@@ -1,0 +1,19 @@
+{
+  "name": "magic-js",
+  "version": "0.0.1",
+  "description": "A Magic: The Gathering deck analyzer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkyle/magic-js.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jkyle/magic-js/issues"
+  },
+  "homepage": "https://github.com/jkyle/magic-js#readme"
+}
