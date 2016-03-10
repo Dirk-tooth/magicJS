@@ -19,8 +19,6 @@ J.Kyle
 
 Dirk-Tooth
 
-Contributions from:
+######Contributions from:
 
-Skybreak
-
-Jaya Prime
+Skybreak  Jaya Prime
