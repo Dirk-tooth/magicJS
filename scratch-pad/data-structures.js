@@ -1,16 +1,16 @@
 var card = {
-	Name: '',
-	Type: '',
-	Effect: '',
-	CMC: '',
-	WhiteIntencity: '',
-	GreenIntencity: '',
-	RedIntencity: '',
-	BlackIntencity: '',
-	BlueIntencity: '',
-	ColorlessIncencity: '',
-	AnyIntencity: '',
-	Price: ''
+	name: '',
+	type: '',
+	effect: '',
+	cmc: '',
+	whiteIntencity: '',
+	greenIntencity: '',
+	redIntencity: '',
+	blackIntencity: '',
+	blueIntencity: '',
+	colorlessIncencity: '',
+	anyIntencity: '',
+	price: ''
 };
 
 var deck = [];
