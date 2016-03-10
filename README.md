@@ -16,8 +16,10 @@ After you add a new file, use `git add YOUR_NEW_FILE_NAME` .
 
 ## Created by:
 J.Kyle
+
 Dirk-Tooth
 
 Contributions from:
 Skybreak
+
 Jaya Prime
