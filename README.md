@@ -1,7 +1,6 @@
 # magic-js
 A Magic: The Gathering deck analyzer written in JavaScript.
 
-
 # Git Cheatsheet
 
 ## Basic get workflow
@@ -14,3 +13,11 @@ A Magic: The Gathering deck analyzer written in JavaScript.
 
 ## Adding New Files
 After you add a new file, use `git add YOUR_NEW_FILE_NAME` .
+
+## Created by:
+J.Kyle
+Dirk-Tooth
+
+Contributions from:
+Skybreak
+Jaya Prime
