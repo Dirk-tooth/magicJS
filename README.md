@@ -15,8 +15,7 @@ A Magic: The Gathering deck analyzer written in JavaScript.
 After you add a new file, use `git add YOUR_NEW_FILE_NAME` .
 
 ## Created by:
-J.Kyle
-
+J.Kyle  
 Dirk-Tooth
 
 ######Contributions from:
