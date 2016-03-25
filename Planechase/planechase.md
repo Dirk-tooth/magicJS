@@ -2,9 +2,9 @@
 # magic-js
 A Magic: The Gathering tool kit written in JavaScript.
 
-#Planechase Deck Builder
+# Planechase Deck Builder
 
-##Start Planeswalking today!
+## Start Planeswalking today!
 
 <!-- # Git Cheatsheet
 
@@ -23,7 +23,7 @@ After you add a new file, use `git add YOUR_NEW_FILE_NAME` . -->
 J.Kyle  
 Dirk-Tooth
 
-######Contributions from:
+###### Contributions from:
 
 Skybreak  
 Jaya Prime
