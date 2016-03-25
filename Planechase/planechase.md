@@ -4,6 +4,8 @@ A Magic: The Gathering tool kit written in JavaScript.
 
 #Planechase Deck Builder
 
+##Start Planeswalking today!
+
 <!-- # Git Cheatsheet
 
 ## Basic get workflow
