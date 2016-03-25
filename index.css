@@ -1,0 +1,37 @@
+#headerBar  {
+  font-family: "Verdana";
+	color: #ffffff;
+	padding: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.5);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#99000000', EndColorStr = '#99000000');
+
+	/*border: 1px solid #888888;*/
+
+     /*-moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;*/
+
+    -moz-box-shadow: 0px 0px 6px #ffffff;
+  -webkit-box-shadow: 0px 0px 6px #ffffff;
+          box-shadow: 0px 0px 6px #ffffff;
+}
+
+#image {
+  text-align: center;
+  margin-top: 15px;
+  .photo img{
+    width: 445px;
+    height: auto;
+  }
+}
+
+#buttons {
+  text-align: center;
+  margin: 10px;
+  .button1 {
+    font-size: 48px;
+    background-color: #555;
+}
