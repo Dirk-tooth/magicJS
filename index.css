@@ -22,11 +22,12 @@
 #image {
   text-align: center;
   margin-top: 15px;
-  .photo img{
-    width: 445px;
-    height: auto;
-  }
 }
+#imageHolder{
+  width: 445px;
+  height: 310px;
+}
+
 
 #buttons {
   text-align: center;
