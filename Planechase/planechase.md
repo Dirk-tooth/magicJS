@@ -1,8 +1,10 @@
+<!-- Planechase Tool -->
 # magic-js
 A Magic: The Gathering tool kit written in JavaScript.
-#Deck Analizer
 
-# Git Cheatsheet
+#Planechase Deck Builder
+
+<!-- # Git Cheatsheet
 
 ## Basic get workflow
 * Files are changed. Those files are "modified".
@@ -13,7 +15,7 @@ A Magic: The Gathering tool kit written in JavaScript.
 
 
 ## Adding New Files
-After you add a new file, use `git add YOUR_NEW_FILE_NAME` .
+After you add a new file, use `git add YOUR_NEW_FILE_NAME` . -->
 
 ## Created by:
 J.Kyle  
