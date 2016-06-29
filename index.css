@@ -1,10 +1,10 @@
 #headerBar  {
   font-family: "Verdana";
-	color: #ffffff;
-	padding: 5px;
-	margin-bottom: 5px;
+	color: #AAA;
+	/*padding: 5px;
+	margin-bottom: 5px;*/
 	text-align: center;
-	background-color: #aaa;
+	/*background-color: #999;*/
 
 }
 
@@ -23,7 +23,7 @@
   margin: 10px;
 }
 .button1 {
-    font-size: 48px;
+    font-size: 24px;
     background-color: #999;
     margin-top: 15px;
 }

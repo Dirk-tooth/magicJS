@@ -44,6 +44,11 @@ var randomImage = function() {
   // }
 }
 
+var getCardFromDeck = function() {
+  selectedIndex = randomNumber(deck.length);
+  return deck[selectedIndex];
+}
+
 var nextImage = function() {
   currentImageNumber += 1
   loadImage(currentImageNumber);
@@ -70,9 +75,10 @@ var addCard = function() {
 var shuffleDeck = function() {
   var _deck = [];
   for (var i = 0; i < deck.length; i++) {
-    _deck.push(randomImage());
+    _deck.push(getCardFromDeck());
   }
   deck = _deck;
+  console.log(deck);
 }
 
 // var chooseDeck = function() {
