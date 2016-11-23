@@ -9,46 +9,59 @@
     <!-- Bootstrap -->
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./stylesheets/main.css" rel="stylesheet" />
+    <link href="./stylesheets/planechase.css" rel="stylesheet" />
+
 
   </head>
   <body>
-    <h1>This is the mtgsdkJS!</h1>
-    <h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>
-    <p>
-      We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(
-    </p>
-    <div class="input-group">
-      <span class="input-group-addon">Card name:</span>
-      <input type="text" id="name-input" class="form-control" placeholder="Jace, Memory Adept" aria-describedby="basic-addon1">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+          <a id="home" class="navbar-brand" href="#">magicJS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a id="planechase" href="#">Planechase</a></li>
+            <li><a id="searchPage" href="#">Search</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="search" id="nav-search" class="btn btn-default">Go!</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">View Profile</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="container">
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="./bin/bundle.js"></script>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
     </div>
-    <div>
-      <button id="search" type="button" name="search">Search</button>
-    </div>
-    <div class="test-area"></div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./bin/bundle.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- planechase stuff -->
-    <div id="headerBar">
-      <h1>Planechase Deck Tool Kit</h1>
-    </div>
-
-    <div id="image">
-      <img id="imageHolder" src="Planes/default.jpg" alt="" >
-    </div>
-
-    <div id="buttons">
-      <button id="random" class="button1"  type="button" name="button">Planeswalk</button>
-      <!-- <button id="add" class="button1" type="button" name="button">Add Card to Deck</button> -->
-      <button id="shuffle" class="button1" type="button" name="button">Shuffle Deck</button>
-      <button id="fill" class="button1" type="button" name="button">Full Deck</button>
-      <!-- <button onclick="nextImage();" type="button" name="button">Next</button> -->
-    </div>
-
-    <!-- <script src="main.js" charset="utf-8"></script> -->
-
   </body>
 </html>

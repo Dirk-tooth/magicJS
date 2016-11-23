@@ -44,18 +44,60 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// libraries
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
-
+	// js
 	const plancechase = __webpack_require__(4);
 	const search = __webpack_require__(5);
+	const loading = __webpack_require__(8);
 
-	$(document).ready(function() {
-	  $('#search').click(search.search);
 
+	function home$() {
+
+	}
+
+	function planechase$() {
 	  $('#random').click(plancechase.randomImage);
 	  $('#shuffle').click(plancechase.shuffleDeck);
 	  $('#fill').click(plancechase.fillDeck);
+	}
+
+	function search$() {
+	  $('#search').click(search.search);
+	}
+
+	function navSearch() {
+	  $('#search').click(search.search);
+	}
+
+
+	// $ nav
+	$(document).ready(function() {
+	  $('#container').html(loading.home);
+	  $('title').html('magicJS | Home');
+	  home$();
+	  
+	  $('#home').click(function() {
+	    $('#container').html(loading.home);
+	    $('title').html('magicJS | Home');
+	    home$();
+	  });
+	  $('#planechase').click(function() {
+	    $('#container').html(loading.planechase);
+	    $('title').html('magicJS | Planechase');
+	    planechase$();
+	  });
+	  $('#searchPage').click(function() {
+	    $('#container').html(loading.search);
+	    $('title').html('magicJS | Search');
+	    search$();
+	  });
+	  $('#nav-search').click(function() {
+	    $('#container').html(loading.search);
+	    $('title').html('magicJS | Search');
+	    navSearch$();
+	  });
 	});
 
 
@@ -27550,6 +27592,58 @@
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"card\">\n  <p>Name: <%= name %></p>\n  <p>Power: <%= power %></p>\n  <p>Toughness: <%= toughness %></p>\n</div>\n";
+
+/***/ },
+/* 7 */,
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const $ = __webpack_require__(1);
+	const _ = __webpack_require__(2);
+
+
+	const planechase = __webpack_require__(9);
+	const search = __webpack_require__(10);
+	const home = __webpack_require__(11);
+
+	function removeClasses() {
+	  $('#planechase').removeClass('active');
+	  $('#search').removeClass('active');
+	}
+
+	function loadPage(target, callback){
+	  // removeClasses();
+	  $('#container').html(target);
+	  $('title').html('magicJS | ' + target);
+	  if (callback) {
+	    callback();
+	  }
+	}
+
+	module.exports.loadPage = loadPage;
+
+	module.exports.home = home;
+	module.exports.planechase = planechase;
+	module.exports.search = search;
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"headerBar\">\n  <h1>Planechase Deck Tool Kit</h1>\n</div>\n\n<div id=\"image\">\n  <img id=\"imageHolder\" src=\"Planes/default.jpg\" alt=\"\" >\n</div>\n\n<div id=\"buttons\">\n  <button id=\"random\" class=\"btn\"  type=\"button\" name=\"button\">Planeswalk</button>\n  <button id=\"shuffle\" class=\"btn\" type=\"button\" name=\"button\">Shuffle Deck</button>\n  <button id=\"fill\" class=\"btn\" type=\"button\" name=\"button\">Full Deck</button>\n</div>\n";
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>This is the mtgsdkJS!</h1>\n<h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>\n<p>\n  We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(\n</p>\n<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>HOME!!!</h1>\n";
 
 /***/ }
 /******/ ]);
