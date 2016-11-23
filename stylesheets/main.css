@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+.test-area {
+  width: 800px;
+  min-height: 400px;
+  background-color: #333;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  color: lime;
+  text-align: left;
+  padding: 5px;
+}
+.input-group {
+  margin: 0 auto;
+  float: none;
+  width: 40%;
+  min-width: 150px;
+}
+#search {
+  margin: 10px;
+}

@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Planechase Deck Builder</title>
-    <link rel="stylesheet" href="index.css" media="screen" title="no title" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MTG API SKD JS</title>
+
+    <!-- Bootstrap -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./stylesheets/main.css" rel="stylesheet" />
+
   </head>
   <body>
+    <h1>This is the mtgsdkJS!</h1>
+    <h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>
+    <p>
+      We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(
+    </p>
+    <div class="input-group">
+      <span class="input-group-addon">Card name:</span>
+      <input type="text" id="name-input" class="form-control" placeholder="Jace, Memory Adept" aria-describedby="basic-addon1">
+    </div>
+    <div>
+      <button id="search" type="button" name="search">Search</button>
+    </div>
+    <div class="test-area"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bin/bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- planechase stuff -->
     <div id="headerBar">
       <h1>Planechase Deck Tool Kit</h1>
     </div>
@@ -15,14 +41,14 @@
     </div>
 
     <div id="buttons">
-      <button class="button1" onclick="randomImage();" type="button" name="button">Planeswalk</button>
-      <button class="button1" onclick="addCard();" type="button" name="button">Add Card to Deck</button>
-      <button class="button1" onclick="shuffleDeck();" type="button" name="button">Shuffle Deck</button>
-      <button class="button1" onclick="fillDeck();" type="button" name="button">Full Deck</button>
+      <button id="random" class="button1"  type="button" name="button">Planeswalk</button>
+      <!-- <button id="add" class="button1" type="button" name="button">Add Card to Deck</button> -->
+      <button id="shuffle" class="button1" type="button" name="button">Shuffle Deck</button>
+      <button id="fill" class="button1" type="button" name="button">Full Deck</button>
       <!-- <button onclick="nextImage();" type="button" name="button">Next</button> -->
     </div>
 
-    <script src="main.js" charset="utf-8"></script>
+    <!-- <script src="main.js" charset="utf-8"></script> -->
 
   </body>
 </html>
