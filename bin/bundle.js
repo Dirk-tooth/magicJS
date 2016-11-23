@@ -27424,7 +27424,6 @@
 /* 4 */
 /***/ function(module, exports) {
 
-	// planechase stuff
 	//Global vars
 	var currentImageNumber = 1;
 	var deck = [];
@@ -27460,15 +27459,9 @@
 	};
 
 	var randomImage = function() {
-	  // if (deck.length === 0) {
-	  //   loadDefaultImage();
-	  // }
-	  // else {
 	    selectedIndex = randomNumber(deck.length);
 	    loadImage(deck[selectedIndex]);
 	    deck.splice(selectedIndex, 1);
-	    //console.log(deck.length);
-	  // }
 	};
 
 	var getCardFromDeck = function() {
@@ -27505,30 +27498,9 @@
 	    _deck.push(getCardFromDeck());
 	  }
 	  deck = _deck;
-	  console.log(deck);
 	};
 
-	// var chooseDeck = function() {
-	//   var firstCard = prompt("Enter the number of your first card", "1, 2, 3, etc...");
-	//   deck.push(firstCard);
-	//   alert("Your first card is " + firstCard);
-	//   var secondCard = prompt("Enter the numer of your second card", "1, 2, 3, etc...");
-	//   deck.push(secondCard);
-	//   alert("Your second card is " + secondCard);
-	//   var thirdCard = prompt("Enter the number of your third cars", "1, 2, 3, etc...");
-	//   deck.push(thirdCard);
-	//   alert("Your third card is " + thirdCard);
-	// }
 
-	// var deckList = function() {
-	//   for (var i = 0; i < deck.length; i++) {
-	//     deck[i]
-	//   }
-	// }
-
-	//chooseDeck();
-	//loadImage(currentImageNumber);
-	// fillDeck();
 	module.exports.randomImage = randomImage;
 	module.exports.shuffleDeck = shuffleDeck;
 	module.exports.fillDeck = fillDeck;
