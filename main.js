@@ -18,11 +18,14 @@ function planechase$() {
 }
 
 function search$() {
-  $('#search').click(search.search);
+  $('#search').click(function() {
+    search.search($('#name-input').val());
+  });
 }
 
-function navSearch() {
-  $('#search').click(search.search);
+function navSearch$(input) {
+  search.search(input);
+  search$();
 }
 
 
@@ -31,7 +34,7 @@ $(document).ready(function() {
   $('#container').html(loading.home);
   $('title').html('magicJS | Home');
   home$();
-  
+
   $('#home').click(function() {
     $('#container').html(loading.home);
     $('title').html('magicJS | Home');
@@ -48,8 +51,10 @@ $(document).ready(function() {
     search$();
   });
   $('#nav-search').click(function() {
+    let userSearchInput = $('#search-bar-input').val();
+    $('#search-bar-input').val('');
     $('#container').html(loading.search);
     $('title').html('magicJS | Search');
-    navSearch$();
+    navSearch$(userSearchInput);
   });
 });

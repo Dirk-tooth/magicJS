@@ -64,11 +64,14 @@
 	}
 
 	function search$() {
-	  $('#search').click(search.search);
+	  $('#search').click(function() {
+	    search.search($('#name-input').val());
+	  });
 	}
 
-	function navSearch() {
-	  $('#search').click(search.search);
+	function navSearch$(input) {
+	  search.search(input);
+	  search$();
 	}
 
 
@@ -77,7 +80,7 @@
 	  $('#container').html(loading.home);
 	  $('title').html('magicJS | Home');
 	  home$();
-	  
+
 	  $('#home').click(function() {
 	    $('#container').html(loading.home);
 	    $('title').html('magicJS | Home');
@@ -94,9 +97,11 @@
 	    search$();
 	  });
 	  $('#nav-search').click(function() {
+	    let userSearchInput = $('#search-bar-input').val();
+	    $('#search-bar-input').val('');
 	    $('#container').html(loading.search);
 	    $('title').html('magicJS | Search');
-	    navSearch$();
+	    navSearch$(userSearchInput);
 	  });
 	});
 
@@ -27563,10 +27568,6 @@
 	  return cardInfo.join(' ');
 	}
 
-	function buildUserUrl() {
-
-	}
-
 	// $('#search').click(function(inputCall) {
 	//   var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + $('#name-input').val();
 	//   console.log(userUrl);
@@ -27576,8 +27577,9 @@
 	//  });
 	// });
 
-	function search() {
-	  var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + $('#name-input').val();
+	function search(userInput) {
+	  console.log(userInput);
+	  var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + userInput;
 	  $.getJSON(userUrl, function(item) {
 	    console.log(item);
 	   $('.test-area').html(compileCardData(buildCardData(item)));

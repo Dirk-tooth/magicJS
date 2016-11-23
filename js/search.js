@@ -28,10 +28,6 @@ function compileCardData(data){
   return cardInfo.join(' ');
 }
 
-function buildUserUrl() {
-
-}
-
 // $('#search').click(function(inputCall) {
 //   var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + $('#name-input').val();
 //   console.log(userUrl);
@@ -41,8 +37,9 @@ function buildUserUrl() {
 //  });
 // });
 
-function search() {
-  var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + $('#name-input').val();
+function search(userInput) {
+  console.log(userInput);
+  var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + userInput;
   $.getJSON(userUrl, function(item) {
     console.log(item);
    $('.test-area').html(compileCardData(buildCardData(item)));
