@@ -52,9 +52,11 @@
 	const search = __webpack_require__(5);
 	const loading = __webpack_require__(8);
 
+	const planechase2 = __webpack_require__(12);
+
 
 	function home$() {
-
+	  // planechase2.loadCurrent();
 	}
 
 	function planechase$() {
@@ -27611,13 +27613,77 @@
 /* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1>This is the mtgsdkJS!</h1>\n<h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>\n<p>\n  We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(\n</p>\n<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
+	module.exports = "<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
 
 /***/ },
 /* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1>HOME!!!</h1>\n";
+	module.exports = "<h1>This is the mtgsdkJS!</h1>\n<h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>\n<p>\n  We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(\n</p>\n";
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const $ = __webpack_require__(1);
+	const requests = __webpack_require__(13);
+
+	let list = requests.layout('plane');
+	let current;
+
+	function length(obj) {
+	  let size = 0, key;
+	  for (key in obj) {
+	    if (obj.hasOwnProperty) size++;
+	  }
+	  return size;
+	}
+
+	function random() {
+	  return Math.floor(Math.random() * length(list));
+	}
+
+	function next() {
+	  if (current >= 0) {
+	    delete list.current;
+	    current = random();
+	    while (list.hasOwnProperty(current) === false) {
+	      current = random();
+	    }
+	  }
+	  current = random();
+	}
+
+	function loadCurrent() {
+	  next();
+	  console.log(current);
+	  console.log(list);
+	  console.log(list.current);
+	}
+
+	module.exports.loadCurrent = loadCurrent;
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const $ = __webpack_require__(1);
+
+	function request() {
+
+	}
+
+	function requestLayout(layout) {
+	  let list;
+	  $.getJSON('https://api.magicthegathering.io/v1/cards?layout=' + layout, function(item) {
+	    list = item;
+	  });
+	  return list;
+	}
+
+	module.exports.layout = requestLayout;
+
 
 /***/ }
 /******/ ]);
