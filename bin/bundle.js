@@ -50,19 +50,18 @@
 	// js
 	const plancechase = __webpack_require__(4);
 	const search = __webpack_require__(5);
-	const loading = __webpack_require__(8);
-
-	const planechase2 = __webpack_require__(12);
+	const loading = __webpack_require__(7);
 
 
 	function home$() {
-	  // planechase2.loadCurrent();
+
 	}
 
 	function planechase$() {
-	  $('#random').click(plancechase.randomImage);
-	  $('#shuffle').click(plancechase.shuffleDeck);
-	  $('#fill').click(plancechase.fillDeck);
+	  plancechase.loadCurrent();
+	  $('#imageHolder').click(function() {
+	    plancechase.loadCurrent();
+	  });
 	}
 
 	function search$() {
@@ -27424,88 +27423,50 @@
 
 /***/ },
 /* 4 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	//Global vars
-	var currentImageNumber = 1;
-	var deck = [];
+	const $ = __webpack_require__(1);
+	const requests = __webpack_require__(12);
 
-	//background code
-	var isInArray = function(array, checkThis) {
-	  var _isInArray = false;
-	  for (var i = 0; i < array.length; i++) {
-	    if (array[i] === checkThis) {
-	      _isInArray = true;
-	      }
-	    }
-	  return _isInArray;
-	};
+	let request = requests.layout('plane');
+	let list = [];
 
-	var randomNumber = function(maxNum) {
-	  return Math.floor(Math.random() * maxNum);
-	};
+	function length(obj) {
+	  return Object.keys(obj).length;
+	}
 
-	//image functions
-	var getImage = function(imageNum) {
-	  return "Planes/Image-" + imageNum + ".jpg";
-	};
+	function random(list) {
+	  return Math.floor(Math.random() * length(list));
+	}
 
-	var loadImage = function(imageNum) {
-	  var image = document.getElementById('imageHolder');
-	  image.setAttribute("src", getImage(imageNum));
-	};
+	function renderCard(card) {
+	  $('#imageHolder').attr('src', card.imageUrl);
+	  $('#name').html(card.name);
+	  let text = card.text.split('Whenever you roll ');
+	  $('#oracle').html(text[0]);
+	  $('#chaos').html(text[1]);
+	}
 
-	var loadDefaultImage = function() {
-	  var image = document.getElementById('imageHolder');
-	  image.setAttribute("src", "Planes/default.jpg");
-	};
+	function next() {
+	  let current = random(list);
+	  let card = list[current];
+	  console.log(card);
+	  list.splice(current, 1);
+	  renderCard(card);
+	}
 
-	var randomImage = function() {
-	    selectedIndex = randomNumber(deck.length);
-	    loadImage(deck[selectedIndex]);
-	    deck.splice(selectedIndex, 1);
-	};
-
-	var getCardFromDeck = function() {
-	  selectedIndex = randomNumber(deck.length);
-	  return deck[selectedIndex];
-	};
-
-	var nextImage = function() {
-	  currentImageNumber += 1;
-	  loadImage(currentImageNumber);
-	};
-
-	//deck functions
-	var fillDeck = function() {
-	  for (var i = 1; i <= 74; i++) {
-	    deck.push(i);
+	function loadCurrent() {
+	  if (list.length > 0) {
+	    next();
+	  } else {
+	    $('#imageHolder').attr('src', 'Planes/default.jpg');
+	    request.then(function(response) {
+	    list = response.cards.slice();
+	    });
 	  }
-	};
+	}
 
-	var addCard = function() {
-	  var addedCard = prompt("Enter the number of the card you would like to add", "1, 2, 3, etc...");
-
-	  if (isInArray(deck, addedCard)) {
-	    alert("That card is already in your deck!\nThe cards in your deck are, " + deck);
-	  }
-	  else {
-	    deck.push(addedCard);
-	  }
-	};
-
-	var shuffleDeck = function() {
-	  var _deck = [];
-	  for (var i = 0; i < deck.length; i++) {
-	    _deck.push(getCardFromDeck());
-	  }
-	  deck = _deck;
-	};
-
-
-	module.exports.randomImage = randomImage;
-	module.exports.shuffleDeck = shuffleDeck;
-	module.exports.fillDeck = fillDeck;
+	module.exports.loadCurrent = loadCurrent;
 
 
 /***/ },
@@ -27570,17 +27531,16 @@
 	module.exports = "<div class=\"card\">\n  <p>Name: <%= name %></p>\n  <p>Power: <%= power %></p>\n  <p>Toughness: <%= toughness %></p>\n</div>\n";
 
 /***/ },
-/* 7 */,
-/* 8 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
 
 
-	const planechase = __webpack_require__(9);
-	const search = __webpack_require__(10);
-	const home = __webpack_require__(11);
+	const planechase = __webpack_require__(8);
+	const search = __webpack_require__(9);
+	const home = __webpack_require__(10);
 
 	function removeClasses() {
 	  $('#planechase').removeClass('active');
@@ -27604,68 +27564,26 @@
 
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div id=\"headerBar\">\n  <h1>Planechase Deck Tool Kit</h1>\n</div>\n\n<div id=\"image\">\n  <img id=\"imageHolder\" src=\"Planes/default.jpg\" alt=\"\" >\n</div>\n\n<div id=\"buttons\">\n  <button id=\"random\" class=\"btn\"  type=\"button\" name=\"button\">Planeswalk</button>\n  <button id=\"shuffle\" class=\"btn\" type=\"button\" name=\"button\">Shuffle Deck</button>\n  <button id=\"fill\" class=\"btn\" type=\"button\" name=\"button\">Full Deck</button>\n</div>\n";
+	module.exports = "<div class=\"row\">\n  <div class=\"col-md-6\" id=\"image\">\n    <img id=\"imageHolder\"  alt=\"\" >\n  </div>\n  <div class=\"col-md-6\" id=\"text\">\n    <h2 id=\"name\"></h2>\n    <h4 id=\"oracle\"></h4>\n    <h4 id=\"chaos\"></h4>\n  </div>\n</div>\n";
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = "<h1>This is the mtgsdkJS!</h1>\n<h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>\n<p>\n  We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(\n</p>\n";
 
 /***/ },
+/* 11 */,
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	const $ = __webpack_require__(1);
-	const requests = __webpack_require__(13);
-
-	let list = requests.layout('plane');
-	let current;
-
-	function length(obj) {
-	  let size = 0, key;
-	  for (key in obj) {
-	    if (obj.hasOwnProperty) size++;
-	  }
-	  return size;
-	}
-
-	function random() {
-	  return Math.floor(Math.random() * length(list));
-	}
-
-	function next() {
-	  if (current >= 0) {
-	    delete list.current;
-	    current = random();
-	    while (list.hasOwnProperty(current) === false) {
-	      current = random();
-	    }
-	  }
-	  current = random();
-	}
-
-	function loadCurrent() {
-	  next();
-	  console.log(current);
-	  console.log(list);
-	  console.log(list.current);
-	}
-
-	module.exports.loadCurrent = loadCurrent;
-
-
-/***/ },
-/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
@@ -27675,11 +27593,7 @@
 	}
 
 	function requestLayout(layout) {
-	  let list;
-	  $.getJSON('https://api.magicthegathering.io/v1/cards?layout=' + layout, function(item) {
-	    list = item;
-	  });
-	  return list;
+	  return $.getJSON('https://api.magicthegathering.io/v1/cards?layout=' + layout);
 	}
 
 	module.exports.layout = requestLayout;

@@ -6,17 +6,16 @@ const plancechase = require('./js/planechase.js');
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
 
-const planechase2 = require('./js/planechase2.js');
-
 
 function home$() {
-  // planechase2.loadCurrent();
+
 }
 
 function planechase$() {
-  $('#random').click(plancechase.randomImage);
-  $('#shuffle').click(plancechase.shuffleDeck);
-  $('#fill').click(plancechase.fillDeck);
+  plancechase.loadCurrent();
+  $('#imageHolder').click(function() {
+    plancechase.loadCurrent();
+  });
 }
 
 function search$() {

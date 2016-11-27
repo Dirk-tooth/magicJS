@@ -1,17 +1,12 @@
-#headerBar  {
-	text-align: center;
-}
-
 #image {
   text-align: center;
   margin-top: 15px;
 }
-#imageHolder{
+#imageHolder {
   width: 445px;
   height: 310px;
 }
 
-#buttons {
-  text-align: center;
-  margin: 10px;
+#text {
+	text-align: left;
 }
