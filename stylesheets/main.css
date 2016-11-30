@@ -3,13 +3,13 @@ body {
   /*padding-top: 70px;*/
 }
 .test-area {
-  width: 800px;
+  width: 90%;
   min-height: 400px;
-  background-color: #333;
+  background-color: white;
   border-radius: 10px;
   margin: auto;
   margin-top: 30px;
-  color: lime;
+  color: black;
   text-align: left;
   padding: 5px;
 }
@@ -21,4 +21,29 @@ body {
 }
 #search {
   margin: 10px;
+}
+
+.card {
+  background-color: #ddd;
+  padding: 5px;
+  border: 2px solid #aaa;
+}
+.card-info {
+
+}
+.card-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.card-mana-cost {
+  font-weight: bold;
+}
+.card-type {
+  font-weight: bold;
+}
+.card-set {
+
+}
+.card-text {
+  margin-top: 15px;
 }

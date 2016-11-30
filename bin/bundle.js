@@ -49,8 +49,8 @@
 	const _ = __webpack_require__(2);
 	// js
 	const plancechase = __webpack_require__(4);
-	const search = __webpack_require__(5);
-	const loading = __webpack_require__(7);
+	const search = __webpack_require__(6);
+	const loading = __webpack_require__(8);
 
 
 	function home$() {
@@ -27426,7 +27426,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
-	const requests = __webpack_require__(12);
+	const requests = __webpack_require__(5);
 
 	let request = requests.layout('plane');
 	let list = [];
@@ -27439,9 +27439,23 @@
 	  return Math.floor(Math.random() * length(list));
 	}
 
+	// function parse (text) {
+	//   text.fandAndReplace('CHAOS', '<span class="chaosSym"><img src="chaosSym.png></span>"');
+	//   text.fandAndReplace('{T}', '<span class="tapSym"><img src="tapSym.png></span>"');
+	//   text.fandAndReplace('{unT}', '<span class="unTSym"><img src="unTSym.png></span>"');
+	//   text.fandAndReplace('{C}', '<span class="colorlessSym"><img src="colorlessSym.png></span>"');
+	//   text.fandAndReplace('{W}', '<span class="whiteSym"><img src="whiteSym.png></span>"');
+	//   text.fandAndReplace('{U}', '<span class="whiteSym"><img src="whiteSym.png></span>"');
+	//   text.fandAndReplace('{B}', '<span class="blueSym"><img src="blueSym.png></span>"');
+	//   text.fandAndReplace('{R}', '<span class="redSym"><img src="redSym.png></span>"');
+	//   text.fandAndReplace('{G}', '<span class="greenSym"><img src="greenSym.png></span>"');
+	//   text.fandAndReplace('{' + hadNum(text) + '}', '<span class="anySym"><img src="anySym.png>' + num + '</span>"');
+	// }
+
 	function renderCard(card) {
 	  $('#imageHolder').attr('src', card.imageUrl);
 	  $('#name').html(card.name);
+	  // replace lines 23 - 25 with parse call and parsed text
 	  let text = card.text.split('Whenever you roll ');
 	  $('#oracle').html(text[0]);
 	  $('#chaos').html(text[1]);
@@ -27473,25 +27487,42 @@
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
+	const $ = __webpack_require__(1);
+
+	function request() {
+
+	}
+
+	function requestLayout(layout) {
+	  return $.getJSON('https://api.magicthegathering.io/v1/cards?layout=' + layout);
+	}
+
+	module.exports.layout = requestLayout;
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var $ = __webpack_require__(1);
 	var _ = __webpack_require__(2);
-	// var card = require('./js/card.js');
-	var card = __webpack_require__(6);
-
-	// const mtg = require('mtgsdk');
-	// mtg.card.all()
-	// .on('data', function (card) {
-	//   console.log(card.name);
-	// });
+	var card = __webpack_require__(7);
 
 
 	function buildCardData(item) {
 	  var data = [];
 	  item.cards.forEach(function(card){
 	    data.push({
+	      imageurl: checkForImage(card),
 	      name: card.name,
+	      manacost: card.manaCost,
+	      cmc: card.cmc,
+	      type: card.type,
 	      power: card.power,
-	      toughness: card.toughness
+	      toughness: card.toughness,
+	      set: card.set,
+	      text: card.text,
+	      // ruleings: ruleingsTable(card)
 	    });
 	  });
 	  return data;
@@ -27503,14 +27534,26 @@
 	  return cardInfo.join(' ');
 	}
 
-	// $('#search').click(function(inputCall) {
-	//   var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + $('#name-input').val();
-	//   console.log(userUrl);
-	//   $.getJSON(userUrl, function(item) {
-	//     console.log(item);
-	//    $('.test-area').html(compileCardData(buildCardData(item)));
-	//  });
-	// });
+	function ruleingsTable(card) {
+	  let tableHtml;
+	  console.log(card.ruleings);
+	  if(card.ruleings.length > 0) {
+	    let table = '<tr><td>date</td><td>ruleing></td></tr>';
+	    card.ruleings.forEach(function(item) {
+	      tableHtml += '<tr><td>' + item.date + '</td><td>' + item.text + '</td></tr>';
+	    });
+	    tableHtml = table;
+	  }
+	  return tableHtml;
+	}
+
+	function checkForImage(card) {
+	  if(card.hasOwnProperty('imageUrl')) {
+	    return card.imageUrl;
+	  } else {
+	    return './images/back.jpeg';
+	  }
+	}
 
 	function search(userInput) {
 	  console.log(userInput);
@@ -27525,22 +27568,22 @@
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"card\">\n  <p>Name: <%= name %></p>\n  <p>Power: <%= power %></p>\n  <p>Toughness: <%= toughness %></p>\n</div>\n";
+	module.exports = "<div class=\"card\">\n  <div class=\"row\">\n    <div class=\"col-md-3 card-imageUrl\">\n      <img src=\"<%= imageurl %>\" alt=\"\">\n    </div>\n    <div class=\"col-md-9 card-info\">\n      <div class=\"row\">\n        <div class=\"col-md-3 card-name\"><%= name %></div>\n        <div class=\"col-md-3 card-mana-cost\"><%= manacost %> (<%= cmc %>)</div>\n        <div class=\"col-md-3 card-type\"><%= type %></div>\n        <div class=\"col-md-1 card-pow-tou\"><%= power %>/<%= toughness %></div>\n        <div class=\"col-md-2 card-set\"><%= set %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-text\"><%= text %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-ruleings\"></div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
 
 
-	const planechase = __webpack_require__(8);
-	const search = __webpack_require__(9);
-	const home = __webpack_require__(10);
+	const planechase = __webpack_require__(9);
+	const search = __webpack_require__(10);
+	const home = __webpack_require__(11);
 
 	function removeClasses() {
 	  $('#planechase').removeClass('active');
@@ -27564,40 +27607,22 @@
 
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"row\">\n  <div class=\"col-md-6\" id=\"image\">\n    <img id=\"imageHolder\"  alt=\"\" >\n  </div>\n  <div class=\"col-md-6\" id=\"text\">\n    <h2 id=\"name\"></h2>\n    <h4 id=\"oracle\"></h4>\n    <h4 id=\"chaos\"></h4>\n  </div>\n</div>\n";
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = "<h1>This is the mtgsdkJS!</h1>\n<h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>\n<p>\n  We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(\n</p>\n";
-
-/***/ },
-/* 11 */,
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	const $ = __webpack_require__(1);
-
-	function request() {
-
-	}
-
-	function requestLayout(layout) {
-	  return $.getJSON('https://api.magicthegathering.io/v1/cards?layout=' + layout);
-	}
-
-	module.exports.layout = requestLayout;
-
 
 /***/ }
 /******/ ]);

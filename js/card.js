@@ -3,9 +3,12 @@ var card = require('../html/card.html');
 
 function showCard (item) {
   var cardData = {
-      name: item.card.name,
-      power: item.card.power,
-      toughness: item.card.toughness
+    imageurl: item.card.imageUrl,
+    name: item.card.name,
+    manacost: item.card.manaCost,
+    type: item.card.type,
+    set: item.card.set,
+    text: item.card.text,
   };
   var compiled = _.template(card);
   compiled(cardData);
