@@ -27522,7 +27522,7 @@
 	      toughness: card.toughness,
 	      set: card.set,
 	      text: card.text,
-	      // ruleings: ruleingsTable(card)
+	      rulings: rulingsTable(card)
 	    });
 	  });
 	  return data;
@@ -27534,17 +27534,15 @@
 	  return cardInfo.join(' ');
 	}
 
-	function ruleingsTable(card) {
-	  let tableHtml;
-	  console.log(card.ruleings);
-	  if(card.ruleings.length > 0) {
-	    let table = '<tr><td>date</td><td>ruleing></td></tr>';
-	    card.ruleings.forEach(function(item) {
-	      tableHtml += '<tr><td>' + item.date + '</td><td>' + item.text + '</td></tr>';
+	function rulingsTable(card) {
+	  let tableHtml = [];
+	  if(card.rulings && card.rulings.length > 0) {
+	    tableHtml.push('<tr><th>date</th><th>ruling</th></tr>');
+	    card.rulings.forEach(function(item) {
+	      tableHtml.push('<tr><td>' + item.date + '</td><td>' + item.text + '</td></tr>');
 	    });
-	    tableHtml = table;
 	  }
-	  return tableHtml;
+	  return tableHtml.join(' ');
 	}
 
 	function checkForImage(card) {
@@ -27571,7 +27569,7 @@
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"card\">\n  <div class=\"row\">\n    <div class=\"col-md-3 card-imageUrl\">\n      <img src=\"<%= imageurl %>\" alt=\"\">\n    </div>\n    <div class=\"col-md-9 card-info\">\n      <div class=\"row\">\n        <div class=\"col-md-3 card-name\"><%= name %></div>\n        <div class=\"col-md-3 card-mana-cost\"><%= manacost %> (<%= cmc %>)</div>\n        <div class=\"col-md-3 card-type\"><%= type %></div>\n        <div class=\"col-md-1 card-pow-tou\"><%= power %>/<%= toughness %></div>\n        <div class=\"col-md-2 card-set\"><%= set %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-text\"><%= text %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-ruleings\"></div>\n      </div>\n    </div>\n  </div>\n</div>\n";
+	module.exports = "<div class=\"card\">\n  <div class=\"row\">\n    <div class=\"col-md-3 card-imageUrl\">\n      <img src=\"<%= imageurl %>\" alt=\"\">\n    </div>\n    <div class=\"col-md-9 card-info\">\n      <div class=\"row\">\n        <div class=\"col-md-3 card-name\"><%= name %></div>\n        <div class=\"col-md-3 card-mana-cost\"><%= manacost %> (<%= cmc %>)</div>\n        <div class=\"col-md-3 card-type\"><%= type %></div>\n        <div class=\"col-md-1 card-pow-tou\"><%= power %>/<%= toughness %></div>\n        <div class=\"col-md-2 card-set\"><%= set %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-text\"><%= text %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-rulings\"><table><%= rulings %></table></div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
 /* 8 */

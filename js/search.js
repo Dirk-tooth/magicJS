@@ -16,7 +16,7 @@ function buildCardData(item) {
       toughness: card.toughness,
       set: card.set,
       text: card.text,
-      // ruleings: ruleingsTable(card)
+      rulings: rulingsTable(card)
     });
   });
   return data;
@@ -28,17 +28,15 @@ function compileCardData(data){
   return cardInfo.join(' ');
 }
 
-function ruleingsTable(card) {
-  let tableHtml;
-  console.log(card.ruleings);
-  if(card.ruleings.length > 0) {
-    let table = '<tr><td>date</td><td>ruleing></td></tr>';
-    card.ruleings.forEach(function(item) {
-      tableHtml += '<tr><td>' + item.date + '</td><td>' + item.text + '</td></tr>';
+function rulingsTable(card) {
+  let tableHtml = [];
+  if(card.rulings && card.rulings.length > 0) {
+    tableHtml.push('<tr><th>date</th><th>ruling</th></tr>');
+    card.rulings.forEach(function(item) {
+      tableHtml.push('<tr><td>' + item.date + '</td><td>' + item.text + '</td></tr>');
     });
-    tableHtml = table;
   }
-  return tableHtml;
+  return tableHtml.join(' ');
 }
 
 function checkForImage(card) {
