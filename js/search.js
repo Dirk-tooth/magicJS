@@ -31,12 +31,12 @@ function compileCardData(data){
 function rulingsTable(card) {
   let tableHtml = [];
   if(card.rulings && card.rulings.length > 0) {
-    tableHtml.push('<tr><th>date</th><th>ruling</th></tr>');
+    tableHtml.push('<thead><tr><td>date</td><td>ruling</td></tr></thead><tbody>');
     card.rulings.forEach(function(item) {
       tableHtml.push('<tr><td>' + item.date + '</td><td>' + item.text + '</td></tr>');
     });
   }
-  return tableHtml.join(' ');
+  return (tableHtml.join(' ') + '</tbody>');
 }
 
 function checkForImage(card) {
