@@ -47,3 +47,7 @@ body {
 .card-text {
   margin-top: 15px;
 }
+
+.manaSymbol > img{
+  width: 18px;
+}

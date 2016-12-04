@@ -49,8 +49,8 @@
 	const _ = __webpack_require__(2);
 	// js
 	const plancechase = __webpack_require__(4);
-	const search = __webpack_require__(6);
-	const loading = __webpack_require__(8);
+	const search = __webpack_require__(7);
+	const loading = __webpack_require__(9);
 
 
 	function home$() {
@@ -27427,6 +27427,8 @@
 
 	const $ = __webpack_require__(1);
 	const requests = __webpack_require__(5);
+	const manaSymbols = __webpack_require__(6);
+
 
 	let request = requests.layout('plane');
 	let list = [];
@@ -27439,32 +27441,17 @@
 	  return Math.floor(Math.random() * length(list));
 	}
 
-	// function parse (text) {
-	//   text.fandAndReplace('CHAOS', '<span class="chaosSym"><img src="chaosSym.png></span>"');
-	//   text.fandAndReplace('{T}', '<span class="tapSym"><img src="tapSym.png></span>"');
-	//   text.fandAndReplace('{unT}', '<span class="unTSym"><img src="unTSym.png></span>"');
-	//   text.fandAndReplace('{C}', '<span class="colorlessSym"><img src="colorlessSym.png></span>"');
-	//   text.fandAndReplace('{W}', '<span class="whiteSym"><img src="whiteSym.png></span>"');
-	//   text.fandAndReplace('{U}', '<span class="whiteSym"><img src="whiteSym.png></span>"');
-	//   text.fandAndReplace('{B}', '<span class="blueSym"><img src="blueSym.png></span>"');
-	//   text.fandAndReplace('{R}', '<span class="redSym"><img src="redSym.png></span>"');
-	//   text.fandAndReplace('{G}', '<span class="greenSym"><img src="greenSym.png></span>"');
-	//   text.fandAndReplace('{' + hadNum(text) + '}', '<span class="anySym"><img src="anySym.png>' + num + '</span>"');
-	// }
-
 	function renderCard(card) {
 	  $('#imageHolder').attr('src', card.imageUrl);
 	  $('#name').html(card.name);
-	  // replace lines 23 - 25 with parse call and parsed text
 	  let text = card.text.split('Whenever you roll ');
-	  $('#oracle').html(text[0]);
-	  $('#chaos').html(text[1]);
+	  $('#oracle').html(manaSymbols.parse(text[0]));
+	  $('#chaos').html(manaSymbols.parse(text[1]));
 	}
 
 	function next() {
 	  let current = random(list);
 	  let card = list[current];
-	  console.log(card);
 	  list.splice(current, 1);
 	  renderCard(card);
 	}
@@ -27502,11 +27489,36 @@
 
 /***/ },
 /* 6 */
+/***/ function(module, exports) {
+
+	function parse (text) {
+	  if (text) {
+	    let newTextchaos = text.replace(/CHAOS/g, '<span class="manaSymbol chaosSym"><img src="./images/chaos.svg" alt=""></span>');
+	    let newTexttap = newTextchaos.replace(/{T}/g, '<span class="manaSymbol tapSym"><img src="./images/tap.svg" alt=""></span>');
+	    // newText = text.replace('{unT}', '<span class="manaSymbol unTSym"><img src="unT.svg" alt=""></span>');
+	    let newTextc = newTexttap.replace(/{C}/g, '<span class="manaSymbol colorlessSym"><img src="./images/colorless.svg" alt=""></span>');
+	    let newTextw = newTextc.replace(/{W}/g, '<span class="manaSymbol whiteSym"><img src="./images/white.svg" alt=""></span>');
+	    let newTextu = newTextw.replace(/{U}/g, '<span class="manaSymbol blueSym"><img src="./images/blue.svg" alt=""></span>');
+	    let newTextb = newTextu.replace(/{B}/g, '<span class="manaSymbol blackSym"><img src="./images/black.svg" alt=""></span>');
+	    let newTextr = newTextb.replace(/{R}/g, '<span class="manaSymbol redSym"><img src="./images/red.svg" alt=""></span>');
+	    let newTextg = newTextr.replace(/{G}/g, '<span class="manaSymbol greenSym"><img src="./images/green.svg" alt=""></span>');
+	    // newText = text.replace('{' + hadNum(text) + '}', '<span class="manaSymbol anySym"><img src="any.svg" alt="">' + num + '</span>');
+
+	    return newTextg;
+	} else {return text;}
+	}
+
+	module.exports.parse = parse;
+
+
+/***/ },
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
 	var _ = __webpack_require__(2);
-	var card = __webpack_require__(7);
+	var card = __webpack_require__(8);
+	const manaSymbols = __webpack_require__(6);
 
 
 	function buildCardData(item) {
@@ -27515,13 +27527,13 @@
 	    data.push({
 	      imageurl: checkForImage(card),
 	      name: card.name,
-	      manacost: card.manaCost,
+	      manacost: manaSymbols.parse(card.manaCost),
 	      cmc: card.cmc,
 	      type: card.type,
 	      power: card.power,
 	      toughness: card.toughness,
 	      set: card.set,
-	      text: card.text,
+	      text: manaSymbols.parse(card.text),
 	      rulings: rulingsTable(card)
 	    });
 	  });
@@ -27566,22 +27578,22 @@
 
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"card\">\n  <div class=\"row\">\n    <div class=\"col-md-3 card-imageUrl\">\n      <img src=\"<%= imageurl %>\" alt=\"\">\n    </div>\n    <div class=\"col-md-9 card-info\">\n      <div class=\"row\">\n        <div class=\"col-md-3 card-name\"><%= name %></div>\n        <div class=\"col-md-3 card-mana-cost\"><%= manacost %> (<%= cmc %>)</div>\n        <div class=\"col-md-3 card-type\"><%= type %></div>\n        <div class=\"col-md-1 card-pow-tou\"><%= power %>/<%= toughness %></div>\n        <div class=\"col-md-2 card-set\"><%= set %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-text\"><%= text %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-rulings\"><table class=\"table\"><%= rulings %></table></div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
 
 
-	const planechase = __webpack_require__(9);
-	const search = __webpack_require__(10);
-	const home = __webpack_require__(11);
+	const planechase = __webpack_require__(10);
+	const search = __webpack_require__(11);
+	const home = __webpack_require__(12);
 
 	function removeClasses() {
 	  $('#planechase').removeClass('active');
@@ -27605,22 +27617,22 @@
 
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"row\">\n  <div class=\"col-md-6\" id=\"image\">\n    <img id=\"imageHolder\"  alt=\"\" >\n  </div>\n  <div class=\"col-md-6\" id=\"text\">\n    <h2 id=\"name\"></h2>\n    <h4 id=\"oracle\"></h4>\n    <h4 id=\"chaos\"></h4>\n  </div>\n</div>\n";
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1>This is the mtgsdkJS!</h1>\n<h3>or, in english... the Magic: The Gathering Software Developers Kit for JavaScript!</h3>\n<p>\n  We decided to make the mtgsdkJS, well, because we like the mtgsdk API but thay didnt have and sdk for JS :(\n</p>\n";
+	module.exports = "<h1>This is magicJS!</h1>\n<h3>An app to help you play magic</h3>\n<p>We decided to make the magicJS, well, because we like playing magic.</p>\n";
 
 /***/ }
 /******/ ]);

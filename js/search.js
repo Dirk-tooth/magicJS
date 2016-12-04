@@ -1,6 +1,7 @@
 var $ = require('jquery');
 var _ = require('lodash');
 var card = require('../html/card.html');
+const manaSymbols = require('./manaSymbols.js');
 
 
 function buildCardData(item) {
@@ -9,13 +10,13 @@ function buildCardData(item) {
     data.push({
       imageurl: checkForImage(card),
       name: card.name,
-      manacost: card.manaCost,
+      manacost: manaSymbols.parse(card.manaCost),
       cmc: card.cmc,
       type: card.type,
       power: card.power,
       toughness: card.toughness,
       set: card.set,
-      text: card.text,
+      text: manaSymbols.parse(card.text),
       rulings: rulingsTable(card)
     });
   });
