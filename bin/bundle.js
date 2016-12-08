@@ -51,10 +51,18 @@
 	const plancechase = __webpack_require__(4);
 	const search = __webpack_require__(7);
 	const loading = __webpack_require__(9);
+	const tools = __webpack_require__(15);
+	const player = __webpack_require__(16);
 
 
 	function home$() {
 
+	}
+
+	function tools$() {
+	  $('#add-player-button').click(function() {
+	    player.addPlayer();
+	  });
 	}
 
 	function planechase$() {
@@ -66,8 +74,9 @@
 
 	function search$() {
 	  $('#search').click(function() {
-	    search.search($('#name-input').val());
+	    search.search($('#search-input').val());
 	  });
+	  
 	}
 
 	function navSearch$(input) {
@@ -86,6 +95,11 @@
 	    $('#container').html(loading.home);
 	    $('title').html('magicJS | Home');
 	    home$();
+	  });
+	  $('#toolsPage').click(function() {
+	    $('#container').html(loading.tools);
+	    $('title').html('magicJS | Tools');
+	    tools$();
 	  });
 	  $('#planechase').click(function() {
 	    $('#container').html(loading.planechase);
@@ -27515,11 +27529,15 @@
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $ = __webpack_require__(1);
-	var _ = __webpack_require__(2);
-	var card = __webpack_require__(8);
+	const $ = __webpack_require__(1);
+	const _ = __webpack_require__(2);
+	const card = __webpack_require__(8);
 	const manaSymbols = __webpack_require__(6);
 
+	function searchType(feedback) {
+	  $('input-dropdown').html(feedback);
+	  state.searchType = feedback;
+	}
 
 	function buildCardData(item) {
 	  var data = [];
@@ -27565,11 +27583,9 @@
 	  }
 	}
 
-	function search(userInput) {
-	  console.log(userInput);
-	  var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + userInput;
+	function search(userInput, searchType) {
+	  var userUrl = 'https://api.magicthegathering.io/v1/cards?' + searchType + '=' + userInput;
 	  $.getJSON(userUrl, function(item) {
-	    console.log(item);
 	   $('.test-area').html(compileCardData(buildCardData(item)));
 	 });
 	}
@@ -27594,6 +27610,9 @@
 	const planechase = __webpack_require__(10);
 	const search = __webpack_require__(11);
 	const home = __webpack_require__(12);
+	const tools = __webpack_require__(13);
+
+	const player = __webpack_require__(14);
 
 	function removeClasses() {
 	  $('#planechase').removeClass('active');
@@ -27612,8 +27631,11 @@
 	module.exports.loadPage = loadPage;
 
 	module.exports.home = home;
+	module.exports.tools = tools;
 	module.exports.planechase = planechase;
 	module.exports.search = search;
+
+	module.exports.player = player;
 
 
 /***/ },
@@ -27626,13 +27648,57 @@
 /* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"input-group\">\n  <span class=\"input-group-addon\">Card name:</span>\n  <input type=\"text\" id=\"name-input\" class=\"form-control\" placeholder=\"Jace, Memory Adept\" aria-describedby=\"basic-addon1\">\n</div>\n<div>\n  <button id=\"search\" type=\"button\" name=\"search\">Search</button>\n</div>\n<div class=\"test-area\"></div>\n";
+	module.exports = "<div class=\"input-group\">\n  <div class=\"input-group-btn\">\n    <button type=\"button\" id=\"input-dropdown\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Search by Name <span class=\"caret\"></span></button>\n    <ul class=\"dropdown-menu\">\n      <li><a id=\"byName\" href=\"#\">Name</a></li>\n      <li><a id=\"byText\" href=\"#\">Text</a></li>\n      <li><a id=\"byType\" href=\"#\">Type</a></li>\n    </ul>\n  </div>\n  <input id=\"search-input\" type=\"text\" class=\"form-control\" placeholder=\"Jace, Memory Adept\">\n    <span class=\"input-group-btn\">\n      <button id=\"search\" class=\"btn btn-default\" type=\"button\">Search!</button>\n    </span>\n</div><!-- /input-group -->\n\n<div class=\"test-area\"></div>\n";
 
 /***/ },
 /* 12 */
 /***/ function(module, exports) {
 
 	module.exports = "<h1>This is magicJS!</h1>\n<h3>An app to help you play magic</h3>\n<p>We decided to make the magicJS, well, because we like playing magic.</p>\n";
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"add-player-button\" class=\"btn\">\n  Add Player(s)\n</div>\n<div id=\"player-space\">\n\n</div>\n";
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"player panel\">\n  <h3>Player Name</h3>\n  <div class=\"life\">\n    <div class=\"life-total\">\n    </div>\n    <div class=\"minus btn\">\n      <span class=\"glyphicon glyphicon-minus\"></span>\n    </div>\n    <div class=\"plus btn\">\n      <span class=\"glyphicon glyphicon-plus\"></span>\n    </div>\n  </div>\n  <div class=\"add-counter btn\">\n    Other Counters  <span class=\"glyphicon glyphicon-tasks\"></span>\n  </div>\n  <div class=\"extra-counter-container\">\n\n  </div>\n</div>\n";
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	function plusButton(target) {
+
+	}
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const loading = __webpack_require__(9);
+
+	let players = [];
+
+	const playerTemplate = {
+	  name: '',
+	  life: 20,
+	};
+
+	function addPlayer() {
+	  $('#player-space').html($('#player-space').html() + loading.player);
+	  players.push(playerTemplate);
+	  players[players.length-1].name = 'Player' + players.length;
+	  console.log(players);
+	}
+
+	module.exports.addPlayer = addPlayer;
+
 
 /***/ }
 /******/ ]);

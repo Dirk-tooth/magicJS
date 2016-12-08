@@ -5,6 +5,9 @@ const _ = require('lodash');
 const planechase = require('../html/planechase.html');
 const search = require('../html/search.html');
 const home = require('../html/home.html');
+const tools = require('../html/tools.html');
+
+const player = require('../html/player.html');
 
 function removeClasses() {
   $('#planechase').removeClass('active');
@@ -23,5 +26,8 @@ function loadPage(target, callback){
 module.exports.loadPage = loadPage;
 
 module.exports.home = home;
+module.exports.tools = tools;
 module.exports.planechase = planechase;
 module.exports.search = search;
+
+module.exports.player = player;

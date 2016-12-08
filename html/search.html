@@ -1,8 +1,16 @@
 <div class="input-group">
-  <span class="input-group-addon">Card name:</span>
-  <input type="text" id="name-input" class="form-control" placeholder="Jace, Memory Adept" aria-describedby="basic-addon1">
-</div>
-<div>
-  <button id="search" type="button" name="search">Search</button>
-</div>
+  <div class="input-group-btn">
+    <button type="button" id="input-dropdown" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search by Name <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a id="byName" href="#">Name</a></li>
+      <li><a id="byText" href="#">Text</a></li>
+      <li><a id="byType" href="#">Type</a></li>
+    </ul>
+  </div>
+  <input id="search-input" type="text" class="form-control" placeholder="Jace, Memory Adept">
+    <span class="input-group-btn">
+      <button id="search" class="btn btn-default" type="button">Search!</button>
+    </span>
+</div><!-- /input-group -->
+
 <div class="test-area"></div>

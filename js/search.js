@@ -1,8 +1,12 @@
-var $ = require('jquery');
-var _ = require('lodash');
-var card = require('../html/card.html');
+const $ = require('jquery');
+const _ = require('lodash');
+const card = require('../html/card.html');
 const manaSymbols = require('./manaSymbols.js');
 
+function searchType(feedback) {
+  $('input-dropdown').html(feedback);
+  state.searchType = feedback;
+}
 
 function buildCardData(item) {
   var data = [];
@@ -48,11 +52,9 @@ function checkForImage(card) {
   }
 }
 
-function search(userInput) {
-  console.log(userInput);
-  var userUrl = 'https://api.magicthegathering.io/v1/cards?name=' + userInput;
+function search(userInput, searchType) {
+  var userUrl = 'https://api.magicthegathering.io/v1/cards?' + searchType + '=' + userInput;
   $.getJSON(userUrl, function(item) {
-    console.log(item);
    $('.test-area').html(compileCardData(buildCardData(item)));
  });
 }

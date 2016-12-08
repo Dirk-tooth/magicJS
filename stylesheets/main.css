@@ -2,6 +2,9 @@ body {
   text-align: center;
   /*padding-top: 70px;*/
 }
+.btn {
+}
+
 .test-area {
   width: 90%;
   min-height: 400px;
@@ -19,9 +22,9 @@ body {
   width: 40%;
   min-width: 150px;
 }
-#search {
+/*#search {
   margin: 10px;
-}
+}*/
 
 .card {
   background-color: #ddd;
@@ -50,4 +53,9 @@ body {
 
 .manaSymbol > img{
   width: 18px;
+}
+
+.player {
+  float: left;
+  margin: 10px;
 }

@@ -5,10 +5,18 @@ const _ = require('lodash');
 const plancechase = require('./js/planechase.js');
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
+const tools = require('./js/tools.js');
+const player = require('./js/player.js');
 
 
 function home$() {
 
+}
+
+function tools$() {
+  $('#add-player-button').click(function() {
+    player.addPlayer();
+  });
 }
 
 function planechase$() {
@@ -20,8 +28,9 @@ function planechase$() {
 
 function search$() {
   $('#search').click(function() {
-    search.search($('#name-input').val());
+    search.search($('#search-input').val());
   });
+  
 }
 
 function navSearch$(input) {
@@ -40,6 +49,11 @@ $(document).ready(function() {
     $('#container').html(loading.home);
     $('title').html('magicJS | Home');
     home$();
+  });
+  $('#toolsPage').click(function() {
+    $('#container').html(loading.tools);
+    $('title').html('magicJS | Tools');
+    tools$();
   });
   $('#planechase').click(function() {
     $('#container').html(loading.planechase);
