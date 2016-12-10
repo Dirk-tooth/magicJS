@@ -31,5 +31,8 @@
     "lodash": "^4.17.2",
     "mtgsdk": "^0.1.1",
     "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.16.2"
   }
 }

@@ -17,6 +17,11 @@ function tools$() {
   $('#add-player-button').click(function() {
     player.addPlayer();
   });
+
+  $('#roll').click(function(){
+    tools.triggerRollOff()
+  })
+
 }
 
 function planechase$() {
@@ -30,7 +35,7 @@ function search$() {
   $('#search').click(function() {
     search.search($('#search-input').val());
   });
-  
+
 }
 
 function navSearch$(input) {
