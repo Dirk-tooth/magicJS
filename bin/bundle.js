@@ -27534,7 +27534,7 @@
 	const card = __webpack_require__(8);
 	const manaSymbols = __webpack_require__(6);
 
-	function searchType(feedback) {
+	function searchType(state, feedback) {
 	  $('input-dropdown').html(feedback);
 	  state.searchType = feedback;
 	}

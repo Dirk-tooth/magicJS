@@ -1,19 +1,31 @@
 # magic-js
 A Magic: The Gathering tool kit written in JavaScript.
-#Deck Analizer
 
-# Git Cheatsheet
+#Planechase
+We wanted to create tools for players who wanted to look through the planechase cards and build sample planechase decks to hone their skills as a planeswalker.
 
-## Basic get workflow
-* Files are changed. Those files are "modified".
-* Modified files can be added to the current commit by using `git add yourFileName`
-* These files are now "staged"
-* When all the changes are ready, the changes can be "committed" by using `git commit -m "Your message that describes the commit."`
-* Finally, those changes can be pushed up to github using `git push`.
+This tool allows players to:
+* look though all the planes in random order
+* build a decklist of planes for planechase games.
 
+#Search
+To give the players full access to information they may need during a game, we put together the most comprehensive search tool we could so that players have access to card and every ruling to ensure games go as smoothly as possible.
 
-## Adding New Files
-After you add a new file, use `git add YOUR_NEW_FILE_NAME` .
+Here players can find all the information they ever wanted to know about any card they can think of quickly, without leaving the plane - or their tools behind. Speaking of tools...
+
+#Tools
+The tools page give players the ability to track all the accounting the game requires with out need their Pound-O-Dice, every where they go.
+
+You can track all the things you could think of and more, including:
+* life total
+* poison counters
+* loyalty counters
+* suspend counters
+* sheep counters
+* any and all other counters including custom counters
+
+#Enjoy
+We hope you enjoy using our MTG suite. If you have any questions or want to contribute, please contact us or leave us a message!
 
 ## Created by:
 J.Kyle  

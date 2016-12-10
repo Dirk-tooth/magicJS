@@ -3,7 +3,7 @@ const _ = require('lodash');
 const card = require('../html/card.html');
 const manaSymbols = require('./manaSymbols.js');
 
-function searchType(feedback) {
+function searchType(state, feedback) {
   $('input-dropdown').html(feedback);
   state.searchType = feedback;
 }
