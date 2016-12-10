@@ -43,7 +43,6 @@ function navSearch$(input) {
   search$();
 }
 
-
 // $ nav
 $(document).ready(function() {
   $('#container').html(loading.home);

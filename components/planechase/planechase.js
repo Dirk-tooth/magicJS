@@ -38,14 +38,11 @@ function loadCurrent() {
 function Planechase(card = {}){
     let text = card.text ? card.text.split('Whenever you roll ') : '';
     return (
-      E('div', {'class': 'row'}, {},
-      [
-        E('div', {'class': 'col-md-6'}, {},
-        [
+      E('div', {'class': 'row'}, {}, [
+        E('div', {'class': 'col-md-6'}, {}, [
           E('img', {src: card.imageUrl || 'Planes/default.jpg'}, {'click': loadCurrent})
         ]),
-        E('div', {'class': 'col-md-6'}, {},
-        [
+        E('div', {'class': 'col-md-6'}, {}, [
           E('h2', {}, {}, card.name || ''),
           E('h4', {}, {}, manaSymbols.parse(text[0])),
           E('h4', {}, {}, manaSymbols.parse(text[1]))
@@ -53,7 +50,6 @@ function Planechase(card = {}){
       ])
   )
 }
-
 
 module.exports.loadCurrent = loadCurrent;
 module.exports.Planechase = Planechase;
