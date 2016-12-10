@@ -1,13 +1,13 @@
 // libraries
 const $ = require('jquery');
 const _ = require('lodash');
+const Element = require('./elemental').Element;
 // js
-const plancechase = require('./js/planechase.js');
+const planechase = require('./components/planechase/planechase.js');
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
 const tools = require('./js/tools.js');
 const player = require('./js/player.js');
-
 
 function home$() {
 
@@ -25,10 +25,10 @@ function tools$() {
 }
 
 function planechase$() {
-  plancechase.loadCurrent();
-  $('#imageHolder').click(function() {
-    plancechase.loadCurrent();
-  });
+  // plancechase.loadCurrent();
+  // $('#imageHolder').click(function() {
+  //   plancechase.loadCurrent();
+  // });
 }
 
 function search$() {
@@ -61,7 +61,8 @@ $(document).ready(function() {
     tools$();
   });
   $('#planechase').click(function() {
-    $('#container').html(loading.planechase);
+    console.log(planechase.Planechase);
+    $('#container').empty().append(planechase.Planechase());
     $('title').html('magicJS | Planechase');
     planechase$();
   });
@@ -77,4 +78,6 @@ $(document).ready(function() {
     $('title').html('magicJS | Search');
     navSearch$(userSearchInput);
   });
+
+
 });
