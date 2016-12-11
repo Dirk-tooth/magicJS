@@ -1,12 +1,12 @@
-#image {
+.theimage {
   text-align: center;
   margin-top: 15px;
 }
-#imageHolder {
+.theimageHolder {
   width: 445px;
   height: 310px;
 }
 
-#text {
+.thetext {
 	text-align: left;
 }

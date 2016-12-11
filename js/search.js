@@ -1,7 +1,7 @@
 const $ = require('jquery');
 const _ = require('lodash');
 const card = require('../html/card.html');
-const manaSymbols = require('./manaSymbols.js');
+// const manaSymbols = require('./manaSymbols.js');
 
 function searchType(state, feedback) {
   $('input-dropdown').html(feedback);

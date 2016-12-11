@@ -1,17 +1,18 @@
 // libraries
 const $ = require('jquery');
-const _ = require('lodash');
-const Element = require('./elemental').Element;
 // js
-const planechase = require('./components/planechase/planechase.js');
+const Planechase = require('./components/planechase/planechase.js').Planechase;
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
 const tools = require('./js/tools.js');
 const player = require('./js/player.js');
+const store = require('./js/store.js');
+const requests = require('./js/requests.js');
 
-function home$() {
-
-}
+requests.layout('plane')
+        .then(function(result){
+          store.dispatch({ type: 'UPDATE_CARDS', cards: result.cards});
+        })
 
 function tools$() {
   $('#add-player-button').click(function() {
@@ -22,13 +23,6 @@ function tools$() {
     tools.triggerRollOff()
   })
 
-}
-
-function planechase$() {
-  // plancechase.loadCurrent();
-  // $('#imageHolder').click(function() {
-  //   plancechase.loadCurrent();
-  // });
 }
 
 function search$() {
@@ -45,14 +39,11 @@ function navSearch$(input) {
 
 // $ nav
 $(document).ready(function() {
-  $('#container').html(loading.home);
   $('title').html('magicJS | Home');
-  home$();
 
   $('#home').click(function() {
-    $('#container').html(loading.home);
+    store.dispatch({type: 'CHANGE_PAGE', page: 'home'});
     $('title').html('magicJS | Home');
-    home$();
   });
   $('#toolsPage').click(function() {
     $('#container').html(loading.tools);
@@ -60,10 +51,8 @@ $(document).ready(function() {
     tools$();
   });
   $('#planechase').click(function() {
-    console.log(planechase.Planechase);
-    $('#container').empty().append(planechase.Planechase());
+    store.dispatch({type: 'CHANGE_PAGE', page: 'planechase'});
     $('title').html('magicJS | Planechase');
-    planechase$();
   });
   $('#searchPage').click(function() {
     $('#container').html(loading.search);
@@ -77,6 +66,20 @@ $(document).ready(function() {
     $('title').html('magicJS | Search');
     navSearch$(userSearchInput);
   });
-
-
 });
+
+function nextCard() {
+  store.dispatch({type: 'NEXT_CARD'})
+};
+
+const pages = {
+  planechase: state => Planechase({card: state.pages.planechase.currentCard, nextCard}),
+  home: state => loading.home
+}
+
+function renderDocument(state){
+  const page = pages[state.currentPage]
+  $('#container').empty().append(page(state));
+}
+
+store.onChange(renderDocument);
