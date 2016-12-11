@@ -1,4 +1,4 @@
-# magic-js
+# magicJS
 A Magic: The Gathering tool kit written in JavaScript.
 
 ##Planechase
@@ -27,7 +27,7 @@ You can track all the things you could think of and more, including:
 ##Enjoy
 We hope you enjoy using our MTG suite. If you have any questions or want to contribute, please contact us or leave us a message!
 
-### Created by:
+###Created by:
 J.Kyle  
 Dirk-Tooth
 
