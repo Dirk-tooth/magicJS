@@ -8,6 +8,9 @@ const loading = require('./js/loading.js');
 const tools = require('./js/tools.js');
 const player = require('./js/player.js');
 
+let state = {
+  searchType: 'name',
+};
 
 function home$() {
 
@@ -27,14 +30,18 @@ function planechase$() {
 }
 
 function search$() {
-  $('#search').click(function() {
-    search.search($('#search-input').val());
+  $('.searchby').click(function() {
+    state.searchType = $(event.target).html();
+    $('#input-dropdown').html('Search by ' + state.searchType + ' <span class="caret"></span>');
   });
-  
+  $('#search').click(function() {
+    search.search($('#search-input').val(), state.searchType);
+  });
+
 }
 
 function navSearch$(input) {
-  search.search(input);
+  search.search(input, 'name');
   search$();
 }
 

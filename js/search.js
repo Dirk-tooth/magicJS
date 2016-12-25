@@ -4,7 +4,7 @@ const card = require('../html/card.html');
 const manaSymbols = require('./manaSymbols.js');
 
 function searchType(state, feedback) {
-  $('input-dropdown').html(feedback);
+  $('.input-dropdown').html(feedback);
   state.searchType = feedback;
 }
 
@@ -54,6 +54,7 @@ function checkForImage(card) {
 
 function search(userInput, searchType) {
   var userUrl = 'https://api.magicthegathering.io/v1/cards?' + searchType + '=' + userInput;
+  console.log(userUrl);
   $.getJSON(userUrl, function(item) {
    $('.test-area').html(compileCardData(buildCardData(item)));
  });

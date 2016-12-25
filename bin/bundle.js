@@ -48,12 +48,15 @@
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
 	// js
-	const plancechase = __webpack_require__(18);
-	const search = __webpack_require__(8);
-	const loading = __webpack_require__(10);
-	const tools = __webpack_require__(16);
-	const player = __webpack_require__(17);
+	const plancechase = __webpack_require__(4);
+	const search = __webpack_require__(7);
+	const loading = __webpack_require__(9);
+	const tools = __webpack_require__(15);
+	const player = __webpack_require__(16);
 
+	let state = {
+	  searchType: 'name',
+	};
 
 	function home$() {
 
@@ -73,14 +76,18 @@
 	}
 
 	function search$() {
-	  $('#search').click(function() {
-	    search.search($('#search-input').val());
+	  $('.searchby').click(function() {
+	    state.searchType = $(event.target).html();
+	    $('#input-dropdown').html('Search by ' + state.searchType + ' <span class="caret"></span>');
 	  });
-	  
+	  $('#search').click(function() {
+	    search.search($('#search-input').val(), state.searchType);
+	  });
+
 	}
 
 	function navSearch$(input) {
-	  search.search(input);
+	  search.search(input, 'name');
 	  search$();
 	}
 
@@ -27436,9 +27443,56 @@
 
 
 /***/ },
-/* 4 */,
-/* 5 */,
-/* 6 */
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const $ = __webpack_require__(1);
+	const requests = __webpack_require__(5);
+	const manaSymbols = __webpack_require__(6);
+
+
+	let request = requests.layout('plane');
+	let list = [];
+
+	function length(obj) {
+	  return Object.keys(obj).length;
+	}
+
+	function random(list) {
+	  return Math.floor(Math.random() * length(list));
+	}
+
+	function renderCard(card) {
+	  $('#imageHolder').attr('src', card.imageUrl);
+	  $('#name').html(card.name);
+	  let text = card.text.split('Whenever you roll ');
+	  $('#oracle').html(manaSymbols.parse(text[0]));
+	  $('#chaos').html(manaSymbols.parse(text[1]));
+	}
+
+	function next() {
+	  let current = random(list);
+	  let card = list[current];
+	  list.splice(current, 1);
+	  renderCard(card);
+	}
+
+	function loadCurrent() {
+	  if (list.length > 0) {
+	    next();
+	  } else {
+	    $('#imageHolder').attr('src', 'Planes/default.jpg');
+	    request.then(function(response) {
+	    list = response.cards.slice();
+	    });
+	  }
+	}
+
+	module.exports.loadCurrent = loadCurrent;
+
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
@@ -27455,7 +27509,7 @@
 
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	function parse (text) {
@@ -27479,16 +27533,16 @@
 
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
-	const card = __webpack_require__(9);
-	const manaSymbols = __webpack_require__(7);
+	const card = __webpack_require__(8);
+	const manaSymbols = __webpack_require__(6);
 
 	function searchType(state, feedback) {
-	  $('input-dropdown').html(feedback);
+	  $('.input-dropdown').html(feedback);
 	  state.searchType = feedback;
 	}
 
@@ -27538,6 +27592,7 @@
 
 	function search(userInput, searchType) {
 	  var userUrl = 'https://api.magicthegathering.io/v1/cards?' + searchType + '=' + userInput;
+	  console.log(userUrl);
 	  $.getJSON(userUrl, function(item) {
 	   $('.test-area').html(compileCardData(buildCardData(item)));
 	 });
@@ -27547,25 +27602,25 @@
 
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"card\">\n  <div class=\"row\">\n    <div class=\"col-md-3 card-imageUrl\">\n      <img src=\"<%= imageurl %>\" alt=\"\">\n    </div>\n    <div class=\"col-md-9 card-info\">\n      <div class=\"row\">\n        <div class=\"col-md-3 card-name\"><%= name %></div>\n        <div class=\"col-md-3 card-mana-cost\"><%= manacost %> (<%= cmc %>)</div>\n        <div class=\"col-md-3 card-type\"><%= type %></div>\n        <div class=\"col-md-1 card-pow-tou\"><%= power %>/<%= toughness %></div>\n        <div class=\"col-md-2 card-set\"><%= set %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-text\"><%= text %></div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-12 card-rulings\"><table class=\"table\"><%= rulings %></table></div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	const $ = __webpack_require__(1);
 	const _ = __webpack_require__(2);
 
 
-	const planechase = __webpack_require__(11);
-	const search = __webpack_require__(12);
-	const home = __webpack_require__(13);
-	const tools = __webpack_require__(14);
+	const planechase = __webpack_require__(10);
+	const search = __webpack_require__(11);
+	const home = __webpack_require__(12);
+	const tools = __webpack_require__(13);
 
-	const player = __webpack_require__(15);
+	const player = __webpack_require__(14);
 
 	function removeClasses() {
 	  $('#planechase').removeClass('active');
@@ -27592,37 +27647,37 @@
 
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"row\">\n  <div class=\"col-md-6\" id=\"image\">\n    <img id=\"imageHolder\"  alt=\"\" >\n  </div>\n  <div class=\"col-md-6\" id=\"text\">\n    <h2 id=\"name\"></h2>\n    <h4 id=\"oracle\"></h4>\n    <h4 id=\"chaos\"></h4>\n  </div>\n</div>\n";
 
 /***/ },
-/* 12 */
+/* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"input-group\">\n  <div class=\"input-group-btn\">\n    <button type=\"button\" id=\"input-dropdown\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Search by Name <span class=\"caret\"></span></button>\n    <ul class=\"dropdown-menu\">\n      <li><a id=\"byName\" href=\"#\">Name</a></li>\n      <li><a id=\"byText\" href=\"#\">Text</a></li>\n      <li><a id=\"byType\" href=\"#\">Type</a></li>\n    </ul>\n  </div>\n  <input id=\"search-input\" type=\"text\" class=\"form-control\" placeholder=\"Jace, Memory Adept\">\n    <span class=\"input-group-btn\">\n      <button id=\"search\" class=\"btn btn-default\" type=\"button\">Search!</button>\n    </span>\n</div><!-- /input-group -->\n\n<div class=\"test-area\"></div>\n";
+	module.exports = "<div class=\"input-group\">\n  <div class=\"input-group-btn\">\n    <button type=\"button\" id=\"input-dropdown\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Search by name <span class=\"caret\"></span></button>\n    <ul class=\"dropdown-menu\">\n      <li><a class=\"searchby\" id=\"byName\" href=\"#\">name</a></li>\n      <li><a class=\"searchby\" id=\"byText\" href=\"#\">text</a></li>\n      <li><a class=\"searchby\" id=\"byType\" href=\"#\">type</a></li>\n    </ul>\n  </div>\n  <input id=\"search-input\" type=\"text\" class=\"form-control\" placeholder=\"Jace, Memory Adept\">\n    <span class=\"input-group-btn\">\n      <button id=\"search\" class=\"btn btn-default\" type=\"button\">Search!</button>\n    </span>\n</div><!-- /input-group -->\n\n<div class=\"test-area\"></div>\n";
 
 /***/ },
-/* 13 */
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = "<h1>This is magicJS!</h1>\n<h3>An app to help you play magic</h3>\n<p>We decided to make the magicJS, well, because we like playing magic.</p>\n";
 
 /***/ },
-/* 14 */
+/* 13 */
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"add-player-button\" class=\"btn\">\n  Add Player(s)\n</div>\n<div id=\"player-space\">\n\n</div>\n";
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"player panel\">\n  <h3>Player Name</h3>\n  <div class=\"life\">\n    <div class=\"life-total\">\n    </div>\n    <div class=\"minus btn\">\n      <span class=\"glyphicon glyphicon-minus\"></span>\n    </div>\n    <div class=\"plus btn\">\n      <span class=\"glyphicon glyphicon-plus\"></span>\n    </div>\n  </div>\n  <div class=\"add-counter btn\">\n    Other Counters  <span class=\"glyphicon glyphicon-tasks\"></span>\n  </div>\n  <div class=\"extra-counter-container\">\n\n  </div>\n</div>\n";
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports) {
 
 	function plusButton(target) {
@@ -27631,10 +27686,10 @@
 
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const loading = __webpack_require__(10);
+	const loading = __webpack_require__(9);
 
 	let players = [];
 
@@ -27651,55 +27706,6 @@
 	}
 
 	module.exports.addPlayer = addPlayer;
-
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	const $ = __webpack_require__(1);
-	const requests = __webpack_require__(6);
-	const manaSymbols = __webpack_require__(7);
-
-
-	let request = requests.layout('plane');
-	let list = [];
-
-	function length(obj) {
-	  return Object.keys(obj).length;
-	}
-
-	function random(list) {
-	  return Math.floor(Math.random() * length(list));
-	}
-
-	function renderCard(card) {
-	  $('#imageHolder').attr('src', card.imageUrl);
-	  $('#name').html(card.name);
-	  let text = card.text.split('Whenever you roll ');
-	  $('#oracle').html(manaSymbols.parse(text[0]));
-	  $('#chaos').html(manaSymbols.parse(text[1]));
-	}
-
-	function next() {
-	  let current = random(list);
-	  let card = list[current];
-	  list.splice(current, 1);
-	  renderCard(card);
-	}
-
-	function loadCurrent() {
-	  if (list.length > 0) {
-	    next();
-	  } else {
-	    $('#imageHolder').attr('src', 'Planes/default.jpg');
-	    request.then(function(response) {
-	    list = response.cards.slice();
-	    });
-	  }
-	}
-
-	module.exports.loadCurrent = loadCurrent;
 
 
 /***/ }
