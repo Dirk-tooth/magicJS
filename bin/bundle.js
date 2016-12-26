@@ -54,6 +54,9 @@
 	const tools = __webpack_require__(15);
 	const player = __webpack_require__(16);
 
+	let state = {
+	  searchType: 'name',
+	};
 
 	function home$() {
 
@@ -73,14 +76,18 @@
 	}
 
 	function search$() {
-	  $('#search').click(function() {
-	    search.search($('#search-input').val());
+	  $('.searchby').click(function() {
+	    state.searchType = $(event.target).html();
+	    $('#input-dropdown').html('Search by ' + state.searchType + ' <span class="caret"></span>');
 	  });
-	  
+	  $('#search').click(function() {
+	    search.search($('#search-input').val(), state.searchType);
+	  });
+
 	}
 
 	function navSearch$(input) {
-	  search.search(input);
+	  search.search(input, 'name');
 	  search$();
 	}
 
@@ -27535,7 +27542,7 @@
 	const manaSymbols = __webpack_require__(6);
 
 	function searchType(state, feedback) {
-	  $('input-dropdown').html(feedback);
+	  $('.input-dropdown').html(feedback);
 	  state.searchType = feedback;
 	}
 
@@ -27585,6 +27592,7 @@
 
 	function search(userInput, searchType) {
 	  var userUrl = 'https://api.magicthegathering.io/v1/cards?' + searchType + '=' + userInput;
+	  console.log(userUrl);
 	  $.getJSON(userUrl, function(item) {
 	   $('.test-area').html(compileCardData(buildCardData(item)));
 	 });
@@ -27648,7 +27656,7 @@
 /* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"input-group\">\n  <div class=\"input-group-btn\">\n    <button type=\"button\" id=\"input-dropdown\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Search by Name <span class=\"caret\"></span></button>\n    <ul class=\"dropdown-menu\">\n      <li><a id=\"byName\" href=\"#\">Name</a></li>\n      <li><a id=\"byText\" href=\"#\">Text</a></li>\n      <li><a id=\"byType\" href=\"#\">Type</a></li>\n    </ul>\n  </div>\n  <input id=\"search-input\" type=\"text\" class=\"form-control\" placeholder=\"Jace, Memory Adept\">\n    <span class=\"input-group-btn\">\n      <button id=\"search\" class=\"btn btn-default\" type=\"button\">Search!</button>\n    </span>\n</div><!-- /input-group -->\n\n<div class=\"test-area\"></div>\n";
+	module.exports = "<div class=\"input-group\">\n  <div class=\"input-group-btn\">\n    <button type=\"button\" id=\"input-dropdown\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Search by name <span class=\"caret\"></span></button>\n    <ul class=\"dropdown-menu\">\n      <li><a class=\"searchby\" id=\"byName\" href=\"#\">name</a></li>\n      <li><a class=\"searchby\" id=\"byText\" href=\"#\">text</a></li>\n      <li><a class=\"searchby\" id=\"byType\" href=\"#\">type</a></li>\n    </ul>\n  </div>\n  <input id=\"search-input\" type=\"text\" class=\"form-control\" placeholder=\"Jace, Memory Adept\">\n    <span class=\"input-group-btn\">\n      <button id=\"search\" class=\"btn btn-default\" type=\"button\">Search!</button>\n    </span>\n</div><!-- /input-group -->\n\n<div class=\"test-area\"></div>\n";
 
 /***/ },
 /* 12 */
