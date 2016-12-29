@@ -55,6 +55,12 @@ body {
   width: 18px;
 }
 
+.anyColor {
+  background-image: url(../images/anyColor.svg);
+  width: 18px;
+  background-repeat: no-repeat;
+}
+
 .player {
   float: left;
   margin: 10px;
