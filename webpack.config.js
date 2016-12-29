@@ -5,6 +5,8 @@ module.exports = {
         { test: /\.html$/, loader: 'html-loader?attrs=false' }
         // { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
     ]},
+    devtool: 'cheap-source-map',
+    debug: true,
     output: {
         path: './bin', // path to where you want the built file
         publicPath: "/bin",
