@@ -1,11 +1,10 @@
 // libraries
 const $ = require('jquery');
-const _ = require('lodash');
 // js
 const plancechase = require('./js/planechase.js');
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
-const tools = require('./js/tools.js');
+// const tools = require('./js/tools.js');
 const player = require('./js/player.js');
 
 let state = {
@@ -17,27 +16,26 @@ function home$() {
 }
 
 function tools$() {
-  $('#add-player-button').click(function() {
+  $('#add-player-button').click(() => {
     player.addPlayer();
   });
 }
 
 function planechase$() {
   plancechase.loadCurrent();
-  $('#imageHolder').click(function() {
+  $('#imageHolder').click(() => {
     plancechase.loadCurrent();
   });
 }
 
 function search$() {
-  $('.searchby').click(function() {
+  $('.searchby').click(() => {
     state.searchType = $(event.target).html();
-    $('#input-dropdown').html('Search by ' + state.searchType + ' <span class="caret"></span>');
+    $('#input-dropdown').html(`Search by ${state.searchType} <span class="caret"></span>`);
   });
-  $('#search').click(function() {
+  $('#search').click(() => {
     search.search($('#search-input').val(), state.searchType);
   });
-
 }
 
 function navSearch$(input) {
@@ -47,33 +45,33 @@ function navSearch$(input) {
 
 
 // $ nav
-$(document).ready(function() {
+$(document).ready(() => {
   $('#container').html(loading.home);
   $('title').html('magicJS | Home');
   home$();
 
-  $('#home').click(function() {
+  $('#home').click(() => {
     $('#container').html(loading.home);
     $('title').html('magicJS | Home');
     home$();
   });
-  $('#toolsPage').click(function() {
+  $('#toolsPage').click(() => {
     $('#container').html(loading.tools);
     $('title').html('magicJS | Tools');
     tools$();
   });
-  $('#planechase').click(function() {
+  $('#planechase').click(() => {
     $('#container').html(loading.planechase);
     $('title').html('magicJS | Planechase');
     planechase$();
   });
-  $('#searchPage').click(function() {
+  $('#searchPage').click(() => {
     $('#container').html(loading.search);
     $('title').html('magicJS | Search');
     search$();
   });
-  $('#nav-search').click(function() {
-    let userSearchInput = $('#search-bar-input').val();
+  $('#nav-search').click(() => {
+    const userSearchInput = $('#search-bar-input').val();
     $('#search-bar-input').val('');
     $('#container').html(loading.search);
     $('title').html('magicJS | Search');

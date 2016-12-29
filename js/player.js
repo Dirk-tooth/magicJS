@@ -1,6 +1,7 @@
+const $ = require('jquery');
 const loading = require('./loading.js');
 
-let players = [];
+const players = [];
 
 const playerTemplate = {
   name: '',
@@ -10,8 +11,7 @@ const playerTemplate = {
 function addPlayer() {
   $('#player-space').html($('#player-space').html() + loading.player);
   players.push(playerTemplate);
-  players[players.length-1].name = 'Player' + players.length;
-  console.log(players);
+  players[players.length - 1].name = `Player' ${players.length}`;
 }
 
 module.exports.addPlayer = addPlayer;

@@ -9,20 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jkyle/magic-js.git"
+    "url": "git+https://github.com/Dirk-tooth/magicJS.git"
   },
   "author": "Dirk-Tooth",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/jkyle/magic-js/issues"
+    "url": "https://github.com/Dirk-tooth/magicJS/issues"
   },
-  "homepage": "https://github.com/jkyle/magic-js#readme",
+  "homepage": "https://github.com/Dirk-tooth/magicJS#readme",
   "keywords": [
     "mtg",
     "magic",
     "the",
     "gathering",
-    "magic",
     "mtgsdkjs"
   ],
   "dependencies": {
@@ -34,6 +33,11 @@
     "webpack": "^1.13.3"
   },
   "devDependencies": {
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
   }
 }

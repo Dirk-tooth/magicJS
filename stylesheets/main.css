@@ -22,9 +22,9 @@ body {
   width: 40%;
   min-width: 150px;
 }
-/*#search {
-  margin: 10px;
-}*/
+#advanced {
+  margin-top: 25px;
+}
 
 .card {
   background-color: #ddd;
@@ -57,7 +57,7 @@ body {
 
 .anyColor {
   background-image: url(../images/anyColor.svg);
-  width: 18px;
+  width: 22px;
   background-repeat: no-repeat;
 }
 

@@ -1,5 +1,4 @@
 const $ = require('jquery');
-const _ = require('lodash');
 
 
 const planechase = require('../html/planechase.html');
@@ -9,15 +8,15 @@ const tools = require('../html/tools.html');
 
 const player = require('../html/player.html');
 
-function removeClasses() {
-  $('#planechase').removeClass('active');
-  $('#search').removeClass('active');
-}
+// function removeClasses() {
+//   $('#planechase').removeClass('active');
+//   $('#search').removeClass('active');
+// }
 
-function loadPage(target, callback){
+function loadPage(target, callback) {
   // removeClasses();
   $('#container').html(target);
-  $('title').html('magicJS | ' + target);
+  $('title').html(`magicJS | ${target}`);
   if (callback) {
     callback();
   }

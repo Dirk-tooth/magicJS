@@ -1,8 +1,8 @@
-var _ = require('lodash');
-var card = require('../html/card.html');
+const _ = require('lodash');
+const card = require('../html/card.html');
 
-function showCard (item) {
-  var cardData = {
+function showCard(item) {
+  const cardData = {
     imageurl: item.card.imageUrl,
     name: item.card.name,
     manacost: item.card.manaCost,
@@ -10,7 +10,7 @@ function showCard (item) {
     set: item.card.set,
     text: item.card.text,
   };
-  var compiled = _.template(card);
+  const compiled = _.template(card);
   compiled(cardData);
 }
 
