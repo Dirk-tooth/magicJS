@@ -7,6 +7,7 @@ module.exports = {
     ]},
     output: {
         path: './bin', // path to where you want the built file
+        publicPath: "/bin",
         filename: 'bundle.js', // name you want of built file
     }
 };
