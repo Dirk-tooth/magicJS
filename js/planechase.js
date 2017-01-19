@@ -15,7 +15,7 @@ function random(cardList) {
 }
 
 function renderCard(card) {
-  $('#imageHolder').attr('src', card.imageUrl);
+  $('#image').attr('src', card.imageUrl);
   $('#name').html(card.name);
   const text = card.text.split('Whenever you roll ');
   $('#oracle').html(manaSymbols.parse(text[0]));
@@ -33,7 +33,7 @@ function loadCurrent() {
   if (list.length > 0) {
     next();
   } else {
-    $('#imageHolder').attr('src', 'Planes/default.jpg');
+    $('#image').attr('src', 'Planes/default.jpg');
     request.then((response) => {
       list = response.cards.slice();
     });

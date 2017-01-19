@@ -25,6 +25,12 @@ body {
 #advanced {
   margin-top: 25px;
 }
+#advanced-filters {
+  display: none;
+}
+#cmc .input-group {
+  /*width: 300px;*/
+}
 
 .card {
   background-color: #ddd;
@@ -54,6 +60,13 @@ body {
 .manaSymbol > img{
   width: 18px;
 }
+.mana-btn > img{
+  width:36px;
+}
+
+.filter-groups {
+  margin: 15px;
+}
 
 .anyColor {
   background-image: url(../images/anyColor.svg);
@@ -61,7 +74,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.tools-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 .player {
-  float: left;
   margin: 10px;
+  width: 120px;
 }

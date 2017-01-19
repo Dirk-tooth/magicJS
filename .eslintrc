@@ -3,5 +3,13 @@
   "env": {
     "browser": true,
     "es6": true,
-  }
+  },
+  "plugins": ["react"],
+  "ecmaFeatures": {"jsx": true},
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx"] }
+    ],
+  },
 }

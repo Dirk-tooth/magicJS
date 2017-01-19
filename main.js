@@ -1,11 +1,13 @@
 // libraries
 const $ = require('jquery');
+const React = require('react');
+const ReactDOM = require('react-dom');
 // js
 const plancechase = require('./js/planechase.js');
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
 // const tools = require('./js/tools.js');
-const player = require('./js/player.js');
+// const player = require('./js/player.js');
 
 let state = {
   searchType: 'name',
@@ -16,9 +18,13 @@ function home$() {
 }
 
 function tools$() {
-  $('#add-player-button').click(() => {
-    player.addPlayer();
-  });
+  // $('#add-player-button').click(() => {
+  //   player.addPlayer();
+  // });
+  ReactDOM.render(
+    <players />,
+    document.getElementById('tools-container'),
+  );
 }
 
 function planechase$() {
@@ -35,6 +41,9 @@ function search$() {
   });
   $('#search').click(() => {
     search.search($('#search-input').val(), state.searchType);
+  });
+  $('#advanced').click(() => {
+    $('#advanced-filters').toggle();
   });
 }
 
