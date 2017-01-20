@@ -74,14 +74,23 @@ body {
   background-repeat: no-repeat;
 }
 
-.tools-container {
+.player-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
 }
 .player {
   margin: 10px;
-  width: 120px;
+  /*width: 120px;*/
+}
+.lifeTotal {
+  font-size: 5em;
+}
+.plus {
+  margin: 5px;
+}
+.minus {
+  margin: 5px;
 }

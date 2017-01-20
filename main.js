@@ -7,7 +7,7 @@ const plancechase = require('./js/planechase.js');
 const search = require('./js/search.js');
 const loading = require('./js/loading.js');
 // const tools = require('./js/tools.js');
-// const player = require('./js/player.js');
+const Players = require('./js/player.js');
 
 let state = {
   searchType: 'name',
@@ -22,7 +22,7 @@ function tools$() {
   //   player.addPlayer();
   // });
   ReactDOM.render(
-    <players />,
+    <Players />,
     document.getElementById('tools-container'),
   );
 }

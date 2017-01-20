@@ -1,6 +1,6 @@
 const React = require('react');
 
-const player = React.createClass({
+const Player = React.createClass({
   getInitialState() {
     return {
       name: 'Player Name',
@@ -8,13 +8,16 @@ const player = React.createClass({
       life: 20,
     };
   },
+  handleChange(event) {
+    this.setState({ text: event.target.value });
+  },
   minusOneLife() {
     this.setState({ life: this.state.life -= 1 });
   },
   plusOneLife() {
     this.setState({ life: this.state.life += 1 });
   },
-  addCOunters() {
+  addCounters() {
     return (
       <div />
     );
@@ -22,9 +25,15 @@ const player = React.createClass({
   render() {
     return (
       <div className="player">
-        <h3>{this.state.name}</h3>
+        <textarea
+          className="form-control"
+          placeholder={this.props.placeholder}
+          onChange={this.handleChange}
+        />
         <div className="lifeTotal">
           {this.state.life}
+        </div>
+        <div>
           <button
             className="minus btn"
             onClick={this.minusOneLife}
@@ -49,7 +58,7 @@ const player = React.createClass({
   },
 });
 
-const players = React.createClass({
+const Players = React.createClass({
   getInitialState() {
     return {
       numberOfPlayers: ['ugin', 'ugin'],
@@ -63,14 +72,16 @@ const players = React.createClass({
       <div>
         <button
           className="add-player-button"
-          onClick={addPlayer}
+          onClick={this.addPlayer}
         >
           Add Players
         </button>
-        { this.state.numberOfPlayers.map((item, idx) => <player key={idx} />) }
+        <div className="player-container">
+          { this.state.numberOfPlayers.map((item, idx) => <Player key={idx} placeholder="Player Name" />) }
+        </div>
       </div>
     );
   },
 });
 
-module.exports.players = players;
+module.exports = Players;
