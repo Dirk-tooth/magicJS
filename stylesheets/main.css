@@ -74,6 +74,7 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .player-container {
   display: flex;
   flex-direction: row;
@@ -83,7 +84,11 @@ body {
 }
 .player {
   margin: 10px;
-  /*width: 120px;*/
+}
+.player-name {
+  text-align: center;
+  font-size: 2.5em;
+  width: 50%;
 }
 .lifeTotal {
   font-size: 5em;
@@ -93,4 +98,16 @@ body {
 }
 .minus {
   margin: 5px;
+}
+.glyphicon-tasks {
+  margin: 3px;
+}
+.counter {
+  margin-top: 15px;
+}
+.counter-name {
+  text-align: center;
+}
+.valueTotal {
+  font-size: 2.5em
 }

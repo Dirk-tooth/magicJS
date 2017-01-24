@@ -21,10 +21,10 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="counter">
-        <textarea
-          className="form-control"
+        <input
+          type="text"
+          className="counter-name"
           placeholder={this.props.placeholder}
-          onChange={e => this.handleChange(e)}
         />
         <div className="valueTotal">
           {this.state.value}
@@ -73,11 +73,11 @@ class Player extends React.Component {
   render() {
     return (
       <div className="player">
-        <textarea
-          className="form-control"
-          placeholder={this.props.placeholder}
-          onChange={e => this.handleChange(e)}
-        />
+      <input
+        type="text"
+        className="player-name"
+        placeholder={this.props.placeholder}
+      />
         <div className="lifeTotal">
           {this.state.life}
         </div>
@@ -99,6 +99,7 @@ class Player extends React.Component {
           className="add-counters btn"
           onClick={() => this.addCounters()}
         >
+          Add Counter
           <span className="glyphicon glyphicon-tasks" />
         </button>
         <div className="counters-container">
@@ -123,7 +124,7 @@ class Players extends React.Component {
     return (
       <div>
         <button
-          className="add-player-button"
+          className="add-player-button btn"
           onClick={() => this.addPlayer()}
         >
           Add Players
