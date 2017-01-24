@@ -84,11 +84,12 @@ body {
 }
 .player {
   margin: 10px;
+  width: 200px;
 }
 .player-name {
   text-align: center;
   font-size: 2.5em;
-  width: 50%;
+  width: 100%;
 }
 .lifeTotal {
   font-size: 5em;
