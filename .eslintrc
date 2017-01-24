@@ -11,5 +11,9 @@
       1,
       { "extensions": [".js", ".jsx"] }
     ],
+    "no-multi-comp": [
+      0,
+      { "ignoreStateless": 1 }
+    ]
   },
 }
