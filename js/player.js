@@ -122,7 +122,7 @@ class Players extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="tools-container">
         <button
           className="add-player-button btn"
           onClick={() => this.addPlayer()}

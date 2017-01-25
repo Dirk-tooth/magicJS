@@ -5,15 +5,15 @@
   justify-content: flex-start;
 }
 
-#imageHolder {
+#image-holder {
   text-align: center;
   margin: 15px;
 }
-#image {
+#plane-image {
   width: 445px;
   height: 310px;
 }
-#text {
+.plane-text {
 	text-align: left;
   margin: 15px;
 }

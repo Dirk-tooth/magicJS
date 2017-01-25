@@ -84,7 +84,7 @@ body {
 }
 .player {
   margin: 10px;
-  width: 200px;
+  flex-basis: 20%;
 }
 .player-name {
   text-align: center;
