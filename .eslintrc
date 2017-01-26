@@ -20,6 +20,6 @@
     "import/first": "off",
     "import/extensions": "off",
     "no-nested-ternary": "off",
-    "max-len": ["error", {"code": 150 }]
+    "max-len": ["off", {"code": 150 }]
   },
 }

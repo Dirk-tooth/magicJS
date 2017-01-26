@@ -28,6 +28,7 @@ class Plane extends React.Component {
     if (length(this.state.planes) > 0) {
       const current = random(this.state.planes);
       const card = this.state.planes[current];
+      console.log(card);
       const text = card.text.split('Whenever you roll ');
       this.state.planes.splice(current, 1);
       this.setState({
@@ -50,8 +51,7 @@ class Plane extends React.Component {
     return (
       <div className="pc-container">
         <div id="image-holder">
-          <input
-            type="image"
+          <input type="image"
             id="plane-image"
             alt={`${this.state.currentPlaneName} card`}
             src={this.state.currentPlaneImage}
