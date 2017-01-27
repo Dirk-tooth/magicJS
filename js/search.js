@@ -1,60 +1,60 @@
-const $ = require('jquery');
-const _ = require('lodash');
-const cardHtml = require('../html/card.html');
-const manaSymbols = require('./manaSymbols.js');
+const requests = require('./requests.js');
+const Card = require('./card.js');
+const React = require('react');
 
-// function searchType(state, feedback) {
-//   $('.input-dropdown').html(feedback);
-//   state.searchType = feedback;
-// }
-
-function compileCardData(data) {
-  const compiled = _.template(cardHtml);
-  const cardInfo = data.map(compiled);
-  return cardInfo.join(' ');
-}
-
-function rulingsTable(card) {
-  const tableHtml = [];
-  if (card.rulings && card.rulings.length > 0) {
-    tableHtml.push('<thead><tr><td>date</td><td>ruling</td></tr></thead><tbody>');
-    card.rulings.forEach((item) => {
-      tableHtml.push(`<tr><td>${item.date}</td><td>${item.text}</td></tr>`);
-    });
+class SearchCards extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      searchBy: 'name',
+      searchText: '',
+      searchCards: [],
+      currentCard: {},
+      matchAll: [],
+      matchAny: [],
+      exclude: [],
+      cmc: [],
+    };
   }
-  return (`${tableHtml.join(' ')}</tbody>`);
+  handleChange(event) {
+    this.setState({ searchText: event.target.value });
+  }
+  changeSearchType(type) {
+    this.setState({ searchBy: type });
+  }
+  search() {
+    this.setState({ searchCards: requests.searchRequest(this.state.searchBy, this.state.searchText) });
+    console.log(this.state.searchCards);
+  }
+  render() {
+    return (
+      <div className="search-container">
+        <div className="input-group">
+          <div className="input-group-btn">
+            <button type="button"
+              id="input-dropdown"
+              className="btn btn-default dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">{`Search by ${this.state.searchBy} `}<span className="caret" />
+            </button>
+            <ul className="dropdown-menu">
+              <li><button className="searchby" id="byName" onClick={() => this.changeSearchType('name')}>name</button></li>
+              <li><button className="searchby" id="byText" onClick={() => this.changeSearchType('text')}>text</button></li>
+              <li><button className="searchby" id="byType" onClick={() => this.changeSearchType('type')}>type</button></li>
+            </ul>
+          </div>
+          <input id="search-input" type="text" className="form-control" placeholder="Jace, Memory Adept" onChange={e => this.handleChange(e)} />
+          <span className="input-group-btn">
+            <button id="search" className="btn btn-default" type="button" onClick={() => this.search()}>Search</button>
+          </span>
+        </div>
+        <div className="results-area">
+          {this.state.searchCards.map((card, idx) => <Card card={card} key={idx} />)}
+        </div>
+      </div>
+    );
+  }
 }
 
-function checkForImage(card) {
-  if (card.hasOwnProperty('imageUrl')) {
-    return card.imageUrl;
-  } else { return './images/back.jpeg'; }
-}
-
-function buildCardData(item) {
-  const data = [];
-  item.cards.forEach((card) => {
-    data.push({
-      imageurl: checkForImage(card),
-      name: card.name,
-      manacost: manaSymbols.parse(card.manaCost),
-      cmc: card.cmc,
-      type: card.type,
-      power: card.power,
-      toughness: card.toughness,
-      set: card.set,
-      text: manaSymbols.parse(card.text),
-      rulings: rulingsTable(card),
-    });
-  });
-  return data;
-}
-
-function search(userInput, searchType) {
-  const userUrl = `https://api.magicthegathering.io/v1/cards?${searchType}=${userInput}`;
-  $.getJSON(userUrl, (item) => {
-    $('.test-area').html(compileCardData(buildCardData(item)));
-  });
-}
-
-module.exports.search = search;
+module.exports = SearchCards;

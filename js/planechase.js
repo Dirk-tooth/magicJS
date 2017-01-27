@@ -28,7 +28,6 @@ class Plane extends React.Component {
     if (length(this.state.planes) > 0) {
       const current = random(this.state.planes);
       const card = this.state.planes[current];
-      console.log(card);
       const text = card.text.split('Whenever you roll ');
       this.state.planes.splice(current, 1);
       this.setState({

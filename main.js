@@ -4,11 +4,11 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 // js
 // const plancechase = require('./js/planechase.js');
-const search = require('./js/search.js');
 const loading = require('./js/loading.js');
 // const tools = require('./js/tools.js');
 // React Components
 const Players = require('./js/player.js');
+const Search = require('./js/search.js');
 const Plane = require('./js/planechase.js');
 
 let state = {
@@ -34,22 +34,16 @@ function planechase$() {
 }
 
 function search$() {
-  $('.searchby').click(() => {
-    state.searchType = $(event.target).html();
-    $('#input-dropdown').html(`Search by ${state.searchType} <span class="caret"></span>`);
-  });
-  $('#search').click(() => {
-    search.search($('#search-input').val(), state.searchType);
-  });
-  $('#advanced').click(() => {
-    $('#advanced-filters').toggle();
-  });
+  ReactDOM.render(
+    <Search />,
+    document.getElementById('container'),
+  );
 }
 
-function navSearch$(input) {
-  search.search(input, 'name');
-  search$();
-}
+// function navSearch$(input) {
+//   Search.search(input, 'name');
+//   search$();
+// }
 
 
 // $ nav
@@ -74,7 +68,7 @@ $(document).ready(() => {
     planechase$();
   });
   $('#searchPage').click(() => {
-    $('#container').html(loading.search);
+    // $('#container').html(loading.search);
     $('title').html('magicJS | Search');
     search$();
   });
