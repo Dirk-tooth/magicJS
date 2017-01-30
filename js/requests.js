@@ -5,10 +5,7 @@ function requestLayout(layout) {
 }
 
 function searchRequest(searchType, searchText) {
-  const userUrl = `https://api.magicthegathering.io/v1/cards?${searchType}=${searchText}`;
-  const searchResult = [];
-  $.getJSON(userUrl, item => searchResult.push(item));
-  return searchResult;
+  return $.getJSON(`https://api.magicthegathering.io/v1/cards?${searchType}=${searchText}`);
 }
 
 module.exports.layout = requestLayout;

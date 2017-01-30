@@ -33,12 +33,20 @@ body {
 }
 
 .card {
-  background-color: #ddd;
   padding: 5px;
-  border: 2px solid #aaa;
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;*/
 }
 .card-info {
 
+}
+.card-info-row {
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;*/
 }
 .card-name {
   font-size: 1.2em;

@@ -23,8 +23,11 @@ class SearchCards extends React.Component {
     this.setState({ searchBy: type });
   }
   search() {
-    this.setState({ searchCards: requests.searchRequest(this.state.searchBy, this.state.searchText) });
-    console.log(this.state.searchCards);
+    requests.searchRequest(this.state.searchBy, this.state.searchText).then((response) => {
+      console.log(response);
+      this.setState({ searchCards: response.cards });
+    })
+    .catch(err => console.log('errrororrrr', err));
   }
   render() {
     return (
