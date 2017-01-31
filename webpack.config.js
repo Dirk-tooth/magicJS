@@ -7,6 +7,10 @@ module.exports = {
         loader: 'html-loader?attrs=false',
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader',
+      },
+      {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
