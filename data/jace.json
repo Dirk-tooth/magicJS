@@ -1,0 +1,4249 @@
+{
+  "cards": [
+    {
+      "name": "Jace Beleren",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Special",
+      "set": "pMEI",
+      "setName": "Media Inserts",
+      "text": "+2: Each player draws a card.\n\u22121: Target player draws a card.\n\u221210: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "artist": "Aleksi Briclot",
+      "number": "15",
+      "layout": "normal",
+      "loyalty": 3,
+      "releaseDate": "2009-01-27",
+      "rulings": [
+        {
+          "date": "2009-10-01",
+          "text": "If there are fewer than twenty cards in the targeted player's library, that player puts all the cards from his or her library into his or her graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u8d1d\u8fde",
+          "language": "Chinese Simplified"
+        },
+        {
+          "name": "\u5091\u65af\u8c9d\u9023",
+          "language": "Chinese Traditional"
+        },
+        {
+          "name": "Jace Beleren",
+          "language": "French"
+        },
+        {
+          "name": "Jace Beleren",
+          "language": "German"
+        },
+        {
+          "name": "Jace Beleren",
+          "language": "Italian"
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u30fb\u30d9\u30ec\u30ec\u30f3",
+          "language": "Japanese"
+        },
+        {
+          "name": "Jace Beleren",
+          "language": "Portuguese (Brazil)"
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441 \u0411\u0435\u043b\u0435\u0440\u0435\u043d",
+          "language": "Russian"
+        },
+        {
+          "name": "Jace Beleren",
+          "language": "Spanish"
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "LRW",
+        "DD2",
+        "M10",
+        "M11",
+        "DD3_JVC"
+      ],
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Lorwyn-Shadowmoor Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "source": "Agent of Artifice Novel Promo",
+      "id": "5e898f919d238471eb26b8b740890324b15402b1"
+    },
+    {
+      "name": "Jace, Memory Adept",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Special",
+      "set": "pMEI",
+      "setName": "Media Inserts",
+      "text": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n\u22127: Any number of target players each draw twenty cards.",
+      "artist": "Steve Prescott",
+      "number": "73",
+      "layout": "normal",
+      "loyalty": 4,
+      "releaseDate": "2013-07-17",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If you target yourself with Jace's first ability, you'll draw a card first, then put the top card of your library into your graveyard."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If you activate Jace's first ability, and the player is an illegal target when the ability tries to resolve, it will be countered and none of its effects will happen. You won't draw a card."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If Jace's third ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u8bb0\u5fc6\u4e13\u5bb6\u6770\u65af",
+          "language": "Chinese Simplified"
+        },
+        {
+          "name": "\u8a18\u61b6\u5c08\u5bb6\u5091\u65af",
+          "language": "Chinese Traditional"
+        },
+        {
+          "name": "Jace, expert en m\u00e9moire",
+          "language": "French"
+        },
+        {
+          "name": "Jace, Meister der Erinnerung",
+          "language": "German"
+        },
+        {
+          "name": "Jace, Esperto di Ricordi",
+          "language": "Italian"
+        },
+        {
+          "name": "\u8a18\u61b6\u306e\u719f\u9054\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "language": "Japanese"
+        },
+        {
+          "name": "\uae30\uc5b5\uc870\uc791\uc220\uc0ac \uc81c\uc774\uc2a4",
+          "language": "Korean"
+        },
+        {
+          "name": "Jace, Adepto da Mem\u00f3ria",
+          "language": "Portuguese (Brazil)"
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0410\u0434\u0435\u043f\u0442 \u041f\u0430\u043c\u044f\u0442\u0438",
+          "language": "Russian"
+        },
+        {
+          "name": "Jace, perito de la memoria",
+          "language": "Spanish"
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M12",
+        "M13",
+        "M14"
+      ],
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "source": "Hasbro Toy Shop Booth San Diego Comic-Con Box Set Sale",
+      "id": "145d0714494108cafb4b35b377691c9a7d433557"
+    },
+    {
+      "name": "Jace, the Living Guildpact",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Special",
+      "set": "pMEI",
+      "setName": "Media Inserts",
+      "text": "+1: Look at the top two cards of your library. Put one of them into your graveyard.\n\u22123: Return another target nonland permanent to its owner's hand.\n\u22128: Each player shuffles his or her hand and graveyard into his or her library. You draw seven cards.",
+      "artist": "Jae Lee",
+      "number": "100",
+      "layout": "normal",
+      "loyalty": 5,
+      "releaseDate": "2014-07-24",
+      "rulings": [
+        {
+          "date": "2014-07-18",
+          "text": "When the first ability resolves, the card you don't put into your graveyard stays on top of your library."
+        },
+        {
+          "date": "2014-07-18",
+          "text": "If a player has no cards in his or her hand and no cards in his or her graveyard when the third ability resolves, that player won't shuffle his or her library."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u73b0\u4e16\u5341\u4f1a\u76df\u6770\u65af",
+          "language": "Chinese Simplified"
+        },
+        {
+          "name": "\u73fe\u4e16\u5341\u6703\u76df\u5091\u65af",
+          "language": "Chinese Traditional"
+        },
+        {
+          "name": "Jace, Pacte des Guildes vivant",
+          "language": "French"
+        },
+        {
+          "name": "Jace, der lebende Gildenbund",
+          "language": "German"
+        },
+        {
+          "name": "Jace, il Patto delle Gilde Vivente",
+          "language": "Italian"
+        },
+        {
+          "name": "\u30ae\u30eb\u30c9\u30d1\u30af\u30c8\u306e\u4f53\u73fe\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "language": "Japanese"
+        },
+        {
+          "name": "\uc0b4\uc544\uc788\ub294 \uae38\ub4dc\ud329\ud2b8 \uc81c\uc774\uc2a4",
+          "language": "Korean"
+        },
+        {
+          "name": "Jace, o Pacto das Guildas Vivo",
+          "language": "Portuguese (Brazil)"
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0412\u043e\u043f\u043b\u043e\u0449\u0435\u043d\u0438\u0435 \u0414\u043e\u0433\u043e\u0432\u043e\u0440\u0430",
+          "language": "Russian"
+        },
+        {
+          "name": "Jace, el Pacto viviente",
+          "language": "Spanish"
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M15"
+      ],
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "source": "Hasbro Toy Shop Booth San Diego Comic-Con Box Set Sale",
+      "id": "8167ef612641823c3146b3770f47d407287bfdfa"
+    },
+    {
+      "name": "Jace, Vryn's Prodigy",
+      "names": [
+        "Jace, Vryn's Prodigy",
+        "Jace, Telepath Unbound"
+      ],
+      "manaCost": "{1}{U}",
+      "cmc": 2,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Legendary Creature \u2014 Human Wizard",
+      "supertypes": [
+        "Legendary"
+      ],
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Human",
+        "Wizard"
+      ],
+      "rarity": "Special",
+      "set": "pPRE",
+      "setName": "Prerelease Events",
+      "text": "{T}: Draw a card, then discard a card. If there are five or more cards in your graveyard, exile Jace, Vryn's Prodigy, then return him to the battlefield transformed under his owner's control.",
+      "flavor": "\"People's thoughts just come to me. Sometimes I don't know if it's them or me thinking.\"",
+      "artist": "Jaime Jones",
+      "number": "216",
+      "power": "0",
+      "toughness": "2",
+      "layout": "double-faced",
+      "rulings": [
+        {
+          "date": "2015-06-22",
+          "text": "The activated ability of Jace, Vryn's Prodigy checks to see if there are five or more cards in your graveyard after you discard a card. Putting a fifth card into your graveyard at other times won't cause Jace to be exiled, nor will Jace entering the battlefield while there are five or more cards in your graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "Each face of a double-faced card has its own set of characteristics: name, types, subtypes, power and toughness, loyalty, abilities, and so on. While a double-faced card is on the battlefield, consider only the characteristics of the face that's currently up. The other set of characteristics is ignored. While a double-faced card isn't on the battlefield, consider only the characteristics of its front face."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "The converted mana cost of a double-faced card not on the battlefield is the converted mana cost of its front face."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "The back face of a double-faced card (in the case of Magic Origins, the planeswalker face) can't be cast."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "Although the two rules are similar, the \"legend rule\" and the \"planeswalker uniqueness rule\" affect different kinds of permanents. You can control two of this permanent, one front face-up and the other back-face up at the same time. However, if the former is exiled and enters the battlefield transformed, you'll then control two planeswalkers with the same subtype. You'll choose one to remain on the battlefield, and the other will be put into its owner's graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "A double-faced card enters the battlefield with its front face up by default, unless a spell or ability instructs you to put it onto the battlefield transformed, in which case it enters with its back face up."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "A Magic Origins planeswalker that enters the battlefield because of the ability of its front face will enter with loyalty counters as normal."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "In some rare cases, a spell or ability may cause one of these five cards to transform while it's a creature (front face up) on the battlefield. If this happens, the resulting planeswalker won't have any loyalty counters on it and will subsequently be put into its owner's graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "You can activate one of the planeswalker's loyalty abilities the turn it enters the battlefield. However, you may do so only during one of your main phases when the stack is empty. For example, if the planeswalker enters the battlefield during combat, there will be an opportunity for your opponent to remove it before you can activate one of its abilities."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "If a double-faced card is manifested, it will be put onto the battlefield face down (this is also true if it's put onto the battlefield face down some other way). Note that \"face down\" is not synonymous with \"with its back face up.\" A manifested double-faced card is a 2\/2 creature with no name, mana cost, creature types, or abilities. While face down, it can't transform. If the front face of a manifested double-faced card is a creature card, you can turn it face up by paying its mana cost. If you do, its front face will be up. A double-faced card on the battlefield can't be turned face down."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "If you discard a card with madness while resolving the ability of Jace, Vryn's Prodigy, you'll need to already have five other cards in your graveyard to satisfy that ability's condition. You can't choose to put the card directly into your graveyard to satisfy it."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "The back face of a double-faced card doesn't have a mana cost. A double-faced permanent with its back face up has a converted mana cost equal to the converted mana cost of its front face. Each back face has a color indicator that defines its color."
+        },
+        {
+          "date": "2016-07-13",
+          "text": "For more information on double-faced cards, see the Shadows over Innistrad mechanics article (http:\/\/magic.wizards.com\/en\/articles\/archive\/feature\/shadows-over-innistrad-mechanics)."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u7ef4\u6797\u9038\u624d\u6770\u65af",
+          "language": "Chinese Simplified"
+        },
+        {
+          "name": "\u7dad\u6797\u9038\u624d\u5091\u65af",
+          "language": "Chinese Traditional"
+        },
+        {
+          "name": "Jace, prodige de Vryn",
+          "language": "French"
+        },
+        {
+          "name": "Jace, Wunderkind von Vryn",
+          "language": "German"
+        },
+        {
+          "name": "Jace, Prodigio di Vryn",
+          "language": "Italian"
+        },
+        {
+          "name": "\u30f4\u30ea\u30f3\u306e\u795e\u7ae5\u3001\u30b8\u30a7\u30a4\u30b9",
+          "language": "Japanese"
+        },
+        {
+          "name": "\ube0c\ub9b0\uc758 \uc2e0\ub3d9 \uc81c\uc774\uc2a4",
+          "language": "Korean"
+        },
+        {
+          "name": "Jace, Prod\u00edgio de Vryn",
+          "language": "Portuguese (Brazil)"
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0413\u0435\u043d\u0438\u0439 \u0438\u0437 \u0412\u0440\u0438\u043d\u0430",
+          "language": "Russian"
+        },
+        {
+          "name": "Jace, prodigio de Vryn",
+          "language": "Spanish"
+        }
+      ],
+      "printings": [
+        "pPRE",
+        "ORI"
+      ],
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "source": "Magic Origins",
+      "id": "db63753af6289d0731411a8d51d553d4d3f4dc62"
+    },
+    {
+      "name": "Jace's Ingenuity",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "Special",
+      "set": "pFNM",
+      "setName": "Friday Night Magic",
+      "text": "Draw three cards.",
+      "flavor": "\"Brute force can sometimes kick down a locked door, but knowledge is a skeleton key.\"",
+      "artist": "Steve Argyle",
+      "number": "134",
+      "layout": "normal",
+      "releaseDate": "2011-07-01",
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u667a\u8c0b",
+          "language": "Chinese Simplified"
+        },
+        {
+          "name": "\u5091\u65af\u7684\u667a\u8b00",
+          "language": "Chinese Traditional"
+        },
+        {
+          "name": "Ing\u00e9niosit\u00e9 de Jace",
+          "language": "French"
+        },
+        {
+          "name": "Jaces Findigkeit",
+          "language": "German"
+        },
+        {
+          "name": "Ingegnosit\u00e0 di Jace",
+          "language": "Italian"
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u5275\u610f",
+          "language": "Japanese"
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \ucc9c\uc7ac\uc131",
+          "language": "Korean"
+        },
+        {
+          "name": "Engenhosidade de Jace",
+          "language": "Portuguese (Brazil)"
+        },
+        {
+          "name": "\u0418\u0437\u043e\u0431\u0440\u0435\u0442\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0414\u0436\u0435\u0439\u0441\u0430",
+          "language": "Russian"
+        },
+        {
+          "name": "Ingenio de Jace",
+          "language": "Spanish"
+        }
+      ],
+      "printings": [
+        "pFNM",
+        "M11",
+        "DDM",
+        "M15"
+      ],
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "source": "Friday Night Magic prize",
+      "id": "0104549397b2db94709745585173332e6fe85893"
+    },
+    {
+      "name": "Jace Beleren",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Rare",
+      "set": "LRW",
+      "setName": "Lorwyn",
+      "text": "+2: Each player draws a card.\n\u22121: Target player draws a card.\n\u221210: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "artist": "Aleksi Briclot",
+      "number": "71",
+      "layout": "normal",
+      "multiverseid": 140222,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=140222&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2009-10-01",
+          "text": "If there are fewer than twenty cards in the targeted player's library, that player puts all the cards from his or her library into his or her graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u8d1d\u8fde",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=154890&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 154890
+        },
+        {
+          "name": "\u5091\u65af\u8c9d\u9023",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=155201&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 155201
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=155502&type=card",
+          "language": "French",
+          "multiverseid": 155502
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=154589&type=card",
+          "language": "German",
+          "multiverseid": 154589
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=155803&type=card",
+          "language": "Italian",
+          "multiverseid": 155803
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u30fb\u30d9\u30ec\u30ec\u30f3",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=156104&type=card",
+          "language": "Japanese",
+          "multiverseid": 156104
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=157007&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 157007
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441 \u0411\u0435\u043b\u0435\u0440\u0435\u043d",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=156405&type=card",
+          "language": "Russian",
+          "multiverseid": 156405
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=156706&type=card",
+          "language": "Spanish",
+          "multiverseid": 156706
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "LRW",
+        "DD2",
+        "M10",
+        "M11",
+        "DD3_JVC"
+      ],
+      "originalText": "+2: Each player draws a card.\n-1: Target player draws a card.\n-10: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Lorwyn-Shadowmoor Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "f79a62604d5a70712721bb5be265512582813c76"
+    },
+    {
+      "name": "Jace Beleren",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "DD2",
+      "setName": "Duel Decks: Jace vs. Chandra",
+      "text": "+2: Each player draws a card.\n\u22121: Target player draws a card.\n\u221210: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "artist": "Kev Walker",
+      "number": "1",
+      "layout": "normal",
+      "multiverseid": 185816,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=185816&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2009-10-01",
+          "text": "If there are fewer than twenty cards in the targeted player's library, that player puts all the cards from his or her library into his or her graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u30fb\u30d9\u30ec\u30ec\u30f3",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=227476&type=card",
+          "language": "Japanese",
+          "multiverseid": 227476
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "LRW",
+        "DD2",
+        "M10",
+        "M11",
+        "DD3_JVC"
+      ],
+      "originalText": "+2: Each player draws a card.\n-1: Target player draws a card.\n-10: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Lorwyn-Shadowmoor Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "bc58c18d0d4f50dd814fbc72c3c1311d92e51019"
+    },
+    {
+      "name": "Jace Beleren",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "M10",
+      "setName": "Magic 2010",
+      "text": "+2: Each player draws a card.\n\u22121: Target player draws a card.\n\u221210: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "artist": "Aleksi Briclot",
+      "number": "58",
+      "layout": "normal",
+      "multiverseid": 191240,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=191240&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2009-10-01",
+          "text": "If there are fewer than twenty cards in the targeted player's library, that player puts all the cards from his or her library into his or her graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u8d1d\u8fde",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=200858&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 200858
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=199364&type=card",
+          "language": "French",
+          "multiverseid": 199364
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=199613&type=card",
+          "language": "German",
+          "multiverseid": 199613
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=200360&type=card",
+          "language": "Italian",
+          "multiverseid": 200360
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u30fb\u30d9\u30ec\u30ec\u30f3",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=199862&type=card",
+          "language": "Japanese",
+          "multiverseid": 199862
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=199115&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 199115
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441 \u0411\u0435\u043b\u0435\u0440\u0435\u043d",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=200111&type=card",
+          "language": "Russian",
+          "multiverseid": 200111
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=200609&type=card",
+          "language": "Spanish",
+          "multiverseid": 200609
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "LRW",
+        "DD2",
+        "M10",
+        "M11",
+        "DD3_JVC"
+      ],
+      "originalText": "+2: Each player draws a card.\n-1: Target player draws a card.\n-10: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Lorwyn-Shadowmoor Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "d88f9be583515367b9efb4405cb570a227678e0a"
+    },
+    {
+      "name": "Jace, the Mind Sculptor",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "WWK",
+      "setName": "Worldwake",
+      "text": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n\u22121: Return target creature to its owner's hand.\n\u221212: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "artist": "Jason Chan",
+      "number": "31",
+      "layout": "normal",
+      "multiverseid": 195297,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=195297&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2016-06-08",
+          "text": "You draw three cards and put two cards back all while Jace's second ability is resolving. Nothing can happen between the two, and no player may choose to take actions."
+        },
+        {
+          "date": "2016-06-08",
+          "text": "If the targeted player for Jace's last ability has no cards in hand, that player shuffles nothing into his or her library, and that player's library will remain empty. That player won't lose the game until he or she tries to draw from the empty library."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u5fc3\u7075\u5851\u5e08\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=211025&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 211025
+        },
+        {
+          "name": "Jace, le sculpteur de l'esprit",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=211315&type=card",
+          "language": "French",
+          "multiverseid": 211315
+        },
+        {
+          "name": "Jace, der Gedankenformer",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=210590&type=card",
+          "language": "German",
+          "multiverseid": 210590
+        },
+        {
+          "name": "Jace, lo Scultore di Menti",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=211170&type=card",
+          "language": "Italian",
+          "multiverseid": 211170
+        },
+        {
+          "name": "\u7cbe\u795e\u3092\u523b\u3080\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=210735&type=card",
+          "language": "Japanese",
+          "multiverseid": 210735
+        },
+        {
+          "name": "Jace, o Escultor de Mentes",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=210880&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 210880
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0421\u043a\u0443\u043b\u044c\u043f\u0442\u043e\u0440 \u0421\u043e\u0437\u043d\u0430\u043d\u0438\u044f",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=211460&type=card",
+          "language": "Russian",
+          "multiverseid": 211460
+        },
+        {
+          "name": "Jace, el escultor mental",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=211605&type=card",
+          "language": "Spanish",
+          "multiverseid": 211605
+        }
+      ],
+      "printings": [
+        "WWK",
+        "V13",
+        "VMA",
+        "EMA"
+      ],
+      "originalText": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n-1: Return target creature to its owner's hand.\n-12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Banned"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        },
+        {
+          "format": "Zendikar Block",
+          "legality": "Legal"
+        }
+      ],
+      "id": "dfce9f7321bea625321a576376e480f854f7c9cb"
+    },
+    {
+      "name": "Jace Beleren",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "M11",
+      "setName": "Magic 2011",
+      "text": "+2: Each player draws a card.\n\u22121: Target player draws a card.\n\u221210: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "artist": "Aleksi Briclot",
+      "number": "58",
+      "layout": "normal",
+      "multiverseid": 205960,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=205960&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2009-10-01",
+          "text": "If there are fewer than twenty cards in the targeted player's library, that player puts all the cards from his or her library into his or her graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u8d1d\u8fde",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=226166&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 226166
+        },
+        {
+          "name": "\u5091\u65af\u8c9d\u9023",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225917&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 225917
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=222372&type=card",
+          "language": "French",
+          "multiverseid": 222372
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=221802&type=card",
+          "language": "German",
+          "multiverseid": 221802
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225668&type=card",
+          "language": "Italian",
+          "multiverseid": 225668
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u30fb\u30d9\u30ec\u30ec\u30f3",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=226415&type=card",
+          "language": "Japanese",
+          "multiverseid": 226415
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225170&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 225170
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441 \u0411\u0435\u043b\u0435\u0440\u0435\u043d",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225419&type=card",
+          "language": "Russian",
+          "multiverseid": 225419
+        },
+        {
+          "name": "Jace Beleren",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=224921&type=card",
+          "language": "Spanish",
+          "multiverseid": 224921
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "LRW",
+        "DD2",
+        "M10",
+        "M11",
+        "DD3_JVC"
+      ],
+      "originalText": "+2: Each player draws a card.\n-1: Target player draws a card.\n-10: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Lorwyn-Shadowmoor Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "c82b5fdb9fa18991b408ac3a0b30642cf7a024c8"
+    },
+    {
+      "name": "Jace's Erasure",
+      "manaCost": "{1}{U}",
+      "cmc": 2,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Common",
+      "set": "M11",
+      "setName": "Magic 2011",
+      "text": "Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.",
+      "flavor": "\"You should try to clear your mind of idle thoughts. And if you can't, I will.\"",
+      "artist": "Jason Chan",
+      "number": "59",
+      "layout": "normal",
+      "multiverseid": 205043,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=205043&type=card",
+      "rulings": [
+        {
+          "date": "2010-08-15",
+          "text": "If a spell or ability causes you to draw multiple cards, Jace's Erasure's ability triggers that many times. (The spell or ability finishes resolving before you put Jace's Erasure's abilities on the stack.)"
+        },
+        {
+          "date": "2010-08-15",
+          "text": "If a spell or ability causes you to put cards in your hand without specifically using the word \"draw,\" Jace's Erasure's ability won't trigger."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u62b9\u6d88",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=226073&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 226073
+        },
+        {
+          "name": "\u5091\u65af\u7684\u62b9\u6d88",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225824&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 225824
+        },
+        {
+          "name": "Effacement selon Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=222279&type=card",
+          "language": "French",
+          "multiverseid": 222279
+        },
+        {
+          "name": "Jaces L\u00f6schung",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=221709&type=card",
+          "language": "German",
+          "multiverseid": 221709
+        },
+        {
+          "name": "Cancellazione di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225575&type=card",
+          "language": "Italian",
+          "multiverseid": 225575
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u6d88\u53bb",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=226322&type=card",
+          "language": "Japanese",
+          "multiverseid": 226322
+        },
+        {
+          "name": "Apagador de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225077&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 225077
+        },
+        {
+          "name": "\u041e\u0447\u0438\u0449\u0435\u043d\u0438\u0435 \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225326&type=card",
+          "language": "Russian",
+          "multiverseid": 225326
+        },
+        {
+          "name": "Limpieza de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=224828&type=card",
+          "language": "Spanish",
+          "multiverseid": 224828
+        }
+      ],
+      "printings": [
+        "M11",
+        "M12"
+      ],
+      "originalText": "Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "9ef4858e4fabe1d445a13b11df87f62237a2a239"
+    },
+    {
+      "name": "Jace's Ingenuity",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "Uncommon",
+      "set": "M11",
+      "setName": "Magic 2011",
+      "text": "Draw three cards.",
+      "flavor": "\"Brute force can sometimes kick down a locked door, but knowledge is a skeleton key.\"",
+      "artist": "Igor Kieryluk",
+      "number": "60",
+      "layout": "normal",
+      "multiverseid": 205015,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=205015&type=card",
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u667a\u8c0b",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=226046&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 226046
+        },
+        {
+          "name": "\u5091\u65af\u7684\u667a\u8b00",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225797&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 225797
+        },
+        {
+          "name": "Ing\u00e9niosit\u00e9 de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=222252&type=card",
+          "language": "French",
+          "multiverseid": 222252
+        },
+        {
+          "name": "Jaces Findigkeit",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=221682&type=card",
+          "language": "German",
+          "multiverseid": 221682
+        },
+        {
+          "name": "Ingegnosit\u00e0 di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225548&type=card",
+          "language": "Italian",
+          "multiverseid": 225548
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u5275\u610f",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=226295&type=card",
+          "language": "Japanese",
+          "multiverseid": 226295
+        },
+        {
+          "name": "Engenhosidade de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225050&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 225050
+        },
+        {
+          "name": "\u0418\u0437\u043e\u0431\u0440\u0435\u0442\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=225299&type=card",
+          "language": "Russian",
+          "multiverseid": 225299
+        },
+        {
+          "name": "Ingenio de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=224801&type=card",
+          "language": "Spanish",
+          "multiverseid": 224801
+        }
+      ],
+      "printings": [
+        "pFNM",
+        "M11",
+        "DDM",
+        "M15"
+      ],
+      "originalText": "Draw three cards.",
+      "originalType": "Instant",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "4df6e2eb6f9705608aeebd00cdcab8711fd5bcca"
+    },
+    {
+      "name": "Jace, Memory Adept",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "M12",
+      "setName": "Magic 2012",
+      "text": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n\u22127: Any number of target players each draw twenty cards.",
+      "artist": "D. Alexander Gregory",
+      "number": "58",
+      "layout": "normal",
+      "multiverseid": 238263,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=238263&type=card",
+      "loyalty": 4,
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If you target yourself with Jace's first ability, you'll draw a card first, then put the top card of your library into your graveyard."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If you activate Jace's first ability, and the player is an illegal target when the ability tries to resolve, it will be countered and none of its effects will happen. You won't draw a card."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If Jace's third ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u8bb0\u5fc6\u4e13\u5bb6\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=262935&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 262935
+        },
+        {
+          "name": "\u8a18\u61b6\u5c08\u5bb6\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263184&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 263184
+        },
+        {
+          "name": "Jace, expert en m\u00e9moire",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263433&type=card",
+          "language": "French",
+          "multiverseid": 263433
+        },
+        {
+          "name": "Jace, Meister der Erinnerung",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263682&type=card",
+          "language": "German",
+          "multiverseid": 263682
+        },
+        {
+          "name": "Jace, Esperto di Ricordi",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263931&type=card",
+          "language": "Italian",
+          "multiverseid": 263931
+        },
+        {
+          "name": "\u8a18\u61b6\u306e\u719f\u9054\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264180&type=card",
+          "language": "Japanese",
+          "multiverseid": 264180
+        },
+        {
+          "name": "Jace, Adepto da Mem\u00f3ria",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264429&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 264429
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0410\u0434\u0435\u043f\u0442 \u041f\u0430\u043c\u044f\u0442\u0438",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264678&type=card",
+          "language": "Russian",
+          "multiverseid": 264678
+        },
+        {
+          "name": "Jace, perito de la memoria",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264927&type=card",
+          "language": "Spanish",
+          "multiverseid": 264927
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M12",
+        "M13",
+        "M14"
+      ],
+      "originalText": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n-7: Any number of target players each draw twenty cards.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "9b7be49d7f0195ed09d431b34b5fc85c414d2f80"
+    },
+    {
+      "name": "Jace's Archivist",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Vedalken Wizard",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Vedalken",
+        "Wizard"
+      ],
+      "rarity": "Rare",
+      "set": "M12",
+      "setName": "Magic 2012",
+      "text": "{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "flavor": "\"This is a sacred duty. Master Beleren's trust has bought an eternity of my loyalty.\"",
+      "artist": "James Ryman",
+      "number": "59",
+      "power": "2",
+      "toughness": "2",
+      "layout": "normal",
+      "multiverseid": 220244,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=220244&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If this ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u4e66\u5e93\u8f96\u5458",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=262936&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 262936
+        },
+        {
+          "name": "\u5091\u65af\u7684\u66f8\u5eab\u8f44\u54e1",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263185&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 263185
+        },
+        {
+          "name": "Archiviste de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263434&type=card",
+          "language": "French",
+          "multiverseid": 263434
+        },
+        {
+          "name": "Jaces Archivar",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263683&type=card",
+          "language": "German",
+          "multiverseid": 263683
+        },
+        {
+          "name": "Archivista di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263932&type=card",
+          "language": "Italian",
+          "multiverseid": 263932
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u6587\u66f8\u7ba1\u7406\u4eba",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264181&type=card",
+          "language": "Japanese",
+          "multiverseid": 264181
+        },
+        {
+          "name": "Arquivista de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264430&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 264430
+        },
+        {
+          "name": "\u0410\u0440\u0445\u0438\u0432\u0430\u0440\u0438\u0443\u0441 \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264679&type=card",
+          "language": "Russian",
+          "multiverseid": 264679
+        },
+        {
+          "name": "Archivista de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264928&type=card",
+          "language": "Spanish",
+          "multiverseid": 264928
+        }
+      ],
+      "printings": [
+        "M12",
+        "C13",
+        "C15"
+      ],
+      "originalText": "{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "originalType": "Creature \u2014 Vedalken Wizard",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "98d4a46a7918405f77d2e75cbd61eb0c1053c230"
+    },
+    {
+      "name": "Jace's Erasure",
+      "manaCost": "{1}{U}",
+      "cmc": 2,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Common",
+      "set": "M12",
+      "setName": "Magic 2012",
+      "text": "Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.",
+      "flavor": "\"You should try to clear your mind of idle thoughts. And if you can't, I will.\"",
+      "artist": "Jason Chan",
+      "number": "60",
+      "layout": "normal",
+      "multiverseid": 227227,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=227227&type=card",
+      "rulings": [
+        {
+          "date": "2010-08-15",
+          "text": "If a spell or ability causes you to draw multiple cards, Jace's Erasure's ability triggers that many times. (The spell or ability finishes resolving before you put Jace's Erasure's abilities on the stack.)"
+        },
+        {
+          "date": "2010-08-15",
+          "text": "If a spell or ability causes you to put cards in your hand without specifically using the word \"draw,\" Jace's Erasure's ability won't trigger."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u62b9\u6d88",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=262937&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 262937
+        },
+        {
+          "name": "\u5091\u65af\u7684\u62b9\u6d88",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263186&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 263186
+        },
+        {
+          "name": "Effacement selon Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263435&type=card",
+          "language": "French",
+          "multiverseid": 263435
+        },
+        {
+          "name": "Jaces L\u00f6schung",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263684&type=card",
+          "language": "German",
+          "multiverseid": 263684
+        },
+        {
+          "name": "Cancellazione di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=263933&type=card",
+          "language": "Italian",
+          "multiverseid": 263933
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u6d88\u53bb",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264182&type=card",
+          "language": "Japanese",
+          "multiverseid": 264182
+        },
+        {
+          "name": "Apagador de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264431&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 264431
+        },
+        {
+          "name": "\u041e\u0447\u0438\u0449\u0435\u043d\u0438\u0435 \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264680&type=card",
+          "language": "Russian",
+          "multiverseid": 264680
+        },
+        {
+          "name": "Limpieza de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=264929&type=card",
+          "language": "Spanish",
+          "multiverseid": 264929
+        }
+      ],
+      "printings": [
+        "M11",
+        "M12"
+      ],
+      "originalText": "Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "bbedb4038389cbc183758beebb75498c1919e506"
+    },
+    {
+      "name": "Jace, Memory Adept",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "M13",
+      "setName": "Magic 2013",
+      "text": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n\u22127: Any number of target players each draw twenty cards.",
+      "artist": "D. Alexander Gregory",
+      "number": "56",
+      "layout": "normal",
+      "multiverseid": 254107,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=254107&type=card",
+      "loyalty": 4,
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If you target yourself with Jace's first ability, you'll draw a card first, then put the top card of your library into your graveyard."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If you activate Jace's first ability, and the player is an illegal target when the ability tries to resolve, it will be countered and none of its effects will happen. You won't draw a card."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If Jace's third ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u8bb0\u5fc6\u4e13\u5bb6\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=330305&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 330305
+        },
+        {
+          "name": "\u8a18\u61b6\u5c08\u5bb6\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=330803&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 330803
+        },
+        {
+          "name": "Jace, expert en m\u00e9moire",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331550&type=card",
+          "language": "French",
+          "multiverseid": 331550
+        },
+        {
+          "name": "Jace, Meister der Erinnerung",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332048&type=card",
+          "language": "German",
+          "multiverseid": 332048
+        },
+        {
+          "name": "Jace, Esperto di Ricordi",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332546&type=card",
+          "language": "Italian",
+          "multiverseid": 332546
+        },
+        {
+          "name": "\u8a18\u61b6\u306e\u719f\u9054\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332795&type=card",
+          "language": "Japanese",
+          "multiverseid": 332795
+        },
+        {
+          "name": "\uae30\uc5b5\uc870\uc791\uc220\uc0ac \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=330554&type=card",
+          "language": "Korean",
+          "multiverseid": 330554
+        },
+        {
+          "name": "Jace, Adepto da Mem\u00f3ria",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331301&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 331301
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0410\u0434\u0435\u043f\u0442 \u041f\u0430\u043c\u044f\u0442\u0438",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331799&type=card",
+          "language": "Russian",
+          "multiverseid": 331799
+        },
+        {
+          "name": "Jace, perito de la memoria",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332297&type=card",
+          "language": "Spanish",
+          "multiverseid": 332297
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M12",
+        "M13",
+        "M14"
+      ],
+      "originalText": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n-7: Any number of target players each draw twenty cards.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "3cfe1b4c14a2a9830ac54e4b4e4b8d1a9bc7291a"
+    },
+    {
+      "name": "Jace's Phantasm",
+      "manaCost": "{U}",
+      "cmc": 1,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Illusion",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Illusion"
+      ],
+      "rarity": "Uncommon",
+      "set": "M13",
+      "setName": "Magic 2013",
+      "text": "Flying\nJace's Phantasm gets +4\/+4 as long as an opponent has ten or more cards in his or her graveyard.",
+      "flavor": "In the abstract memories of the Iquati, Jace found interesting ideas to improve upon.",
+      "artist": "Johann Bodin",
+      "number": "57",
+      "power": "1",
+      "toughness": "1",
+      "layout": "normal",
+      "multiverseid": 249672,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=249672&type=card",
+      "rulings": [
+        {
+          "date": "2012-07-01",
+          "text": "The last ability constantly monitors each opponent's graveyard to see if the bonus applies. If the stated condition becomes no longer true, the bonus immediately stops applying."
+        },
+        {
+          "date": "2012-07-01",
+          "text": "In a multiplayer game, a single opponent must have ten or more cards in his or her graveyard for the bonus to apply, although this opponent may change over the course of the game. You don't have to pick a single opponent; the ability will monitor each opponent's graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u5e7b\u8c61",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=330223&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 330223
+        },
+        {
+          "name": "\u5091\u65af\u7684\u5e7b\u8c61",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=330721&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 330721
+        },
+        {
+          "name": "Phantasme de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331468&type=card",
+          "language": "French",
+          "multiverseid": 331468
+        },
+        {
+          "name": "Jaces Traumwesen",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331966&type=card",
+          "language": "German",
+          "multiverseid": 331966
+        },
+        {
+          "name": "Fantasma di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332464&type=card",
+          "language": "Italian",
+          "multiverseid": 332464
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u5e7b",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332713&type=card",
+          "language": "Japanese",
+          "multiverseid": 332713
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \ud5c8\uae68\ube44",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=330472&type=card",
+          "language": "Korean",
+          "multiverseid": 330472
+        },
+        {
+          "name": "Fantasma de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331219&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 331219
+        },
+        {
+          "name": "\u0424\u0430\u043d\u0442\u043e\u043c \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=331717&type=card",
+          "language": "Russian",
+          "multiverseid": 331717
+        },
+        {
+          "name": "Fantasma de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=332215&type=card",
+          "language": "Spanish",
+          "multiverseid": 332215
+        }
+      ],
+      "printings": [
+        "M13",
+        "DDM"
+      ],
+      "originalText": "Flying\nJace's Phantasm gets +4\/+4 as long as an opponent has ten or more cards in his or her graveyard.",
+      "originalType": "Creature \u2014 Illusion",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "a41a64c3021949b20a8d3aafbaba47e31c553b87"
+    },
+    {
+      "name": "Jace, Architect of Thought",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "RTR",
+      "setName": "Return to Ravnica",
+      "text": "+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1\/-0 until end of turn.\n\u22122: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.\n\u22128: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.",
+      "artist": "Jaime Jones",
+      "number": "44",
+      "layout": "normal",
+      "multiverseid": 253653,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=253653&type=card",
+      "loyalty": 4,
+      "rulings": [
+        {
+          "date": "2012-10-01",
+          "text": "Jace's first ability creates a delayed triggered ability that triggers whenever a creature an opponent controls attacks. It doesn't matter which player or planeswalker that creature is attacking."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "You pick one of your opponents when Jace's second ability resolves. The ability doesn't target that opponent. All players may see the revealed cards and offer opinions. You (not your opponent) choose which pile is put into your hand and which pile is put on the bottom of your library."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "Piles can be empty. If one of the piles is empty, you choose to put all the revealed cards in your hand or on the bottom of your library."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "When resolving Jace's third ability, you search each player's library (including yours) and exile the nonland cards before casting any of them."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "For each library, the search is complete only when you explicitly say it is. For example, you can look through one player's library, set that library down, look at another player's library, choose a nonland card in the first library, then choose a nonland card in the second library. Don't reveal any cards from those libraries to any other player until you exile them."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "You cast the cards by putting them on the stack one at a time, choosing modes, targets, and so on. The last card you cast will be the first one to resolve."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "When casting a card this way, ignore timing restrictions based on the card's type. Other timing restrictions, such as \"Cast [this card] only during combat,\" must be followed."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If you can't cast a card, perhaps because there are no legal targets available, or if you choose not to cast one, it will remain exiled. Jace's ability won't allow you to cast it later."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If you cast a card \"without paying its mana cost,\" you can't pay alternative costs such as overload costs. You can pay additional costs such as kicker costs. If the card has mandatory additional costs, you must pay those."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If a card has {X} in its mana cost, you must choose 0 as its value."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u7b51\u5ff5\u5e08\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=357150&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 357150
+        },
+        {
+          "name": "\u7bc9\u5ff5\u5e2b\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=355506&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 355506
+        },
+        {
+          "name": "Jace, architecte des pens\u00e9es",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=356054&type=card",
+          "language": "French",
+          "multiverseid": 356054
+        },
+        {
+          "name": "Jace der Gedankenarchitekt",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=355780&type=card",
+          "language": "German",
+          "multiverseid": 355780
+        },
+        {
+          "name": "Jace, Architetto del Pensiero",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=356328&type=card",
+          "language": "Italian",
+          "multiverseid": 356328
+        },
+        {
+          "name": "\u601d\u8003\u3092\u7bc9\u304f\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=356602&type=card",
+          "language": "Japanese",
+          "multiverseid": 356602
+        },
+        {
+          "name": "\uc0dd\uac01\uc758 \uc124\uacc4\uc790 \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=357424&type=card",
+          "language": "Korean",
+          "multiverseid": 357424
+        },
+        {
+          "name": "Jace, Arquiteto do Pensamento",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=356876&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 356876
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0410\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u043e\u0440 \u041c\u044b\u0441\u043b\u0438",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=355232&type=card",
+          "language": "Russian",
+          "multiverseid": 355232
+        },
+        {
+          "name": "Jace, arquitecto del pensamiento",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=365502&type=card",
+          "language": "Spanish",
+          "multiverseid": 365502
+        }
+      ],
+      "printings": [
+        "RTR",
+        "DDM"
+      ],
+      "originalText": "+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1\/-0 until end of turn.\n-2: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.\n-8: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Return to Ravnica Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "709f646f7d11da87a8cd57cb69d986f538f687e0"
+    },
+    {
+      "name": "Jace, Memory Adept",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "M14",
+      "setName": "Magic 2014 Core Set",
+      "text": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n\u22127: Any number of target players each draw twenty cards.",
+      "artist": "D. Alexander Gregory",
+      "number": "60",
+      "layout": "normal",
+      "multiverseid": 370728,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=370728&type=card",
+      "loyalty": 4,
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If you target yourself with Jace's first ability, you'll draw a card first, then put the top card of your library into your graveyard."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If you activate Jace's first ability, and the player is an illegal target when the ability tries to resolve, it will be countered and none of its effects will happen. You won't draw a card."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If Jace's third ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u8bb0\u5fc6\u4e13\u5bb6\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=370977&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 370977
+        },
+        {
+          "name": "\u8a18\u61b6\u5c08\u5bb6\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371226&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 371226
+        },
+        {
+          "name": "Jace, expert en m\u00e9moire",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371724&type=card",
+          "language": "French",
+          "multiverseid": 371724
+        },
+        {
+          "name": "Jace, Meister der Erinnerung",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371475&type=card",
+          "language": "German",
+          "multiverseid": 371475
+        },
+        {
+          "name": "Jace, Esperto di Ricordi",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371973&type=card",
+          "language": "Italian",
+          "multiverseid": 371973
+        },
+        {
+          "name": "\u8a18\u61b6\u306e\u719f\u9054\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372222&type=card",
+          "language": "Japanese",
+          "multiverseid": 372222
+        },
+        {
+          "name": "\uae30\uc5b5\uc870\uc791\uc220\uc0ac \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372471&type=card",
+          "language": "Korean",
+          "multiverseid": 372471
+        },
+        {
+          "name": "Jace, Adepto da Mem\u00f3ria",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372720&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 372720
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0410\u0434\u0435\u043f\u0442 \u041f\u0430\u043c\u044f\u0442\u0438",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372969&type=card",
+          "language": "Russian",
+          "multiverseid": 372969
+        },
+        {
+          "name": "Jace, perito de la memoria",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=373218&type=card",
+          "language": "Spanish",
+          "multiverseid": 373218
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M12",
+        "M13",
+        "M14"
+      ],
+      "originalText": "+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.0: Target player puts the top ten cards of his or her library into his or her graveyard.-7: Any number of target players each draw twenty cards.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "c435786640d52392de9dc8ea12617a8b8a7d8e98"
+    },
+    {
+      "name": "Jace's Mindseeker",
+      "manaCost": "{4}{U}{U}",
+      "cmc": 6,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Fish Illusion",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Fish",
+        "Illusion"
+      ],
+      "rarity": "Rare",
+      "set": "M14",
+      "setName": "Magic 2014 Core Set",
+      "text": "Flying\nWhen Jace's Mindseeker enters the battlefield, target opponent puts the top five cards of his or her library into his or her graveyard. You may cast an instant or sorcery card from among them without paying its mana cost.",
+      "artist": "Greg Staples",
+      "number": "61",
+      "power": "4",
+      "toughness": "4",
+      "layout": "normal",
+      "multiverseid": 370638,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=370638&type=card",
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u89c5\u7075\u5f71",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=370887&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 370887
+        },
+        {
+          "name": "\u5091\u65af\u7684\u8993\u9748\u5f71",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371136&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 371136
+        },
+        {
+          "name": "Cherche-esprit de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371634&type=card",
+          "language": "French",
+          "multiverseid": 371634
+        },
+        {
+          "name": "Jaces Gedankensucher",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371385&type=card",
+          "language": "German",
+          "multiverseid": 371385
+        },
+        {
+          "name": "Cercamente di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=371883&type=card",
+          "language": "Italian",
+          "multiverseid": 371883
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u7cbe\u795e\u8ffd\u3044",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372132&type=card",
+          "language": "Japanese",
+          "multiverseid": 372132
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \uc815\uc2e0\ucd94\uc801\uc790",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372381&type=card",
+          "language": "Korean",
+          "multiverseid": 372381
+        },
+        {
+          "name": "Ca\u00e7a-mentes de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372630&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 372630
+        },
+        {
+          "name": "\u041c\u044b\u0441\u043b\u0435\u0438\u0441\u043a\u0430\u0442\u0435\u043b\u044c \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=372879&type=card",
+          "language": "Russian",
+          "multiverseid": 372879
+        },
+        {
+          "name": "Buscamentes de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=373128&type=card",
+          "language": "Spanish",
+          "multiverseid": 373128
+        }
+      ],
+      "printings": [
+        "M14",
+        "DDM"
+      ],
+      "originalText": "FlyingWhen Jace's Mindseeker enters the battlefield, target opponent puts the top five cards of his or her library into his or her graveyard. You may cast an instant or sorcery card from among them without paying its mana cost.",
+      "originalType": "Creature \u2014 Fish Illusion",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "0313685b62d656dabf0d56fa5ff17b6f6c4a0d5d"
+    },
+    {
+      "name": "Jace, the Mind Sculptor",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "V13",
+      "setName": "From the Vault: Twenty",
+      "text": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n\u22121: Return target creature to its owner's hand.\n\u221212: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "artist": "Jason Chan",
+      "number": "18",
+      "layout": "normal",
+      "multiverseid": 373316,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=373316&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2016-06-08",
+          "text": "You draw three cards and put two cards back all while Jace's second ability is resolving. Nothing can happen between the two, and no player may choose to take actions."
+        },
+        {
+          "date": "2016-06-08",
+          "text": "If the targeted player for Jace's last ability has no cards in hand, that player shuffles nothing into his or her library, and that player's library will remain empty. That player won't lose the game until he or she tries to draw from the empty library."
+        }
+      ],
+      "printings": [
+        "WWK",
+        "V13",
+        "VMA",
+        "EMA"
+      ],
+      "originalText": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n-1: Return target creature to its owner's hand.\n-12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Banned"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        },
+        {
+          "format": "Zendikar Block",
+          "legality": "Legal"
+        }
+      ],
+      "id": "b1dfa975ee9bf2fb2b6d7694effad405dbc72ad6"
+    },
+    {
+      "name": "Jace's Archivist",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Vedalken Wizard",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Vedalken",
+        "Wizard"
+      ],
+      "rarity": "Rare",
+      "set": "C13",
+      "setName": "Commander 2013 Edition",
+      "text": "{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "flavor": "\"This is a sacred duty. Master Beleren's trust has bought an eternity of my loyalty.\"",
+      "artist": "James Ryman",
+      "number": "48",
+      "power": "2",
+      "toughness": "2",
+      "layout": "normal",
+      "multiverseid": 376379,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=376379&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If this ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "Archiviste de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=377091&type=card",
+          "language": "French",
+          "multiverseid": 377091
+        },
+        {
+          "name": "Jaces Archivar",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=376735&type=card",
+          "language": "German",
+          "multiverseid": 376735
+        },
+        {
+          "name": "Archivista di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=377447&type=card",
+          "language": "Italian",
+          "multiverseid": 377447
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u6587\u66f8\u7ba1\u7406\u4eba",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=377803&type=card",
+          "language": "Japanese",
+          "multiverseid": 377803
+        },
+        {
+          "name": "Archivista de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=378159&type=card",
+          "language": "Spanish",
+          "multiverseid": 378159
+        }
+      ],
+      "printings": [
+        "M12",
+        "C13",
+        "C15"
+      ],
+      "originalText": "{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "originalType": "Creature \u2014 Vedalken Wizard",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "0ff02f97808cc68ae555d2d828de8997cad0dcc6"
+    },
+    {
+      "name": "Jace, Architect of Thought",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "DDM",
+      "setName": "Duel Decks: Jace vs. Vraska",
+      "text": "+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1\/-0 until end of turn.\n\u22122: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.\n\u22128: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.",
+      "artist": "Igor Kieryluk",
+      "number": "1",
+      "layout": "normal",
+      "multiverseid": 380190,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380190&type=card",
+      "loyalty": 4,
+      "rulings": [
+        {
+          "date": "2012-10-01",
+          "text": "Jace's first ability creates a delayed triggered ability that triggers whenever a creature an opponent controls attacks. It doesn't matter which player or planeswalker that creature is attacking."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "You pick one of your opponents when Jace's second ability resolves. The ability doesn't target that opponent. All players may see the revealed cards and offer opinions. You (not your opponent) choose which pile is put into your hand and which pile is put on the bottom of your library."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "Piles can be empty. If one of the piles is empty, you choose to put all the revealed cards in your hand or on the bottom of your library."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "When resolving Jace's third ability, you search each player's library (including yours) and exile the nonland cards before casting any of them."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "For each library, the search is complete only when you explicitly say it is. For example, you can look through one player's library, set that library down, look at another player's library, choose a nonland card in the first library, then choose a nonland card in the second library. Don't reveal any cards from those libraries to any other player until you exile them."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "You cast the cards by putting them on the stack one at a time, choosing modes, targets, and so on. The last card you cast will be the first one to resolve."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "When casting a card this way, ignore timing restrictions based on the card's type. Other timing restrictions, such as \"Cast [this card] only during combat,\" must be followed."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If you can't cast a card, perhaps because there are no legal targets available, or if you choose not to cast one, it will remain exiled. Jace's ability won't allow you to cast it later."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If you cast a card \"without paying its mana cost,\" you can't pay alternative costs such as overload costs. You can pay additional costs such as kicker costs. If the card has mandatory additional costs, you must pay those."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If a card has {X} in its mana cost, you must choose 0 as its value."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u601d\u8003\u3092\u7bc9\u304f\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380278&type=card",
+          "language": "Japanese",
+          "multiverseid": 380278
+        }
+      ],
+      "printings": [
+        "RTR",
+        "DDM"
+      ],
+      "originalText": "+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1\/-0 until end of turn.\n-2: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.\n-8: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Return to Ravnica Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "9ab227740aef3c12912bdfa9d00dbb89c60bee1d"
+    },
+    {
+      "name": "Jace's Phantasm",
+      "manaCost": "{U}",
+      "cmc": 1,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Illusion",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Illusion"
+      ],
+      "rarity": "Uncommon",
+      "set": "DDM",
+      "setName": "Duel Decks: Jace vs. Vraska",
+      "text": "Flying\nJace's Phantasm gets +4\/+4 as long as an opponent has ten or more cards in his or her graveyard.",
+      "flavor": "In the abstract memories of the Iquati, Jace found interesting ideas to improve upon.",
+      "artist": "Johann Bodin",
+      "number": "3",
+      "power": "1",
+      "toughness": "1",
+      "layout": "normal",
+      "multiverseid": 380245,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380245&type=card",
+      "rulings": [
+        {
+          "date": "2012-07-01",
+          "text": "The last ability constantly monitors each opponent's graveyard to see if the bonus applies. If the stated condition becomes no longer true, the bonus immediately stops applying."
+        },
+        {
+          "date": "2012-07-01",
+          "text": "In a multiplayer game, a single opponent must have ten or more cards in his or her graveyard for the bonus to apply, although this opponent may change over the course of the game. You don't have to pick a single opponent; the ability will monitor each opponent's graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u5e7b",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380333&type=card",
+          "language": "Japanese",
+          "multiverseid": 380333
+        }
+      ],
+      "printings": [
+        "M13",
+        "DDM"
+      ],
+      "originalText": "Flying\nJace's Phantasm gets +4\/+4 as long as an opponent has ten or more cards in his or her graveyard.",
+      "originalType": "Creature \u2014 Illusion",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "cf095ebf1071887d2c69ceb966ea427fd3251159"
+    },
+    {
+      "name": "Jace's Mindseeker",
+      "manaCost": "{4}{U}{U}",
+      "cmc": 6,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Fish Illusion",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Fish",
+        "Illusion"
+      ],
+      "rarity": "Rare",
+      "set": "DDM",
+      "setName": "Duel Decks: Jace vs. Vraska",
+      "text": "Flying\nWhen Jace's Mindseeker enters the battlefield, target opponent puts the top five cards of his or her library into his or her graveyard. You may cast an instant or sorcery card from among them without paying its mana cost.",
+      "artist": "Greg Staples",
+      "number": "19",
+      "power": "4",
+      "toughness": "4",
+      "layout": "normal",
+      "multiverseid": 380206,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380206&type=card",
+      "foreignNames": [
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u7cbe\u795e\u8ffd\u3044",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380294&type=card",
+          "language": "Japanese",
+          "multiverseid": 380294
+        }
+      ],
+      "printings": [
+        "M14",
+        "DDM"
+      ],
+      "originalText": "Flying\nWhen Jace's Mindseeker enters the battlefield, target opponent puts the top five cards of his or her library into his or her graveyard. You may cast an instant or sorcery card from among them without paying its mana cost.",
+      "originalType": "Creature \u2014 Fish Illusion",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "71099d5a57d5fd474d6ef53ab20d81785f1c7bb4"
+    },
+    {
+      "name": "Jace's Ingenuity",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "Uncommon",
+      "set": "DDM",
+      "setName": "Duel Decks: Jace vs. Vraska",
+      "text": "Draw three cards.",
+      "flavor": "\"Brute force can sometimes kick down a locked door, but knowledge is a skeleton key.\"",
+      "artist": "Igor Kieryluk",
+      "number": "32",
+      "layout": "normal",
+      "multiverseid": 380211,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380211&type=card",
+      "foreignNames": [
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u5275\u610f",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=380299&type=card",
+          "language": "Japanese",
+          "multiverseid": 380299
+        }
+      ],
+      "printings": [
+        "pFNM",
+        "M11",
+        "DDM",
+        "M15"
+      ],
+      "originalText": "Draw three cards.",
+      "originalType": "Instant",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "a88d61391ad1b8d6d2280b0db10e73053986ee0b"
+    },
+    {
+      "name": "Jace, the Mind Sculptor",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "VMA",
+      "setName": "Vintage Masters",
+      "text": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n\u22121: Return target creature to its owner's hand.\n\u221212: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "artist": "Jason Chan",
+      "number": "74",
+      "layout": "normal",
+      "multiverseid": 382979,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=382979&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2016-06-08",
+          "text": "You draw three cards and put two cards back all while Jace's second ability is resolving. Nothing can happen between the two, and no player may choose to take actions."
+        },
+        {
+          "date": "2016-06-08",
+          "text": "If the targeted player for Jace's last ability has no cards in hand, that player shuffles nothing into his or her library, and that player's library will remain empty. That player won't lose the game until he or she tries to draw from the empty library."
+        }
+      ],
+      "printings": [
+        "WWK",
+        "V13",
+        "VMA",
+        "EMA"
+      ],
+      "originalText": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n-1: Return target creature to its owner's hand.\n-12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Banned"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        },
+        {
+          "format": "Zendikar Block",
+          "legality": "Legal"
+        }
+      ],
+      "id": "52abc282940de68646b5dcd266de6c7c5de9494d"
+    },
+    {
+      "name": "Jace, the Living Guildpact",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "M15",
+      "setName": "Magic 2015 Core Set",
+      "text": "+1: Look at the top two cards of your library. Put one of them into your graveyard.\n\u22123: Return another target nonland permanent to its owner's hand.\n\u22128: Each player shuffles his or her hand and graveyard into his or her library. You draw seven cards.",
+      "artist": "Chase Stone",
+      "number": "62",
+      "layout": "normal",
+      "multiverseid": 383285,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=383285&type=card",
+      "loyalty": 5,
+      "rulings": [
+        {
+          "date": "2014-07-18",
+          "text": "When the first ability resolves, the card you don't put into your graveyard stays on top of your library."
+        },
+        {
+          "date": "2014-07-18",
+          "text": "If a player has no cards in his or her hand and no cards in his or her graveyard when the third ability resolves, that player won't shuffle his or her library."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u73b0\u4e16\u5341\u4f1a\u76df\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=383569&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 383569
+        },
+        {
+          "name": "\u73fe\u4e16\u5341\u6703\u76df\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=383853&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 383853
+        },
+        {
+          "name": "Jace, Pacte des Guildes vivant",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384421&type=card",
+          "language": "French",
+          "multiverseid": 384421
+        },
+        {
+          "name": "Jace, der lebende Gildenbund",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384137&type=card",
+          "language": "German",
+          "multiverseid": 384137
+        },
+        {
+          "name": "Jace, il Patto delle Gilde Vivente",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384705&type=card",
+          "language": "Italian",
+          "multiverseid": 384705
+        },
+        {
+          "name": "\u30ae\u30eb\u30c9\u30d1\u30af\u30c8\u306e\u4f53\u73fe\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384989&type=card",
+          "language": "Japanese",
+          "multiverseid": 384989
+        },
+        {
+          "name": "\uc0b4\uc544\uc788\ub294 \uae38\ub4dc\ud329\ud2b8 \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=385273&type=card",
+          "language": "Korean",
+          "multiverseid": 385273
+        },
+        {
+          "name": "Jace, o Pacto das Guildas Vivo",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=385557&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 385557
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0412\u043e\u043f\u043b\u043e\u0449\u0435\u043d\u0438\u0435 \u0414\u043e\u0433\u043e\u0432\u043e\u0440\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=385841&type=card",
+          "language": "Russian",
+          "multiverseid": 385841
+        },
+        {
+          "name": "Jace, el Pacto viviente",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=386125&type=card",
+          "language": "Spanish",
+          "multiverseid": 386125
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M15"
+      ],
+      "originalText": "+1: Look at the top two cards of your library. Put one of them into your graveyard.\n\u22123: Return another target nonland permanent to its owner's hand.\n\u22128: Each player shuffles his or her hand and graveyard into his or her library. You draw seven cards.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "92b76e4f6544f0c9ff088c1259d8ab33fdcc0cae"
+    },
+    {
+      "name": "Jace's Ingenuity",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "Uncommon",
+      "set": "M15",
+      "setName": "Magic 2015 Core Set",
+      "text": "Draw three cards.",
+      "flavor": "\"Brute force can sometimes kick down a locked door, but knowledge is a skeleton key.\"",
+      "artist": "Igor Kieryluk",
+      "number": "63",
+      "layout": "normal",
+      "multiverseid": 383286,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=383286&type=card",
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u667a\u8c0b",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=383570&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 383570
+        },
+        {
+          "name": "\u5091\u65af\u7684\u667a\u8b00",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=383854&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 383854
+        },
+        {
+          "name": "Ing\u00e9niosit\u00e9 de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384422&type=card",
+          "language": "French",
+          "multiverseid": 384422
+        },
+        {
+          "name": "Jaces Findigkeit",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384138&type=card",
+          "language": "German",
+          "multiverseid": 384138
+        },
+        {
+          "name": "Ingegnosit\u00e0 di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384706&type=card",
+          "language": "Italian",
+          "multiverseid": 384706
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u5275\u610f",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=384990&type=card",
+          "language": "Japanese",
+          "multiverseid": 384990
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \ucc9c\uc7ac\uc131",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=385274&type=card",
+          "language": "Korean",
+          "multiverseid": 385274
+        },
+        {
+          "name": "Engenhosidade de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=385558&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 385558
+        },
+        {
+          "name": "\u0418\u0437\u043e\u0431\u0440\u0435\u0442\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=385842&type=card",
+          "language": "Russian",
+          "multiverseid": 385842
+        },
+        {
+          "name": "Ingenio de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=386126&type=card",
+          "language": "Spanish",
+          "multiverseid": 386126
+        }
+      ],
+      "printings": [
+        "pFNM",
+        "M11",
+        "DDM",
+        "M15"
+      ],
+      "originalText": "Draw three cards.",
+      "originalType": "Instant",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "3164348feca0d346b00e733c2dcaccdc99c63216"
+    },
+    {
+      "name": "Jace Beleren",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "DD3_JVC",
+      "setName": "Duel Decks Anthology, Jace vs. Chandra",
+      "text": "+2: Each player draws a card.\n\u22121: Target player draws a card.\n\u221210: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "artist": "Kev Walker",
+      "number": "1",
+      "layout": "normal",
+      "multiverseid": 393851,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=393851&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2009-10-01",
+          "text": "If there are fewer than twenty cards in the targeted player's library, that player puts all the cards from his or her library into his or her graveyard."
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "LRW",
+        "DD2",
+        "M10",
+        "M11",
+        "DD3_JVC"
+      ],
+      "originalText": "+2: Each player draws a card.\n\u20131: Target player draws a card.\n\u201310: Target player puts the top twenty cards of his or her library into his or her graveyard.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Lorwyn-Shadowmoor Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "97821d7f4791399323978fff0819cc6a45a03b24"
+    },
+    {
+      "name": "Jace, Vryn's Prodigy",
+      "names": [
+        "Jace, Vryn's Prodigy",
+        "Jace, Telepath Unbound"
+      ],
+      "manaCost": "{1}{U}",
+      "cmc": 2,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Legendary Creature \u2014 Human Wizard",
+      "supertypes": [
+        "Legendary"
+      ],
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Human",
+        "Wizard"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "ORI",
+      "setName": "Magic Origins",
+      "text": "{T}: Draw a card, then discard a card. If there are five or more cards in your graveyard, exile Jace, Vryn's Prodigy, then return him to the battlefield transformed under his owner's control.",
+      "flavor": "\"People's thoughts just come to me. Sometimes I don't know if it's them or me thinking.\"",
+      "artist": "Jaime Jones",
+      "number": "60a",
+      "power": "0",
+      "toughness": "2",
+      "layout": "double-faced",
+      "multiverseid": 398434,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398434&type=card",
+      "rulings": [
+        {
+          "date": "2015-06-22",
+          "text": "The activated ability of Jace, Vryn's Prodigy checks to see if there are five or more cards in your graveyard after you discard a card. Putting a fifth card into your graveyard at other times won't cause Jace to be exiled, nor will Jace entering the battlefield while there are five or more cards in your graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "Each face of a double-faced card has its own set of characteristics: name, types, subtypes, power and toughness, loyalty, abilities, and so on. While a double-faced card is on the battlefield, consider only the characteristics of the face that's currently up. The other set of characteristics is ignored. While a double-faced card isn't on the battlefield, consider only the characteristics of its front face."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "The converted mana cost of a double-faced card not on the battlefield is the converted mana cost of its front face."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "The back face of a double-faced card (in the case of Magic Origins, the planeswalker face) can't be cast."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "Although the two rules are similar, the \"legend rule\" and the \"planeswalker uniqueness rule\" affect different kinds of permanents. You can control two of this permanent, one front face-up and the other back-face up at the same time. However, if the former is exiled and enters the battlefield transformed, you'll then control two planeswalkers with the same subtype. You'll choose one to remain on the battlefield, and the other will be put into its owner's graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "A double-faced card enters the battlefield with its front face up by default, unless a spell or ability instructs you to put it onto the battlefield transformed, in which case it enters with its back face up."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "A Magic Origins planeswalker that enters the battlefield because of the ability of its front face will enter with loyalty counters as normal."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "In some rare cases, a spell or ability may cause one of these five cards to transform while it's a creature (front face up) on the battlefield. If this happens, the resulting planeswalker won't have any loyalty counters on it and will subsequently be put into its owner's graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "You can activate one of the planeswalker's loyalty abilities the turn it enters the battlefield. However, you may do so only during one of your main phases when the stack is empty. For example, if the planeswalker enters the battlefield during combat, there will be an opportunity for your opponent to remove it before you can activate one of its abilities."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "If a double-faced card is manifested, it will be put onto the battlefield face down (this is also true if it's put onto the battlefield face down some other way). Note that \"face down\" is not synonymous with \"with its back face up.\" A manifested double-faced card is a 2\/2 creature with no name, mana cost, creature types, or abilities. While face down, it can't transform. If the front face of a manifested double-faced card is a creature card, you can turn it face up by paying its mana cost. If you do, its front face will be up. A double-faced card on the battlefield can't be turned face down."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "If you discard a card with madness while resolving the ability of Jace, Vryn's Prodigy, you'll need to already have five other cards in your graveyard to satisfy that ability's condition. You can't choose to put the card directly into your graveyard to satisfy it."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "The back face of a double-faced card doesn't have a mana cost. A double-faced permanent with its back face up has a converted mana cost equal to the converted mana cost of its front face. Each back face has a color indicator that defines its color."
+        },
+        {
+          "date": "2016-07-13",
+          "text": "For more information on double-faced cards, see the Shadows over Innistrad mechanics article (http:\/\/magic.wizards.com\/en\/articles\/archive\/feature\/shadows-over-innistrad-mechanics)."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u7ef4\u6797\u9038\u624d\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398711&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 398711
+        },
+        {
+          "name": "\u7dad\u6797\u9038\u624d\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398988&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 398988
+        },
+        {
+          "name": "Jace, prodige de Vryn",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399542&type=card",
+          "language": "French",
+          "multiverseid": 399542
+        },
+        {
+          "name": "Jace, Wunderkind von Vryn",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399265&type=card",
+          "language": "German",
+          "multiverseid": 399265
+        },
+        {
+          "name": "Jace, Prodigio di Vryn",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399819&type=card",
+          "language": "Italian",
+          "multiverseid": 399819
+        },
+        {
+          "name": "\u30f4\u30ea\u30f3\u306e\u795e\u7ae5\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400096&type=card",
+          "language": "Japanese",
+          "multiverseid": 400096
+        },
+        {
+          "name": "\ube0c\ub9b0\uc758 \uc2e0\ub3d9 \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400373&type=card",
+          "language": "Korean",
+          "multiverseid": 400373
+        },
+        {
+          "name": "Jace, Prod\u00edgio de Vryn",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400650&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 400650
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0413\u0435\u043d\u0438\u0439 \u0438\u0437 \u0412\u0440\u0438\u043d\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400927&type=card",
+          "language": "Russian",
+          "multiverseid": 400927
+        },
+        {
+          "name": "Jace, prodigio de Vryn",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=401204&type=card",
+          "language": "Spanish",
+          "multiverseid": 401204
+        }
+      ],
+      "printings": [
+        "pPRE",
+        "ORI"
+      ],
+      "originalText": "{T}: Draw a card, then discard a card. If there are five or more cards in your graveyard, exile Jace, Vryn's Prodigy, then return him to the battlefield transformed under his owner's control.",
+      "originalType": "Legendary Creature \u2014 Human Wizard",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "df8777cde35a8dde343d5055445312c983311f8b"
+    },
+    {
+      "name": "Jace, Telepath Unbound",
+      "names": [
+        "Jace, Vryn's Prodigy",
+        "Jace, Telepath Unbound"
+      ],
+      "cmc": 2,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "ORI",
+      "setName": "Magic Origins",
+      "text": "+1: Up to one target creature gets -2\/-0 until your next turn.\n\u22123: You may cast target instant or sorcery card from your graveyard this turn. If that card would be put into your graveyard this turn, exile it instead.\n\u22129: You get an emblem with \"Whenever you cast a spell, target opponent puts the top five cards of his or her library into his or her graveyard.\"",
+      "artist": "Jaime Jones",
+      "number": "60b",
+      "layout": "double-faced",
+      "multiverseid": 398435,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398435&type=card",
+      "loyalty": 5,
+      "rulings": [
+        {
+          "date": "2015-06-22",
+          "text": "If you activate the second ability of Jace, Telepath Unbound, you must follow the timing rules for the card's types. For example, if you target a sorcery card, you may cast it during your main phase when the stack is empty. You pay all the spell's costs."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "If you don't cast the card that turn, nothing happens. It remains in your graveyard."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "The card is exiled only if it's cast from the graveyard and put back into the graveyard (either by resolving or being countered). If, at any time, the card goes to a hidden zone (such as your hand or your library), the effect loses track of the card. It won't be exiled, even if that card is put into your graveyard later that turn."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u901a\u5ff5\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398712&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 398712
+        },
+        {
+          "name": "\u901a\u5ff5\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398989&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 398989
+        },
+        {
+          "name": "Jace, t\u00e9l\u00e9pathe lib\u00e9r\u00e9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399543&type=card",
+          "language": "French",
+          "multiverseid": 399543
+        },
+        {
+          "name": "Jace, der entfesselte Telepath",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399266&type=card",
+          "language": "German",
+          "multiverseid": 399266
+        },
+        {
+          "name": "Jace, Telepate Libero da Vincoli",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399820&type=card",
+          "language": "Italian",
+          "multiverseid": 399820
+        },
+        {
+          "name": "\u675f\u7e1b\u306a\u304d\u30c6\u30ec\u30d1\u30b9\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400097&type=card",
+          "language": "Japanese",
+          "multiverseid": 400097
+        },
+        {
+          "name": "\ud574\ubc29\ub41c \uc815\uc2e0\uc220\uc0ac \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400374&type=card",
+          "language": "Korean",
+          "multiverseid": 400374
+        },
+        {
+          "name": "Jace, Telepata Ilimitado",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400651&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 400651
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0412\u043e\u043b\u044c\u043d\u044b\u0439 \u0422\u0435\u043b\u0435\u043f\u0430\u0442",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400928&type=card",
+          "language": "Russian",
+          "multiverseid": 400928
+        },
+        {
+          "name": "Jace, tel\u00e9pata desenfrenado",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=401205&type=card",
+          "language": "Spanish",
+          "multiverseid": 401205
+        }
+      ],
+      "printings": [
+        "ORI"
+      ],
+      "originalText": "+1: Up to one target creature gets -2\/-0 until your next turn.\u22123: You may cast target instant or sorcery card from your graveyard this turn. If that card would be put into a graveyard this turn, exile it instead.\u22129: You get an emblem with \"Whenever you cast a spell, target opponent puts the top five cards of his or her library into his or her graveyard.\"",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "bead9f25b1f07740bc0406ffa617b9592d4f00ee"
+    },
+    {
+      "name": "Jace's Sanctum",
+      "manaCost": "{3}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Rare",
+      "set": "ORI",
+      "setName": "Magic Origins",
+      "text": "Instant and sorcery spells you cast cost {1} less to cast.\nWhenever you cast an instant or sorcery spell, scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)",
+      "artist": "Adam Paquette",
+      "number": "61",
+      "layout": "normal",
+      "multiverseid": 398614,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398614&type=card",
+      "rulings": [
+        {
+          "date": "2015-06-22",
+          "text": "The first ability of Jace's Sanctum can't reduce the colored mana requirement of an instant or sorcery spell."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "If there are additional costs to cast an instant or sorcery spell, apply those before applying cost reductions."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "Jace's Sanctum can reduce alternative costs such as miracle or overload costs."
+        },
+        {
+          "date": "2015-06-22",
+          "text": "Jace's Sanctum's scry ability will resolve before the instant or sorcery spell that caused it to trigger."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u5723\u6240",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=398891&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 398891
+        },
+        {
+          "name": "\u5091\u65af\u7684\u8056\u6240",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399168&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 399168
+        },
+        {
+          "name": "Sanctuaire de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399722&type=card",
+          "language": "French",
+          "multiverseid": 399722
+        },
+        {
+          "name": "Jaces Refugium",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399445&type=card",
+          "language": "German",
+          "multiverseid": 399445
+        },
+        {
+          "name": "Rifugio di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=399999&type=card",
+          "language": "Italian",
+          "multiverseid": 399999
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u8056\u57df",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400276&type=card",
+          "language": "Japanese",
+          "multiverseid": 400276
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \uc740\uc2e0\ucc98",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400553&type=card",
+          "language": "Korean",
+          "multiverseid": 400553
+        },
+        {
+          "name": "Santu\u00e1rio de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=400830&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 400830
+        },
+        {
+          "name": "\u0423\u0431\u0435\u0436\u0438\u0449\u0435 \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=401107&type=card",
+          "language": "Russian",
+          "multiverseid": 401107
+        },
+        {
+          "name": "Santuario de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=401384&type=card",
+          "language": "Spanish",
+          "multiverseid": 401384
+        }
+      ],
+      "printings": [
+        "ORI"
+      ],
+      "originalText": "Instant and sorcery spells you cast cost {1} less to cast.Whenever you cast an instant or sorcery spell, scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "980e59a39b7ae69b0a539e1799b0f0abe7a2379a"
+    },
+    {
+      "name": "Jace's Archivist",
+      "manaCost": "{1}{U}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Creature \u2014 Vedalken Wizard",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Vedalken",
+        "Wizard"
+      ],
+      "rarity": "Rare",
+      "set": "C15",
+      "setName": "Commander 2015",
+      "text": "{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "flavor": "\"This is a sacred duty. Master Beleren's trust has bought an eternity of my loyalty.\"",
+      "artist": "James Ryman",
+      "number": "95",
+      "power": "2",
+      "toughness": "2",
+      "layout": "normal",
+      "multiverseid": 405270,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=405270&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If this ability causes a player to draw more cards than are left in his or her library, that player loses the game as a state-based action. If this ability causes all players to do this, the game is a draw."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u4e66\u5e93\u8f96\u5458",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=405612&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 405612
+        },
+        {
+          "name": "Archiviste de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=406296&type=card",
+          "language": "French",
+          "multiverseid": 406296
+        },
+        {
+          "name": "Jaces Archivar",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=405954&type=card",
+          "language": "German",
+          "multiverseid": 405954
+        },
+        {
+          "name": "Archivista di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=406638&type=card",
+          "language": "Italian",
+          "multiverseid": 406638
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u6587\u66f8\u7ba1\u7406\u4eba",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=406980&type=card",
+          "language": "Japanese",
+          "multiverseid": 406980
+        },
+        {
+          "name": "Archivista de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=407322&type=card",
+          "language": "Spanish",
+          "multiverseid": 407322
+        }
+      ],
+      "printings": [
+        "M12",
+        "C13",
+        "C15"
+      ],
+      "originalText": "{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",
+      "originalType": "Creature \u2014 Vedalken Wizard",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "1f5f013092b16d678d108c7250c2b004db13abf8"
+    },
+    {
+      "name": "Oath of Jace",
+      "manaCost": "{2}{U}",
+      "cmc": 3,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Legendary Enchantment",
+      "supertypes": [
+        "Legendary"
+      ],
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Rare",
+      "set": "OGW",
+      "setName": "Oath of the Gatewatch",
+      "text": "When Oath of Jace enters the battlefield, draw three cards, then discard two cards.\nAt the beginning of your upkeep, scry X, where X is the number of planeswalkers you control.",
+      "flavor": "\"For the sake of the Multiverse, I will keep watch.\"",
+      "artist": "Wesley Burt",
+      "number": "60",
+      "layout": "normal",
+      "multiverseid": 407570,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=407570&type=card",
+      "rulings": [
+        {
+          "date": "2016-01-22",
+          "text": "If you control no planeswalkers as the last ability resolves, you won't scry at all. Abilities that trigger whenever you scry won't trigger."
+        },
+        {
+          "date": "2016-01-22",
+          "text": "Each of the Oaths is legendary: if you control more than one of any particular Oath, you choose one to remain on the battlefield and the others are put into your graveyard."
+        },
+        {
+          "date": "2016-01-22",
+          "text": "The \"legend rule\" checks the full names of legendary permanents. You can control Oath of Gideon and Oath of Chandra at the same time, for example."
+        },
+        {
+          "date": "2016-01-22",
+          "text": "Even if you control a particular Oath, you can cast another of that Oath to take advantage of its enters-the-battlefield ability. It will enter the battlefield, causing its first ability to trigger. You will then choose one to keep, as detailed above, and then its enters-the-battlefield ability will resolve."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u8a93\u7ea6",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=407756&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 407756
+        },
+        {
+          "name": "\u5091\u65af\u7684\u8a93\u7d04",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=407942&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 407942
+        },
+        {
+          "name": "Serment de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=408314&type=card",
+          "language": "French",
+          "multiverseid": 408314
+        },
+        {
+          "name": "Jaces Eid",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=408128&type=card",
+          "language": "German",
+          "multiverseid": 408128
+        },
+        {
+          "name": "Giuramento di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=408500&type=card",
+          "language": "Italian",
+          "multiverseid": 408500
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u8a93\u3044",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=408686&type=card",
+          "language": "Japanese",
+          "multiverseid": 408686
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \ub9f9\uc138",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=408872&type=card",
+          "language": "Korean",
+          "multiverseid": 408872
+        },
+        {
+          "name": "Juramento de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=409058&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 409058
+        },
+        {
+          "name": "\u041a\u043b\u044f\u0442\u0432\u0430 \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=409244&type=card",
+          "language": "Russian",
+          "multiverseid": 409244
+        },
+        {
+          "name": "Juramento de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=409430&type=card",
+          "language": "Spanish",
+          "multiverseid": 409430
+        }
+      ],
+      "printings": [
+        "OGW"
+      ],
+      "originalText": "When Oath of Jace enters the battlefield, draw three cards, then discard two cards.\nAt the beginning of your upkeep, scry X, where X is the number of planeswalkers you control.",
+      "originalType": "Legendary Enchantment",
+      "legalities": [
+        {
+          "format": "Battle for Zendikar Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Standard",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "30fc97fe0225b031678cf4b8bbe0d81850a55e3e"
+    },
+    {
+      "name": "Jace, Unraveler of Secrets",
+      "manaCost": "{3}{U}{U}",
+      "cmc": 5,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "SOI",
+      "setName": "Shadows over Innistrad",
+      "text": "+1: Scry 1, then draw a card.\n\u22122: Return target creature to its owner's hand.\n\u22128: You get an emblem with \"Whenever an opponent casts his or her first spell each turn, counter that spell.\"",
+      "artist": "Tyler Jacobson",
+      "number": "69",
+      "layout": "normal",
+      "multiverseid": 409812,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=409812&type=card",
+      "loyalty": 5,
+      "rulings": [
+        {
+          "date": "2016-04-08",
+          "text": "The emblem's triggered ability counters the first spell an opponent casts on each turn, not just that opponent's turn."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "If Jace's emblem's triggered ability doesn't counter the first spell an opponent casts (perhaps because that spell can't be countered), it won't trigger again in the same turn to try to counter that player's second spell."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "If you have multiple opponents, Jace's emblem can trigger once each turn for each opponent."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u63ed\u79d8\u5e08\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=410142&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 410142
+        },
+        {
+          "name": "\u63ed\u79d8\u5e2b\u5091\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=410472&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 410472
+        },
+        {
+          "name": "Jace, d\u00e9tisseur de secrets",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=411132&type=card",
+          "language": "French",
+          "multiverseid": 411132
+        },
+        {
+          "name": "Jace, Entr\u00e4tsler der Geheimnisse",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=410802&type=card",
+          "language": "German",
+          "multiverseid": 410802
+        },
+        {
+          "name": "Jace, Rivelatore di Segreti",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=411462&type=card",
+          "language": "Italian",
+          "multiverseid": 411462
+        },
+        {
+          "name": "\u79d8\u5bc6\u306e\u89e3\u660e\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=411792&type=card",
+          "language": "Japanese",
+          "multiverseid": 411792
+        },
+        {
+          "name": "\ube44\ubc00\uc744 \ud30c\ud5e4\uce58\ub294 \uc790 \uc81c\uc774\uc2a4",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=412122&type=card",
+          "language": "Korean",
+          "multiverseid": 412122
+        },
+        {
+          "name": "Jace, Desvendador de Segredos",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=412452&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 412452
+        },
+        {
+          "name": "\u0414\u0436\u0435\u0439\u0441, \u0420\u0430\u0441\u043a\u0440\u044b\u0432\u0430\u044e\u0449\u0438\u0439 \u0421\u0435\u043a\u0440\u0435\u0442\u044b",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=412782&type=card",
+          "language": "Russian",
+          "multiverseid": 412782
+        },
+        {
+          "name": "Jace, Descifrador de Misterios",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=413112&type=card",
+          "language": "Spanish",
+          "multiverseid": 413112
+        }
+      ],
+      "printings": [
+        "SOI"
+      ],
+      "originalText": "+1: Scry 1, then draw a card.\n\u22122: Return target creature to its owner's hand.\n\u22128: You get an emblem with \"Whenever an opponent casts his or her first spell each turn, counter that spell.\"",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Shadows over Innistrad Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Standard",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "e7c61f91c000780088860f6958025b31319fa50e"
+    },
+    {
+      "name": "Jace's Scrutiny",
+      "manaCost": "{1}{U}",
+      "cmc": 2,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "Common",
+      "set": "SOI",
+      "setName": "Shadows over Innistrad",
+      "text": "Target creature gets -4\/-0 until end of turn.\nInvestigate. (Create a colorless Clue artifact token with \"{2}, Sacrifice this artifact: Draw a card.\")",
+      "flavor": "\"Just a collage of images: cryptoliths, the sea, a tangle of shipwrecks.\"",
+      "artist": "Slawomir Maniak",
+      "number": "70",
+      "layout": "normal",
+      "multiverseid": 409813,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=409813&type=card",
+      "rulings": [
+        {
+          "date": "2016-04-08",
+          "text": "The token is named Clue and has the artifact subtype Clue. Clue isn't a creature type."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "The tokens are normal artifacts. For example, they can be sacrificed to cast Angelic Purge or targeted by Root Out."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "If you sacrifice a Clue for another card's cost or effect, such as that of Angelic Purge or Tamiyo's Journal, you can't also pay {2} and sacrifice it to draw a card."
+        },
+        {
+          "date": "2016-04-08",
+          "text": "You can't cast a spell without choosing legal targets. If all of those targets become illegal, the spell is countered and you won't investigate."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u6770\u65af\u7684\u6d1e\u67e5",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=410143&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 410143
+        },
+        {
+          "name": "\u5091\u65af\u7684\u6d1e\u67e5",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=410473&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 410473
+        },
+        {
+          "name": "Examen de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=411133&type=card",
+          "language": "French",
+          "multiverseid": 411133
+        },
+        {
+          "name": "Jaces pr\u00fcfender Blick",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=410803&type=card",
+          "language": "German",
+          "multiverseid": 410803
+        },
+        {
+          "name": "Esame di Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=411463&type=card",
+          "language": "Italian",
+          "multiverseid": 411463
+        },
+        {
+          "name": "\u30b8\u30a7\u30a4\u30b9\u306e\u7cbe\u67fb",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=411793&type=card",
+          "language": "Japanese",
+          "multiverseid": 411793
+        },
+        {
+          "name": "\uc81c\uc774\uc2a4\uc758 \uc751\uc2dc",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=412123&type=card",
+          "language": "Korean",
+          "multiverseid": 412123
+        },
+        {
+          "name": "Escrut\u00ednio de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=412453&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 412453
+        },
+        {
+          "name": "\u0418\u0437\u044b\u0441\u043a\u0430\u043d\u0438\u044f \u0414\u0436\u0435\u0439\u0441\u0430",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=412783&type=card",
+          "language": "Russian",
+          "multiverseid": 412783
+        },
+        {
+          "name": "Escrutinio de Jace",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=413113&type=card",
+          "language": "Spanish",
+          "multiverseid": 413113
+        }
+      ],
+      "printings": [
+        "SOI"
+      ],
+      "originalText": "Target creature gets -4\/-0 until end of turn.\nInvestigate. (Put a colorless Clue artifact token onto the battlefield with \"{2}, Sacrifice this artifact: Draw a card.\")",
+      "originalType": "Instant",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Shadows over Innistrad Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Standard",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "00e6ca83a270d9e42c0f0f08978f84d6c65bacd3"
+    },
+    {
+      "name": "Jace, the Mind Sculptor",
+      "manaCost": "{2}{U}{U}",
+      "cmc": 4,
+      "colors": [
+        "Blue"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "type": "Planeswalker \u2014 Jace",
+      "types": [
+        "Planeswalker"
+      ],
+      "subtypes": [
+        "Jace"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "EMA",
+      "setName": "Eternal Masters",
+      "text": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n\u22121: Return target creature to its owner's hand.\n\u221212: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "artist": "Jason Chan",
+      "number": "57",
+      "layout": "normal",
+      "multiverseid": 413599,
+      "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=413599&type=card",
+      "loyalty": 3,
+      "rulings": [
+        {
+          "date": "2016-06-08",
+          "text": "You draw three cards and put two cards back all while Jace's second ability is resolving. Nothing can happen between the two, and no player may choose to take actions."
+        },
+        {
+          "date": "2016-06-08",
+          "text": "If the targeted player for Jace's last ability has no cards in hand, that player shuffles nothing into his or her library, and that player's library will remain empty. That player won't lose the game until he or she tries to draw from the empty library."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "\u5fc3\u7075\u5851\u5e08\u6770\u65af",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=413848&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 413848
+        },
+        {
+          "name": "\u7cbe\u795e\u3092\u523b\u3080\u8005\u3001\u30b8\u30a7\u30a4\u30b9",
+          "imageUrl": "http:\/\/gatherer.wizards.com\/Handlers\/Image.ashx?multiverseid=414097&type=card",
+          "language": "Japanese",
+          "multiverseid": 414097
+        }
+      ],
+      "printings": [
+        "WWK",
+        "V13",
+        "VMA",
+        "EMA"
+      ],
+      "originalText": "+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n\u22121: Return target creature to its owner's hand.\n\u221212: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.",
+      "originalType": "Planeswalker \u2014 Jace",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Banned"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        },
+        {
+          "format": "Zendikar Block",
+          "legality": "Legal"
+        }
+      ],
+      "id": "a350c6b5a8ce7a9521c88d12365e184578884071"
+    }
+  ]
+}
