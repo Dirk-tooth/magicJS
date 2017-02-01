@@ -8,8 +8,8 @@ function requestLayout(layout) {
 }
 
 function searchRequest(searchType, searchText) {
-  // return $.getJSON(`https://api.magicthegathering.io/v1/cards?${searchType}=${searchText}`);
-  return new Promise(resolve => resolve(jace));
+  return $.getJSON(`https://api.magicthegathering.io/v1/cards?${searchType}=${searchText}`);
+  // return new Promise(resolve => resolve(jace));
 }
 
 module.exports.layout = requestLayout;

@@ -24,7 +24,7 @@ class SearchCards extends React.Component {
   }
   search() {
     requests.searchRequest(this.state.searchBy, this.state.searchText).then((response) => {
-      console.log(response);
+      console.log(this.state.searchText);
       this.setState({ searchCards: response.cards });
     })
     .catch(err => console.log('errrororrrr', err));
@@ -53,7 +53,7 @@ class SearchCards extends React.Component {
           </span>
         </div>
         <div className="results-area">
-          {this.state.searchCards.map((card, idx) => <Card card={card} key={idx} />)}
+          {this.state.searchCards.map(card => <Card card={card} key={card.id} />)}
         </div>
       </div>
     );

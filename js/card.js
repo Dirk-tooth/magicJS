@@ -10,7 +10,6 @@ class Card extends React.Component {
   }
   checkForImage() {
     if (Object.prototype.hasOwnProperty.call(this.state.card, 'imageUrl')) {
-      console.log(this.state.card.imageUrl);
       return this.state.card.imageUrl;
     }
     return '../images/back.jpeg';
@@ -33,7 +32,7 @@ class Card extends React.Component {
         <div className="card-info">
           <div className="card-info-row">
             <div className="card-name">{this.state.card.name}</div>
-            <div className="card-mana-cost">{this.state.card.manaCost ? `${manaSymbols.parse(this.state.card.manaCost)} (${this.state.card.cmc})` : this.state.card.manaCost}</div>
+            <div className="card-mana-cost">{this.state.card.manaCost ? <span>{manaSymbols.parse(this.state.card.manaCost)} ({this.state.card.cmc})</span> : ''}</div>
             <div className="card-type">{this.state.card.type}</div>
             <div className="card-pow-tou">{this.state.card.power ? `${this.state.card.power}/${this.state.card.toughness}` : ''}</div>
             <div className="card-set">{this.state.card.set}</div>

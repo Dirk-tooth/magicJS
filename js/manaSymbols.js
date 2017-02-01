@@ -1,6 +1,6 @@
 const React = require('react');
 
-// const isNumber = num => !isNaN(num);
+const isNumber = num => !isNaN(num);
 
 function splitOnSymbols(mainText) {
   const splitString = mainText.split(' ');
@@ -14,6 +14,9 @@ function splitOnSymbols(mainText) {
 }
 
 function replacements(text, idx) {
+  if (isNumber(text) && text !== '') {
+    return <span className="anyColorSym" key={idx}>{text}</span>;
+  }
   switch (text) {
     case 'CHAOS':
       return <span className="manaSymbol chaosSym" key={idx}><img src="./images/chaos.svg" alt="chaos symbol" /></span>;

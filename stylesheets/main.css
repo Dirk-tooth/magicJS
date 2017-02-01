@@ -34,25 +34,29 @@ body {
 
 .card {
   padding: 5px;
-  /*display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;*/
+  justify-content: flex-start;
 }
-.card-info {
+.card > img {
 
 }
+.card-info {
+  padding: 15px;
+  flex-basis: 80%
+}
 .card-info-row {
-  /*display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;*/
+  justify-content: space-between;
 }
 .card-name {
   font-size: 1.2em;
   font-weight: bold;
 }
-.card-mana-cost {
+.card-mana-cost > span {
   font-weight: bold;
 }
 .card-type {
@@ -63,6 +67,7 @@ body {
 }
 .card-text {
   margin-top: 15px;
+  text-align: left;
 }
 
 .manaSymbol > img{
@@ -76,10 +81,12 @@ body {
   margin: 15px;
 }
 
-.anyColor {
-  background-image: url(../images/anyColor.svg);
-  width: 22px;
+.anyColorSym {
+  background-image: url('../images/anyColor.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  padding: 9px;
 }
 
 
