@@ -1,7 +1,7 @@
 {
   "name": "magic-js",
-  "version": "0.0.1",
-  "description": "A Magic: The Gathering deck analyzer",
+  "version": "0.0.2",
+  "description": "A Magic: The Gathering tool kit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

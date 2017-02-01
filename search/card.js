@@ -1,4 +1,4 @@
-const manaSymbols = require('./manaSymbols.js');
+const manaSymbols = require('../utility/manaSymbols.js');
 const React = require('react');
 
 class Card extends React.Component {

@@ -1,5 +1,5 @@
-const requests = require('./requests.js');
-const manaSymbols = require('./manaSymbols.js');
+const requests = require('../utility/requests.js');
+const manaSymbols = require('../utility/manaSymbols.js');
 const React = require('react');
 
 const request = requests.layout('plane');
@@ -17,7 +17,7 @@ class Plane extends React.Component {
     super();
     this.state = {
       planes: '',
-      currentPlaneImage: 'Planes/default.jpg',
+      currentPlaneImage: 'images/default.jpg',
       currentPlaneName: '',
       currentPlaneOracle: '',
       currentPlaneChaos: '',
@@ -39,7 +39,7 @@ class Plane extends React.Component {
     } else {
       this.setState({
         planes: requests.layout('plane'),
-        currentPlaneImage: 'Planes/default.jpg',
+        currentPlaneImage: 'images/default.jpg',
         currentPlaneName: '',
         currentPlaneOracle: '',
         currentPlaneChaos: '',

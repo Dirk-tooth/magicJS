@@ -1,4 +1,4 @@
-const requests = require('./requests.js');
+const requests = require('../utility/requests.js');
 const Card = require('./card.js');
 const React = require('react');
 
@@ -42,9 +42,9 @@ class SearchCards extends React.Component {
               aria-expanded="false">{`Search by ${this.state.searchBy} `}<span className="caret" />
             </button>
             <ul className="dropdown-menu">
-              <li><button className="searchby" id="byName" onClick={() => this.changeSearchType('name')}>name</button></li>
-              <li><button className="searchby" id="byText" onClick={() => this.changeSearchType('text')}>text</button></li>
-              <li><button className="searchby" id="byType" onClick={() => this.changeSearchType('type')}>type</button></li>
+              <li><button className="searchby" id="byName" onClick={() => this.changeSearchType('name')}>Search by name</button></li>
+              <li><button className="searchby" id="byText" onClick={() => this.changeSearchType('text')}>Search by text</button></li>
+              <li><button className="searchby" id="byType" onClick={() => this.changeSearchType('type')}>Search by type</button></li>
             </ul>
           </div>
           <input id="search-input" type="text" className="form-control" placeholder="Jace, Memory Adept" onChange={e => this.handleChange(e)} />
