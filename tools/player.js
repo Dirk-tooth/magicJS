@@ -73,11 +73,11 @@ class Player extends React.Component {
   render() {
     return (
       <div className="player">
-      <input
-        type="text"
-        className="player-name"
-        placeholder={this.props.placeholder}
-      />
+        <input
+          type="text"
+          className="player-name"
+          placeholder={this.props.placeholder}
+          />
         <div className="lifeTotal">
           {this.state.life}
         </div>

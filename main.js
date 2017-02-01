@@ -1,56 +1,51 @@
-// libraries
-const $ = require('jquery');
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-// modules
-const loading = require('./utility/loading.js');
-
 // React Components
+const Nav = require('./nav/nav.js');
 const Players = require('./tools/player.js');
 const Search = require('./search/search.js');
 const Plane = require('./planechase/planechase.js');
 
-const state = {
-  searchType: 'name',
-};
-
-function tools$() {
-  ReactDOM.render(
-    <Players />,
-    document.getElementById('container'),
-  );
+class Container extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      currentPage: Search,
+    };
+  }
+  renderPlanechase() {
+    this.setState({ currentPage: Plane });
+    ReactDOM.render(
+      <Plane />,
+      document.getElementById('container'),
+    );
+  }
+  renderSearch() {
+    this.setState({ currentPage: Search });
+    ReactDOM.render(
+      <Plane />,
+      document.getElementById('container'),
+    );
+  }
+  renderTools() {
+    this.setState({ currentPage: Players });
+    ReactDOM.render(
+      <Plane />,
+      document.getElementById('container'),
+    );
+  }
+  render() {
+    return (
+      <div>
+        <Nav />
+        <div>{this.state.currentPage}</div>
+      </div>
+    );
+  }
 }
 
-function planechase$() {
-  ReactDOM.render(
-    <Plane />,
-    document.getElementById('container'),
-  );
-}
-
-function search$() {
-  ReactDOM.render(
-    <Search />,
-    document.getElementById('container'),
-  );
-}
-
-
-// $ nav
-$(document).ready(() => {
-  $('#container').html(loading.home);
-
-  $('#home').click(() => {
-    $('#container').html(loading.home);
-  });
-  $('#toolsPage').click(() => {
-    tools$();
-  });
-  $('#planechase').click(() => {
-    planechase$();
-  });
-  $('#searchPage').click(() => {
-    search$();
-  });
-});
+ReactDOM.render(
+  <Container />,
+  document.getElementById('container'),
+);
