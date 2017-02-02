@@ -15,30 +15,21 @@ class Container extends React.Component {
     };
   }
   renderPlanechase() {
-    this.setState({ currentPage: Plane });
-    ReactDOM.render(
-      <Plane />,
-      document.getElementById('container'),
-    );
+    this.setState({ currentPage: <Plane /> });
   }
   renderSearch() {
-    this.setState({ currentPage: Search });
-    ReactDOM.render(
-      <Plane />,
-      document.getElementById('container'),
-    );
+    this.setState({ currentPage: <Search /> });
   }
   renderTools() {
-    this.setState({ currentPage: Players });
-    ReactDOM.render(
-      <Plane />,
-      document.getElementById('container'),
-    );
+    this.setState({ currentPage: <Players /> });
   }
   render() {
     return (
       <div>
-        <Nav />
+        <Nav renderPlanechase={() => this.renderPlanechase()}
+          renderSearch={() => this.renderSearch()}
+          renderTools={() => this.renderTools()}
+        />
         <div>{this.state.currentPage}</div>
       </div>
     );
