@@ -11,7 +11,7 @@ class Container extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentPage: Search,
+      currentPage: <Search />,
     };
   }
   renderPlanechase() {
