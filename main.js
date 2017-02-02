@@ -13,7 +13,18 @@ class Container extends React.Component {
     this.state = {
       currentPage: <Search />,
     };
+
+    this.views = {
+      plane: <Plane />,
+      search: <Search />,
+      tools: <Players />,
+    };
   }
+
+  changeViews(view) {
+    this.setState({ currentPage: this.views[view] });
+  }
+
   renderPlanechase() {
     this.setState({ currentPage: <Plane /> });
   }
@@ -26,9 +37,9 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        <Nav renderPlanechase={() => this.renderPlanechase()}
-          renderSearch={() => this.renderSearch()}
-          renderTools={() => this.renderTools()}
+        <Nav renderPlanechase={() => this.changeViews('plane')}
+          renderSearch={() => this.changeViews('search')}
+          renderTools={() => this.changeViews('tools')}
         />
         <div>{this.state.currentPage}</div>
       </div>
