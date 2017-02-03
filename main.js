@@ -16,7 +16,7 @@ class Container extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentPage: <Search />,
+      currentPage: 'search',
       planechase: {
         planes: '',
         currentPlaneImage: 'images/default.jpg',
@@ -24,39 +24,46 @@ class Container extends React.Component {
         currentPlaneOracle: '',
         currentPlaneChaos: '',
       },
-    };
-    this.views = {
-      plane: <Plane
-        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-        planechase={this.state.planechase}
-        />,
-      search: <Search
-        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-        searchState={this.state.search}
-        />,
-      tools: <Players
-        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-        toolsState={this.state.tools}
-        />,
+      search: {
+        searchBy: 'name',
+        searchText: '',
+        searchCards: [],
+        matchAll: [],
+        matchAny: [],
+        exclude: [],
+        cmc: [],
+      },
+      tools: {},
     };
     request.then((response) => {
       this.state.planechase.planes = response.cards;
     });
   }
   changeTopLevelState(key, value) {
-    // console.log(key, value);
-    console.log(key, value);
     this.setState({ [key]: value });
-    console.log(this.state.planechase);
   }
   render() {
+    const views = {
+      plane: <Plane
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        planechase={this.state.planechase}
+        />,
+      search: <Search
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        search={this.state.search}
+        />,
+      tools: <Players
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        tools={this.state.tools}
+        />,
+    };
     return (
       <div>
         <Nav
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-          views={this.views}
+          views={views}
         />
-        <div>{this.state.currentPage}</div>
+        <div>{views[this.state.currentPage]}</div>
       </div>
     );
   }

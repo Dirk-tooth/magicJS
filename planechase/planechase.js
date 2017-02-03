@@ -15,24 +15,16 @@ function random(cardList) {
 class Plane extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   planes: '',
-    //   currentPlaneImage: 'images/default.jpg',
-    //   currentPlaneName: '',
-    //   currentPlaneOracle: '',
-    //   currentPlaneChaos: '',
-    // };
-    // request.then((response) => {
-    //   this.props.changeTopLevelState('planechase.planes', response.cards);
-    // });
   }
   nextPlane() {
-    if (length(this.props.planechase.planes) > 0) {
+    console.log(this.props.planechase.planes);
+    if (this.props.planechase.planes.length > 0) {
       const current = random(this.props.planechase.planes);
       const card = this.props.planechase.planes[current];
       const text = card.text.split('Whenever you roll ');
       this.props.planechase.planes.splice(current, 1);
       const newState = {
+        planes: this.props.planechase.planes,
         currentPlaneImage: card.imageUrl,
         currentPlaneName: card.name,
         currentPlaneOracle: manaSymbols.parse(text[0]),

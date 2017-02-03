@@ -3,29 +3,18 @@ const Card = require('./card.js');
 const React = require('react');
 
 class SearchCards extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      searchBy: 'name',
-      searchText: '',
-      searchCards: [],
-      currentCard: {},
-      matchAll: [],
-      matchAny: [],
-      exclude: [],
-      cmc: [],
-    };
+  constructor(props) {
+    super(props);
   }
   handleChange(event) {
-    this.setState({ searchText: event.target.value });
+    this.props.changeTopLevelState('search', Object.assign({}, this.props.search, { searchText: event.target.value }));
   }
   changeSearchType(type) {
-    this.setState({ searchBy: type });
+    this.props.changeTopLevelState('search', Object.assign({}, this.props.search, { searchBy: type }));
   }
   search() {
-    requests.searchRequest(this.state.searchBy, this.state.searchText).then((response) => {
-      console.log(this.state.searchText);
-      this.setState({ searchCards: response.cards });
+    requests.searchRequest(this.props.search.searchBy, this.props.search.searchText).then((response) => {
+      this.props.changeTopLevelState('search', Object.assign({}, this.props.search, { searchCards: response.cards }));
     })
     .catch(err => console.log('errrororrrr', err));
   }
@@ -39,7 +28,7 @@ class SearchCards extends React.Component {
               className="btn btn-default dropdown-toggle"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false">{`Search by ${this.state.searchBy} `}<span className="caret" />
+              aria-expanded="false">{`Search by ${this.props.search.searchBy} `}<span className="caret" />
             </button>
             <ul className="dropdown-menu">
               <li><button className="searchby" id="byName" onClick={() => this.changeSearchType('name')}>Search by name</button></li>
@@ -53,7 +42,7 @@ class SearchCards extends React.Component {
           </span>
         </div>
         <div className="results-area">
-          {this.state.searchCards.map(card => <Card card={card} key={card.id} />)}
+          {this.props.search.searchCards.map(card => <Card card={card} key={card.id} />)}
         </div>
       </div>
     );
