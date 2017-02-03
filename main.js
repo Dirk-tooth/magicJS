@@ -7,39 +7,54 @@ const Players = require('./tools/player.js');
 const Search = require('./search/search.js');
 const Plane = require('./planechase/planechase.js');
 
+// Modules
+const requests = require('./utility/requests.js');
+
+const request = requests.layout('plane');
+
 class Container extends React.Component {
   constructor() {
     super();
     this.state = {
       currentPage: <Search />,
+      planechase: {
+        planes: '',
+        currentPlaneImage: 'images/default.jpg',
+        currentPlaneName: '',
+        currentPlaneOracle: '',
+        currentPlaneChaos: '',
+      },
     };
-
     this.views = {
-      plane: <Plane />,
-      search: <Search />,
-      tools: <Players />,
+      plane: <Plane
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        planechase={this.state.planechase}
+        />,
+      search: <Search
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        searchState={this.state.search}
+        />,
+      tools: <Players
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        toolsState={this.state.tools}
+        />,
     };
+    request.then((response) => {
+      this.state.planechase.planes = response.cards;
+    });
   }
-
-  changeViews(view) {
-    this.setState({ currentPage: this.views[view] });
-  }
-
-  renderPlanechase() {
-    this.setState({ currentPage: <Plane /> });
-  }
-  renderSearch() {
-    this.setState({ currentPage: <Search /> });
-  }
-  renderTools() {
-    this.setState({ currentPage: <Players /> });
+  changeTopLevelState(key, value) {
+    // console.log(key, value);
+    console.log(key, value);
+    this.setState({ [key]: value });
+    console.log(this.state.planechase);
   }
   render() {
     return (
       <div>
-        <Nav renderPlanechase={() => this.changeViews('plane')}
-          renderSearch={() => this.changeViews('search')}
-          renderTools={() => this.changeViews('tools')}
+        <Nav
+          changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+          views={this.views}
         />
         <div>{this.state.currentPage}</div>
       </div>

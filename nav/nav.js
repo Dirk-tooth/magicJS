@@ -20,9 +20,9 @@ class Nav extends React.Component {
 
           <div className="collapse navbar-collapse" id="navbar-collapse">
             <ul className="nav navbar-nav">
-              <li><a id="planechase" href="#" onClick={this.props.renderPlanechase}>Planechase</a></li>
-              <li><a id="searchPage" href="#" onClick={this.props.renderSearch}>Search</a></li>
-              <li><a id="toolsPage" href="#" onClick={this.props.renderTools}>Tools</a></li>
+              <li><a id="planechase" href="#" onClick={() => this.props.changeTopLevelState('currentPage', this.props.views.plane)}>Planechase</a></li>
+              <li><a id="searchPage" href="#" onClick={() => this.props.changeTopLevelState('currentPage', this.props.views.search)}>Search</a></li>
+              <li><a id="toolsPage" href="#" onClick={() => this.props.changeTopLevelState('currentPage', this.props.views.tools)}>Tools</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li><a href="#">About Us</a></li>

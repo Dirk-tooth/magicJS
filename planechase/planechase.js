@@ -13,32 +13,35 @@ function random(cardList) {
 }
 
 class Plane extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      planes: '',
-      currentPlaneImage: 'images/default.jpg',
-      currentPlaneName: '',
-      currentPlaneOracle: '',
-      currentPlaneChaos: '',
-    };
-    request.then(response => this.state.planes = response.cards);
+  constructor(props) {
+    super(props);
+    // this.state = {
+    //   planes: '',
+    //   currentPlaneImage: 'images/default.jpg',
+    //   currentPlaneName: '',
+    //   currentPlaneOracle: '',
+    //   currentPlaneChaos: '',
+    // };
+    // request.then((response) => {
+    //   this.props.changeTopLevelState('planechase.planes', response.cards);
+    // });
   }
   nextPlane() {
-    if (length(this.state.planes) > 0) {
-      const current = random(this.state.planes);
-      const card = this.state.planes[current];
+    if (length(this.props.planechase.planes) > 0) {
+      const current = random(this.props.planechase.planes);
+      const card = this.props.planechase.planes[current];
       const text = card.text.split('Whenever you roll ');
-      this.state.planes.splice(current, 1);
-      this.setState({
+      this.props.planechase.planes.splice(current, 1);
+      const newState = {
         currentPlaneImage: card.imageUrl,
         currentPlaneName: card.name,
         currentPlaneOracle: manaSymbols.parse(text[0]),
         currentPlaneChaos: manaSymbols.parse(text[1]),
-      });
+      };
+      this.props.changeTopLevelState('planechase', newState);
     } else {
-      this.setState({
-        planes: requests.layout('plane'),
+      this.props.changeTopLevelState('planechase', {
+        planes: request,
         currentPlaneImage: 'images/default.jpg',
         currentPlaneName: '',
         currentPlaneOracle: '',
@@ -52,15 +55,15 @@ class Plane extends React.Component {
         <div id="image-holder">
           <input type="image"
             id="plane-image"
-            alt={`${this.state.currentPlaneName} card`}
-            src={this.state.currentPlaneImage}
+            alt={`${this.props.planechase.currentPlaneName} card`}
+            src={this.props.planechase.currentPlaneImage}
             onClick={() => this.nextPlane()}
           />
         </div>
         <div className="plane-text">
-          <h2 id="plane-name">{this.state.currentPlaneName}</h2>
-          <h4 id="plane-oracle">{this.state.currentPlaneOracle}</h4>
-          <h4 is="plane-chaos">{this.state.currentPlaneChaos}</h4>
+          <h2 id="plane-name">{this.props.planechase.currentPlaneName}</h2>
+          <h4 id="plane-oracle">{this.props.planechase.currentPlaneOracle}</h4>
+          <h4 is="plane-chaos">{this.props.planechase.currentPlaneChaos}</h4>
         </div>
       </div>
     );
