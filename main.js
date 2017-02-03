@@ -33,7 +33,20 @@ class Container extends React.Component {
         exclude: [],
         cmc: [],
       },
-      tools: {},
+      players: {
+        1: {
+          id: 1,
+          name: `Player 1`,
+          life: 20,
+          counters: {},
+        },
+        2: {
+          id: 2,
+          name: `Player 2`,
+          life: 20,
+          counters: {},
+        },
+      },
     };
     request.then((response) => {
       this.state.planechase.planes = response.cards;
@@ -54,7 +67,7 @@ class Container extends React.Component {
         />,
       tools: <Players
         changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-        tools={this.state.tools}
+        players={this.state.players}
         />,
     };
     return (

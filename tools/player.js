@@ -1,3 +1,7 @@
+// changes players to new higher level state
+// need to move player up next
+// need to move counters up
+
 const React = require('react');
 
 class Counter extends React.Component {
@@ -111,14 +115,17 @@ class Player extends React.Component {
 }
 
 class Players extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      numberOfPlayers: ['ugin', 'ugin'],
-    };
+  constructor(props) {
+    super(props);
   }
   addPlayer() {
-    this.setState({ numberOfPlayers: ['ugin', ...this.state.numberOfPlayers] });
+    const newPlayer = {
+      id: Object.keys(this.props.players).length + 1,
+      name: `Player ${this.id}`,
+      life: 20,
+      counters: {},
+    };
+    this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
   }
   render() {
     return (
@@ -130,7 +137,7 @@ class Players extends React.Component {
           Add Players
         </button>
         <div className="player-container">
-          { this.state.numberOfPlayers.map((item, idx) => <Player key={idx} placeholder={`Player ${idx + 1}`} />) }
+          { Object.keys(this.props.players).map((item, idx) => <Player key={idx + 1} placeholder={`Player ${idx + 1}`} />) }
         </div>
       </div>
     );
