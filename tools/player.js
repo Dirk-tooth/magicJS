@@ -63,15 +63,12 @@ class Player extends React.Component {
     };
   }
   handleChange(event) {
-    // this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { name: event.tartget.value }));
     this.setState({ text: event.target.value });
   }
-  minusOneLife(event) {
-    // this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { life: this.props.players[event.target.key].life - 1 }));
+  minusOneLife() {
     this.setState({ life: this.state.life -= 1 });
   }
-  plusOneLife(event) {
-    // this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { life: this.props.players[event.target.key].life + 1 }));
+  plusOneLife() {
     this.setState({ life: this.state.life += 1 });
   }
   addCounters() {
@@ -91,13 +88,13 @@ class Player extends React.Component {
         <div>
           <button
             className="minus btn"
-            onClick={e => this.minusOneLife(e)}
+            onClick={() => this.minusOneLife()}
           >
             <span className="glyphicon glyphicon-minus" />
           </button>
           <button
             className="plus btn"
-            onClick={e => this.plusOneLife(e)}
+            onClick={() => this.plusOneLife()}
           >
             <span className="glyphicon glyphicon-plus" />
           </button>
