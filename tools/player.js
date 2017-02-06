@@ -1,26 +1,17 @@
-// changes players to new higher level state
-// need to move player up next
-// need to move counters up
-
 const React = require('react');
 
 class Counter extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'Counter',
-      idx: '',
-      value: 0,
-    };
+  updateCounterState(newState) {
+    this.props.updateCounter(Object.assign({}, this.props.counter, newState));
   }
   handleChange(event) {
-    this.setState({ text: event.target.value });
+    this.updateCounterState({ name: event.target.value });
   }
   minusOneValue() {
-    this.setState({ life: this.state.value -= 1 });
+    this.updateCounterState({ value: this.props.counter.value - 1 });
   }
   plusOneValue() {
-    this.setState({ life: this.state.value += 1 });
+    this.updateCounterState({ value: this.props.counter.value + 1 });
   }
   render() {
     return (
@@ -28,10 +19,12 @@ class Counter extends React.Component {
         <input
           type="text"
           className="counter-name"
-          placeholder={this.props.placeholder}
+          placeholder={`Counter ${this.props.counter.id}`}
+          onChange={e => this.handleChange(e)}
+          value={this.props.counter.name}
         />
         <div className="valueTotal">
-          {this.state.value}
+          {this.props.counter.value}
         </div>
         <div>
           <button
@@ -53,37 +46,47 @@ class Counter extends React.Component {
 }
 
 class Player extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'Player Name',
-      idx: '',
-      life: 20,
-      numberOfCounters: [],
-    };
+  updatePlayerState(newState) {
+    this.props.updatePlayer(Object.assign({}, this.props.player, newState));
   }
+
   handleChange(event) {
-    this.setState({ text: event.target.value });
+    this.updatePlayerState({ name: event.target.value });
   }
   minusOneLife() {
-    this.setState({ life: this.state.life -= 1 });
+    this.updatePlayerState({ life: this.props.player.life - 1 });
   }
   plusOneLife() {
-    this.setState({ life: this.state.life += 1 });
+    this.updatePlayerState({ life: this.props.player.life + 1 });
   }
+
   addCounters() {
-    this.setState({ numberOfCounters: ['jace', ...this.state.numberOfCounters] });
+    const id = Object.keys(this.props.player.counters).length + 1;
+    const newCounter = {
+      id,
+      name: `Counter ${id}`,
+      value: 0,
+    };
+    this.updateCounter(newCounter);
   }
+
+  updateCounter(newCounter) {
+    const counters = Object.assign({}, this.props.player.counters, { [newCounter.id]: newCounter });
+    this.updatePlayerState({ counters });
+  }
+
   render() {
     return (
       <div className="player">
         <input
           type="text"
           className="player-name"
-          placeholder={this.props.placeholder}
+          placeholder={`Player ${this.props.player.id}`}
+          value={this.props.player.name}
+          onChange={e => this.handleChange(e)}
           />
         <div className="lifeTotal">
-          {this.state.life}
+          {this.props.player.life}
         </div>
         <div>
           <button
@@ -107,7 +110,10 @@ class Player extends React.Component {
           <span className="glyphicon glyphicon-tasks" />
         </button>
         <div className="counters-container">
-          { this.state.numberOfCounters.map((item, idx) => <Counter key={idx} placeholder={`Counter ${idx + 1}`} />) }
+          { Object.values(this.props.player.counters).map(item =>
+            <Counter key={item.id}
+              counter={item}
+              updateCounter={newCounter => this.updateCounter(newCounter)} />) }
         </div>
       </div>
     );
@@ -119,14 +125,20 @@ class Players extends React.Component {
     super(props);
   }
   addPlayer() {
+    const id = Object.keys(this.props.players).length + 1;
     const newPlayer = {
-      id: Object.keys(this.props.players).length + 1,
-      name: `Player ${this.id}`,
+      id,
+      name: `Player ${id}`,
       life: 20,
       counters: {},
     };
     this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
   }
+
+  updatePlayer(newPlayer) {
+    this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
+  }
+
   render() {
     return (
       <div className="tools-container">
@@ -137,7 +149,10 @@ class Players extends React.Component {
           Add Players
         </button>
         <div className="player-container">
-          { Object.keys(this.props.players).map((item, idx) => <Player key={idx + 1} placeholder={`Player ${idx + 1}`} />) }
+          { Object.values(this.props.players).map(item =>
+            <Player key={item.id}
+              player={item}
+              updatePlayer={newPlayer => this.updatePlayer(newPlayer)} />) }
         </div>
       </div>
     );
