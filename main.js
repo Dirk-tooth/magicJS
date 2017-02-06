@@ -36,13 +36,13 @@ class Container extends React.Component {
       players: {
         1: {
           id: 1,
-          name: `Player 1`,
+          name: 'Player 1',
           life: 20,
           counters: {},
         },
         2: {
           id: 2,
-          name: `Player 2`,
+          name: 'Player 2',
           life: 20,
           counters: {},
         },
