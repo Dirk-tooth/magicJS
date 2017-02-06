@@ -1,3 +1,7 @@
+// changes players to new higher level state
+// need to move player up next
+// need to move counters up
+
 const React = require('react');
 
 class Counter extends React.Component {
