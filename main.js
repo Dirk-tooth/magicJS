@@ -36,13 +36,13 @@ class Container extends React.Component {
       players: {
         1: {
           id: 1,
-          name: `Player 1`,
+          name: 'Player 1',
           life: 20,
           counters: {},
         },
         2: {
           id: 2,
-          name: `Player 2`,
+          name: 'Player 2',
           life: 20,
           counters: {},
         },
@@ -76,7 +76,23 @@ class Container extends React.Component {
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           views={views}
         />
-        <div>{views[this.state.currentPage]}</div>
+        { /* <div>{views[this.state.currentPage]}</div> */ }
+        <div className="game">
+          <Players
+            changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+            players={this.state.players}
+            />
+            <div className="game-bottom">
+            <Plane
+              changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+              planechase={this.state.planechase}
+              />
+            <Search
+              changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+              search={this.state.search}
+              />
+            </div>
+        </div>
       </div>
     );
   }

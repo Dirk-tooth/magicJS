@@ -3,17 +3,53 @@ body {
 }
 
 /*---------------------------------------------------------------------------*/
+/*top level styles*/
+
+.game-bottom {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.tools-container {
+  /*flex-grow: 2;
+  flex-shrink: 1;*/
+  /*flex-basis: 30%;*/
+}
+.search-container {
+  /*flex-grow: 1;
+  flex-shrink: 2;*/
+  /*flex-basis: 60%;*/
+  height: 500px;
+}
+.pc-container {
+  /*flex-grow: 1;
+  flex-shrink: 3;*/
+  /*flex-basis: 475px;*/
+  width: 475px;
+  height: 500px;
+}
+
+/*---------------------------------------------------------------------------*/
 /*search styles*/
 
 .input-group {
   margin: 0 auto;
+  margin-top: 15px;
   float: none;
-  width: 40%;
+  width: 80%;
   min-width: 150px;
 }
 .searchby {
   border: none;
   background: none;
+}
+.results-area {
+  margin-top: 16px;
+  height: 450px;
+    overflow: auto;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .card {
@@ -71,7 +107,7 @@ body {
 .player-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -110,9 +146,10 @@ body {
 /*planechase styles*/
 
 .pc-container {
+  margin-left: 15px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -127,12 +164,15 @@ body {
 .plane-text {
 	text-align: left;
   margin: 15px;
+  width: 445px;
+  height: 130px;
+    overflow: auto;
 }
 #oracle {
   margin-top: 25px;
-  padding-right: 25px;
+  /*padding-right: 25px;*/
 }
 #chaos {
   margin-top: 25px;
-  padding-right: 25px;
+  /*padding-right: 25px;*/
 }
