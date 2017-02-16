@@ -36,7 +36,6 @@ node_modules/
 .DS_Store
 
 # system bin
-.bin/
 bin/
 
 .jshintrc

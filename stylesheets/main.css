@@ -15,6 +15,7 @@ body {
   /*flex-grow: 2;
   flex-shrink: 1;*/
   /*flex-basis: 30%;*/
+  height: 290px;
 }
 .search-container {
   /*flex-grow: 1;
@@ -110,6 +111,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  height: 256px;
+    overflow: auto;
 }
 .player {
   margin: 10px;

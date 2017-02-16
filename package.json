@@ -4,7 +4,7 @@
   "description": "A Magic: The Gathering tool kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack -w",
     "start": "webpack-dev-server --inline --hot"
   },
   "repository": {
