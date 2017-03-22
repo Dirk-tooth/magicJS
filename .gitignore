@@ -38,3 +38,7 @@ node_modules/
 # system bin
 .bin/
 bin/
+
+.jshintrc
+.eslintrc
+.babelrc

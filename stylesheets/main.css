@@ -1,67 +1,138 @@
 body {
   text-align: center;
-  /*padding-top: 70px;*/
-}
-.btn {
 }
 
-.test-area {
-  width: 90%;
-  min-height: 400px;
-  background-color: white;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 30px;
-  color: black;
-  text-align: left;
-  padding: 5px;
-}
+/*---------------------------------------------------------------------------*/
+/*search styles*/
+
 .input-group {
   margin: 0 auto;
   float: none;
   width: 40%;
   min-width: 150px;
 }
-#advanced {
-  margin-top: 25px;
+.searchby {
+  border: none;
+  background: none;
 }
 
 .card {
-  background-color: #ddd;
   padding: 5px;
-  border: 2px solid #aaa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 .card-info {
-
+  padding: 15px;
+  flex-basis: 80%
+}
+.card-info-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .card-name {
   font-size: 1.2em;
   font-weight: bold;
 }
-.card-mana-cost {
+.card-mana-cost > span {
   font-weight: bold;
 }
 .card-type {
   font-weight: bold;
 }
-.card-set {
-
-}
 .card-text {
   margin-top: 15px;
+  text-align: left;
 }
-
+/*filter styles*/
 .manaSymbol > img{
   width: 18px;
 }
-
-.anyColor {
-  background-image: url(../images/anyColor.svg);
-  width: 22px;
+.mana-btn > img{
+  width:36px;
+}
+.filter-groups {
+  margin: 15px;
+}
+.anyColorSym {
+  background-image: url('../images/anyColor.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  padding: 9px;
 }
 
+/*---------------------------------------------------------------------------*/
+/*tools styles*/
+
+.player-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 .player {
-  float: left;
   margin: 10px;
+  flex-basis: 20%;
+}
+.player-name {
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+}
+.lifeTotal {
+  font-size: 5em;
+}
+.plus {
+  margin: 5px;
+}
+.minus {
+  margin: 5px;
+}
+.glyphicon-tasks {
+  margin: 3px;
+}
+.counter {
+  margin-top: 15px;
+}
+.counter-name {
+  text-align: center;
+}
+.valueTotal {
+  font-size: 2.5em
+}
+
+/*---------------------------------------------------------------------------*/
+/*planechase styles*/
+
+.pc-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+#image-holder {
+  text-align: center;
+  margin: 15px;
+}
+#plane-image {
+  width: 445px;
+  height: 310px;
+}
+.plane-text {
+	text-align: left;
+  margin: 15px;
+}
+#oracle {
+  margin-top: 25px;
+  padding-right: 25px;
+}
+#chaos {
+  margin-top: 25px;
+  padding-right: 25px;
 }
