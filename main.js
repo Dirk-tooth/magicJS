@@ -16,7 +16,7 @@ class Container extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 'search',
+      currentPage: 'tools',
       planechase: {
         planes: '',
         currentPlaneImage: 'images/default.jpg',
@@ -65,31 +65,27 @@ class Container extends React.Component {
         changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
         search={this.state.search}
         />,
-      tools: <Players
-        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-        players={this.state.players}
-        />,
+      tools: <div className="game">
+        <div className="game-bottom">
+          <Plane
+            changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+            planechase={this.state.planechase}
+          />
+        </div>
+        <Players
+          changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+          players={this.state.players}
+          />
+      </div>
+          ,
     };
     return (
       <div>
-        { /* <Nav
+        <Nav
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           views={views}
-        /> */ }
-        { /* <div>{views[this.state.currentPage]}</div> */ }
-        <div className="game">
-          <Players
-            changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-            players={this.state.players}
-            />
-          <div className="game-bottom">
-            <Plane
-              changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-              planechase={this.state.planechase}
-            />
-          </div>
-          <div>{views[this.state.currentPage]}</div>
-        </div>
+        />
+        <div>{views[this.state.currentPage]}</div>
       </div>
     );
   }

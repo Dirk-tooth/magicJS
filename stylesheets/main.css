@@ -6,7 +6,7 @@ body {
 /*top level styles*/
 
 .game-bottom {
-  margin-top: 45px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -15,13 +15,13 @@ body {
   /*flex-grow: 2;
   flex-shrink: 1;*/
   /*flex-basis: 30%;*/
-  height: 290px;
+  /*height: 290px;*/
 }
 .search-container {
   /*flex-grow: 1;
   flex-shrink: 2;*/
   /*flex-basis: 60%;*/
-  height: 500px;
+  /*height: 500px;*/
 }
 .pc-container {
   /*flex-grow: 1;
@@ -47,8 +47,8 @@ body {
 }
 .results-area {
   margin-top: 16px;
-  height: 450px;
-    overflow: auto;
+  /*height: 450px;*/
+    /*overflow: auto;*/
   width: 80%;
   margin-left: 10%;
 }
@@ -111,8 +111,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  height: 256px;
-    overflow: auto;
+  /*height: 256px;*/
+    /*overflow: auto;*/
 }
 .player {
   margin: 10px;
