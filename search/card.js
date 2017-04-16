@@ -21,7 +21,7 @@ class Card extends React.Component {
           <tr><td>date</td><td>ruling</td></tr>
         </thead>
         <tbody>
-          {this.props.card.rulings.map(item => <tr><td>{item.date}</td><td>{item.text}</td></tr>)}
+          {this.props.card.rulings.map((item, idx) => <tr key={idx}><td>{item.date}</td><td>{item.text}</td></tr>)}
         </tbody>
       </table>
     );
