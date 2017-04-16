@@ -139,6 +139,17 @@ class Players extends React.Component {
     this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
   }
 
+  updatePlayers(value) {
+    this.props.changeTopLevelState('players', this.resetPlayers(value));
+  }
+  resetPlayers(value) {
+    const newPlayers = Object.keys(this.props.players).reduce((acc, playerId) => Object.assign({}, acc, { [playerId]: this.changePlayerState(this.props.players[playerId], value) }), {});
+    console.log(this.props.players, newPlayers);
+    this.props.changeTopLevelState('players', newPlayers);
+  }
+  changePlayerState(player, value) {
+    return Object.assign({}, player, { life: value, counters: {} });
+  }
   render() {
     return (
       <div className="tools-container">
@@ -147,6 +158,24 @@ class Players extends React.Component {
           onClick={() => this.addPlayer()}
         >
           Add Players
+        </button>
+        <button
+          className="reset-to-20 btn"
+          onClick={() => this.resetPlayers(20)}
+        >
+          20
+        </button>
+        <button
+          className="reset-to-25 btn"
+          onClick={() => this.resetPlayers(25)}
+        >
+          25
+        </button>
+        <button
+          className="reset-to-40 btn"
+          onClick={() => this.resetPlayers(40)}
+        >
+          40
         </button>
         <div className="player-container">
           { Object.values(this.props.players).map(item =>

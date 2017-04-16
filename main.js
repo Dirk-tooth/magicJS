@@ -72,26 +72,23 @@ class Container extends React.Component {
     };
     return (
       <div>
-        <Nav
+        { /* <Nav
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           views={views}
-        />
+        /> */ }
         { /* <div>{views[this.state.currentPage]}</div> */ }
         <div className="game">
           <Players
             changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
             players={this.state.players}
             />
-            <div className="game-bottom">
+          <div className="game-bottom">
             <Plane
               changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
               planechase={this.state.planechase}
-              />
-            <Search
-              changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
-              search={this.state.search}
-              />
-            </div>
+            />
+          </div>
+          <div>{views[this.state.currentPage]}</div>
         </div>
       </div>
     );

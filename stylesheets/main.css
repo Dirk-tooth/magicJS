@@ -27,8 +27,8 @@ body {
   /*flex-grow: 1;
   flex-shrink: 3;*/
   /*flex-basis: 475px;*/
-  width: 475px;
-  height: 500px;
+  /*width: 475px;*/
+  /*height: 500px;*/
 }
 
 /*---------------------------------------------------------------------------*/
@@ -116,7 +116,7 @@ body {
 }
 .player {
   margin: 10px;
-  flex-basis: 20%;
+  flex-basis: 18%;
 }
 .player-name {
   text-align: center;
@@ -152,7 +152,7 @@ body {
   margin-left: 15px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
 }
 
@@ -167,9 +167,9 @@ body {
 .plane-text {
 	text-align: left;
   margin: 15px;
-  width: 445px;
+  /*width: 445px;
   height: 130px;
-    overflow: auto;
+    overflow: auto;*/
 }
 #oracle {
   margin-top: 25px;
