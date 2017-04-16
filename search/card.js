@@ -15,15 +15,16 @@ class Card extends React.Component {
     return '../images/back.jpeg';
   }
   rulingsTable() {
-    const tableHtml = [];
-    const card = this.state.card;
-    if (card.rulings && card.rulings.length > 0) {
-      tableHtml.push('<thead><tr><td>date</td><td>ruling</td></tr></thead><tbody>');
-      card.rulings.forEach((item) => {
-        tableHtml.push(`<tr><td>${item.date}</td><td>${item.text}</td></tr>`);
-      });
-    }
-    return (`${tableHtml.join(' ')}</tbody>`);
+    return (
+      <table>
+        <thead>
+          <tr><td>date</td><td>ruling</td></tr>
+        </thead>
+        <tbody>
+          {this.props.card.rulings.map(item => <tr><td>{item.date}</td><td>{item.text}</td></tr>)}
+        </tbody>
+      </table>
+    );
   }
   render() {
     return (
@@ -41,7 +42,7 @@ class Card extends React.Component {
             <div className="card-text">{this.state.card.text ? manaSymbols.parse(this.state.card.text) : manaSymbols.parse(this.state.card.originalText)}</div>
           </div>
           <div className="card-rulings-row">
-            <div className="card-rulings"><table className="rulings-table">{() => this.rulingsTable()}</table></div>
+            <div className="card-rulings">{this.props.card.rulings && Object.keys(this.props.card.rulings).length > 0 ? this.rulingsTable() : null}</div>
           </div>
         </div>
       </div>
