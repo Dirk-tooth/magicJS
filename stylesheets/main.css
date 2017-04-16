@@ -142,7 +142,10 @@ body {
   text-align: center;
 }
 .valueTotal {
-  font-size: 2.5em
+  font-size: 2.5em;
+}
+.reset{
+  margin: 15px;
 }
 
 /*---------------------------------------------------------------------------*/

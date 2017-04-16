@@ -160,19 +160,19 @@ class Players extends React.Component {
           Add Players
         </button>
         <button
-          className="reset-to-20 btn"
+          className="reset to-20 btn"
           onClick={() => this.resetPlayers(20)}
         >
           20
         </button>
         <button
-          className="reset-to-25 btn"
+          className="reset to-25 btn"
           onClick={() => this.resetPlayers(25)}
         >
           25
         </button>
         <button
-          className="reset-to-40 btn"
+          className="reset to-40 btn"
           onClick={() => this.resetPlayers(40)}
         >
           40
