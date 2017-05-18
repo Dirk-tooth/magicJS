@@ -3,8 +3,9 @@ const planes = require('../data/planes.json');
 const jace = require('../data/jace.json');
 
 function requestLayout(layout) {
-  // return $.getJSON(`https://api.magicthegathering.io/v1/cards?layout=${layout}`);
-  return new Promise(resolve => resolve(planes));
+  console.log($.getJSON(`https://api.magicthegathering.io/v1/cards?layout=${layout}`));
+  return $.getJSON(`https://api.magicthegathering.io/v1/cards?layout=${layout}`);
+  // return new Promise(resolve => resolve(planes));
 }
 
 function searchRequest(searchType, searchText) {

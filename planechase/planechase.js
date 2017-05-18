@@ -2,7 +2,7 @@ const requests = require('../utility/requests.js');
 const manaSymbols = require('../utility/manaSymbols.js');
 const React = require('react');
 
-const request = requests.layout('plane');
+const request = requests.layout('plane'); // .reduce((acc, item) => acc.find(item) ? null : acc.push(item), []);
 
 function length(obj) {
   return Object.keys(obj).length;
@@ -17,7 +17,6 @@ class Plane extends React.Component {
     super(props);
   }
   nextPlane() {
-    console.log(this.props.planechase.planes);
     if (this.props.planechase.planes.length > 0) {
       const current = random(this.props.planechase.planes);
       const card = this.props.planechase.planes[current];
