@@ -1,80 +1,98 @@
-// libraries
-const $ = require('jquery');
-// js
-const plancechase = require('./js/planechase.js');
-const search = require('./js/search.js');
-const loading = require('./js/loading.js');
-// const tools = require('./js/tools.js');
-const player = require('./js/player.js');
+const React = require('react');
+const ReactDOM = require('react-dom');
 
-let state = {
-  searchType: 'name',
-};
+// React Components
+const Nav = require('./nav/nav.js');
+const Players = require('./tools/player.js');
+const Search = require('./search/search.js');
+const Plane = require('./planechase/planechase.js');
+const About = require('./about/about.js');
 
-function home$() {
+// Modules
+const requests = require('./utility/requests.js');
 
+const request = requests.layout('plane');
+
+class Container extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      currentPage: 'tools',
+      planechase: {
+        planes: '',
+        currentPlaneImage: 'images/default.jpg',
+        currentPlaneName: '',
+        currentPlaneOracle: '',
+        currentPlaneChaos: '',
+      },
+      search: {
+        searchBy: 'name',
+        searchText: '',
+        searchCards: [],
+        matchAll: [],
+        matchAny: [],
+        exclude: [],
+        cmc: [],
+      },
+      players: {
+        1: {
+          id: 1,
+          name: 'Player 1',
+          life: 20,
+          counters: {},
+        },
+        2: {
+          id: 2,
+          name: 'Player 2',
+          life: 20,
+          counters: {},
+        },
+      },
+    };
+    request.then((response) => {
+      this.state.planechase.planes = response.cards;
+    });
+  }
+  changeTopLevelState(key, value) {
+    this.setState({ [key]: value });
+  }
+  render() {
+    const views = {
+      plane: <Plane
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        planechase={this.state.planechase}
+				/>,
+      search: <Search
+        changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+        search={this.state.search}
+				/>,
+      tools: <div className="game">
+        <div className="game-bottom">
+          <Plane
+            changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+            planechase={this.state.planechase}
+					/>
+        </div>
+        <Players
+          changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+          players={this.state.players}
+					/>
+      </div>,
+      about: <About />,
+    };
+    return (
+      <div>
+        <Nav
+          changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
+          views={views}
+				 />
+        <div>{views[this.state.currentPage]}</div>
+      </div>
+    );
+  }
 }
 
-function tools$() {
-  $('#add-player-button').click(() => {
-    player.addPlayer();
-  });
-}
-
-function planechase$() {
-  plancechase.loadCurrent();
-  $('#imageHolder').click(() => {
-    plancechase.loadCurrent();
-  });
-}
-
-function search$() {
-  $('.searchby').click(() => {
-    state.searchType = $(event.target).html();
-    $('#input-dropdown').html(`Search by ${state.searchType} <span class="caret"></span>`);
-  });
-  $('#search').click(() => {
-    search.search($('#search-input').val(), state.searchType);
-  });
-}
-
-function navSearch$(input) {
-  search.search(input, 'name');
-  search$();
-}
-
-
-// $ nav
-$(document).ready(() => {
-  $('#container').html(loading.home);
-  $('title').html('magicJS | Home');
-  home$();
-
-  $('#home').click(() => {
-    $('#container').html(loading.home);
-    $('title').html('magicJS | Home');
-    home$();
-  });
-  $('#toolsPage').click(() => {
-    $('#container').html(loading.tools);
-    $('title').html('magicJS | Tools');
-    tools$();
-  });
-  $('#planechase').click(() => {
-    $('#container').html(loading.planechase);
-    $('title').html('magicJS | Planechase');
-    planechase$();
-  });
-  $('#searchPage').click(() => {
-    $('#container').html(loading.search);
-    $('title').html('magicJS | Search');
-    search$();
-  });
-  $('#nav-search').click(() => {
-    const userSearchInput = $('#search-bar-input').val();
-    $('#search-bar-input').val('');
-    $('#container').html(loading.search);
-    $('title').html('magicJS | Search');
-    navSearch$(userSearchInput);
-  });
-});
+ReactDOM.render(
+  <Container />,
+	document.getElementById('container'),
+);
