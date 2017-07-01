@@ -20,7 +20,7 @@ class Plane extends React.Component {
     if (this.props.planechase.planes.length > 0) {
       const current = random(this.props.planechase.planes);
       const card = this.props.planechase.planes[current];
-      // TODO: Problem Case: Stairs to Infinity
+			// TODO: Problem Case: Stairs to Infinity
       const text = card.text.split('Whenever you roll ');
       this.props.planechase.planes.splice(current, 1);
       const newState = {
@@ -50,7 +50,7 @@ class Plane extends React.Component {
             alt={`${this.props.planechase.currentPlaneName} card`}
             src={this.props.planechase.currentPlaneImage}
             onClick={() => this.nextPlane()}
-          />
+					/>
         </div>
         <div className="plane-text">
           <h2 id="plane-name">{this.props.planechase.currentPlaneName}</h2>

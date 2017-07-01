@@ -24,7 +24,7 @@ class Nav extends React.Component {
               <li><a id="searchPage" href="#" onClick={() => this.props.changeTopLevelState('currentPage', 'search')}>Search</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#">About Us</a></li>
+              <li><a id="aboutPage" href="#" onClick={() => this.props.changeTopLevelState('currentPage', 'about')}>About Us</a></li>
             </ul>
           </div>
         </div>

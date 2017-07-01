@@ -6,6 +6,7 @@ const Nav = require('./nav/nav.js');
 const Players = require('./tools/player.js');
 const Search = require('./search/search.js');
 const Plane = require('./planechase/planechase.js');
+const About = require('./about/about.js');
 
 // Modules
 const requests = require('./utility/requests.js');
@@ -60,31 +61,31 @@ class Container extends React.Component {
       plane: <Plane
         changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
         planechase={this.state.planechase}
-        />,
+				/>,
       search: <Search
         changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
         search={this.state.search}
-        />,
+				/>,
       tools: <div className="game">
         <div className="game-bottom">
           <Plane
             changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
             planechase={this.state.planechase}
-          />
+					/>
         </div>
         <Players
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           players={this.state.players}
-          />
-      </div>
-          ,
+					/>
+      </div>,
+      about: <About />,
     };
     return (
       <div>
         <Nav
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           views={views}
-        />
+				 />
         <div>{views[this.state.currentPage]}</div>
       </div>
     );
@@ -93,5 +94,5 @@ class Container extends React.Component {
 
 ReactDOM.render(
   <Container />,
-  document.getElementById('container'),
+	document.getElementById('container'),
 );
