@@ -8,7 +8,7 @@ This tool allows players to:
 * look though all the planes in random order
 * build a decklist of planes for planechase games.
 
-## Search
+## Search
 To give the players full access to information they may need during a game, we put together the most comprehensive search tool we could so that players have access to card and every ruling to ensure games go as smoothly as possible.
 
 Here players can find all the information they ever wanted to know about any card they can think of quickly, without leaving the plane - or their tools behind. Speaking of tools...
