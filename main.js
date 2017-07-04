@@ -85,7 +85,7 @@ class Container extends React.Component {
         <Nav
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           views={views}
-				 />
+				/>
         <div>{views[this.state.currentPage]}</div>
       </div>
     );
