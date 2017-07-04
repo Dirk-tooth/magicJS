@@ -34,30 +34,37 @@ class Plane extends React.Component {
     } else {
       this.props.changeTopLevelState('planechase', {
         planes: request,
-        currentPlaneImage: 'images/default.jpg',
-        currentPlaneName: '',
-        currentPlaneOracle: '',
-        currentPlaneChaos: '',
+        currentPlaneImage: 'images/default.png',
+        currentPlaneName: 'Welcome to magicJS',
+        currentPlaneOracle: 'Click the planar card to the left to planeswalk.',
+        currentPlaneChaos: 'There are other worlds than these.',
       });
     }
   }
   render() {
     return (
-      <div className="pc-container">
-        <div id="image-holder">
-          <input type="image"
-            id="plane-image"
-            alt={`${this.props.planechase.currentPlaneName} card`}
-            src={this.props.planechase.currentPlaneImage}
-            onClick={() => this.nextPlane()}
+		<div className="pc-wrap">
+			<div className="game-bottom-background">
+				<img alt={`${this.props.planechase.currentPlaneName} background`}
+					src={this.props.planechase.currentPlaneImage}
+				/>
+			</div>
+			<div className="pc-container">
+				<div id="image-holder">
+					<input type="image"
+						id="plane-image"
+						alt={`${this.props.planechase.currentPlaneName} card`}
+						src={this.props.planechase.currentPlaneImage}
+						onClick={() => this.nextPlane()}
 					/>
-        </div>
-        <div className="plane-text">
-          <h2 id="plane-name">{this.props.planechase.currentPlaneName}</h2>
-          <h4 id="plane-oracle">{this.props.planechase.currentPlaneOracle}</h4>
-          <h4 is="plane-chaos">{this.props.planechase.currentPlaneChaos}</h4>
-        </div>
-      </div>
+				</div>
+				<div className="plane-text">
+					<h2 id="plane-name">{this.props.planechase.currentPlaneName}</h2>
+					<h4 id="plane-oracle">{this.props.planechase.currentPlaneOracle}</h4>
+					<h4 is="plane-chaos">{this.props.planechase.currentPlaneChaos}</h4>
+				</div>
+			</div>
+		</div>
     );
   }
 }

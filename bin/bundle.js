@@ -83,10 +83,10 @@
 	      currentPage: 'tools',
 	      planechase: {
 	        planes: '',
-	        currentPlaneImage: 'images/default.jpg',
-	        currentPlaneName: '',
-	        currentPlaneOracle: '',
-	        currentPlaneChaos: ''
+	        currentPlaneImage: 'images/default.png',
+	        currentPlaneName: 'Welcome to magicJS',
+	        currentPlaneOracle: 'Click the card to the left to planeswalk.',
+	        currentPlaneChaos: 'There are other worlds than these.'
 	      },
 	      search: {
 	        searchBy: 'name',
@@ -32786,39 +32786,56 @@
 	      var _this2 = this;
 
 	      return React.createElement(
-	        'div',
-	        { className: 'pc-container' },
-	        React.createElement(
-	          'div',
-	          { id: 'image-holder' },
-	          React.createElement('input', { type: 'image',
-	            id: 'plane-image',
-	            alt: this.props.planechase.currentPlaneName + ' card',
-	            src: this.props.planechase.currentPlaneImage,
-	            onClick: function onClick() {
-	              return _this2.nextPlane();
-	            }
-	          })
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'plane-text' },
-	          React.createElement(
-	            'h2',
-	            { id: 'plane-name' },
-	            this.props.planechase.currentPlaneName
-	          ),
-	          React.createElement(
-	            'h4',
-	            { id: 'plane-oracle' },
-	            this.props.planechase.currentPlaneOracle
-	          ),
-	          React.createElement(
-	            'h4',
-	            { is: 'plane-chaos' },
-	            this.props.planechase.currentPlaneChaos
-	          )
-	        )
+			'div',
+			{ id: 'pc-wrap' },
+			React.createElement(
+				'div', {
+					id: 'game-bottom-background'
+				},
+				React.createElement(
+					'img', {
+						alt: this.props.planechase.currentPlaneName + ' background',
+						src: this.props.planechase.currentPlaneImage
+					}
+				)
+			),
+			React.createElement(
+			
+	        
+				'div',
+				{ className: 'pc-container' },
+				React.createElement(
+				  'div',
+				  { id: 'image-holder' },
+				  React.createElement('input', { type: 'image',
+					id: 'plane-image',
+					alt: this.props.planechase.currentPlaneName + ' card',
+					src: this.props.planechase.currentPlaneImage,
+					onClick: function onClick() {
+					  return _this2.nextPlane();
+					}
+				  })
+				),
+				React.createElement(
+				  'div',
+				  { className: 'plane-text' },
+				  React.createElement(
+					'h2',
+					{ id: 'plane-name' },
+					this.props.planechase.currentPlaneName
+				  ),
+				  React.createElement(
+					'h4',
+					{ id: 'plane-oracle' },
+					this.props.planechase.currentPlaneOracle
+				  ),
+				  React.createElement(
+					'h4',
+					{ is: 'plane-chaos' },
+					this.props.planechase.currentPlaneChaos
+				  )
+				)
+			)
 	      );
 	    }
 	  }]);

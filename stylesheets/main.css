@@ -10,6 +10,7 @@ body {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	position:relative;
 }
 .tools-container {
 	/*flex-grow: 2;
@@ -195,3 +196,47 @@ body {
 .about>h1 {
 	font-size: 4em;
 }
+
+
+
+
+/* Jaya's Styles to Test Layout Updates */
+
+.game-bottom {
+	overflow-y:hidden;
+	background-color: gray;
+}
+#pc-wrap{width:100%}
+#game-bottom-background{
+	position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 1;
+    background: gray url(images/default.jpg) center center;
+    background-size: cover;
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    width: 100%;
+}
+#game-bottom-background img{
+	width: 100%;
+    height: 100%;
+}
+.pc-container, #image-holder, .plane-text {
+	z-index:3;
+}
+.plane-text h2, .plane-text h4 {
+	margin:0 0 1em;
+	padding:.5em;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 3px;
+	text-shadow: 1px 0 2px rgba(255,255,255,.2), -1px 0 2px rgba(255,255,255,.2), 0 1px 2px rgba(255,255,255,.2), 0 -1px 2px rgba(255,255,255,.2);
+}
+.plane-text h2{font-weight:800}
+.plane-text h4{font-size:175%}
+input:focus{outline:rgba(0,0,0,0)}
+.navbar{margin-bottom:0}
+.game-bottom{margin-top:0;}
