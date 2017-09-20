@@ -29,7 +29,7 @@ class Card extends React.Component {
   render() {
     return (
       <div className="card">
-        <img src={this.checkForImage()} alt={this.state.card.name} />
+        <img className="card-image" src={this.checkForImage()} alt={this.state.card.name} />
         <div className="card-info">
           <div className="card-info-row">
             <div className="card-name">{this.state.card.name}</div>
