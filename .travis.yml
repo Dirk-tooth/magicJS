@@ -20,7 +20,7 @@ pipelines:
 						- pip install awscli
 						- pip --help
 						- aws --version
-						 # build the Docker image (this will use the Dockerfile in the root of the repo)
+						# build the Docker image (this will use the Dockerfile in the root of the repo)
 						- docker build -t $IMAGE_NAME .
 						# authenticate with AWS
 						- export MY_LOGIN="$(aws ecr get-login --no-include-email --region us-east-2)"
