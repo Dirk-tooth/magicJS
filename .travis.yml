@@ -7,12 +7,12 @@ services:
 before_install:
   - pip install --user awscli
   - npm install
-  - docker build -t $AWS_IMAGE_TAG .
+  - docker build -t $IMAGE_NAME .
 script:
   - export MY_LOGIN="$(aws ecr get-login)"
   - $MY_LOGIN
-  - docker tag $AWS_IMAGE_TAG $AWS_ECR_REPOSITORY/$AWS_IMAGE_TAG
-  - docker push $AWS_ECR_REPOSITORY/$AWS_IMAGE_TAG
+  - docker tag $IMAGE_NAME $AWS_ECR_REPOSITORY/$IMAGE_NAME
+  - docker push $AWS_ECR_REPOSITORY/$IMAGE_NAME
 after_script:
   - cd post-process
   - npm install
