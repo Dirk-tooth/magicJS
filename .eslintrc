@@ -22,6 +22,6 @@
 		"import/extensions": "off",
 		"no-nested-ternary": "off",
 		"max-len": ["off", {"code": 150 }],
-		"no-tabs": "off"
+		"no-tabs": "on"
 	},
 }

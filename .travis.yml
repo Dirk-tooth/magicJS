@@ -2,31 +2,33 @@ image: datagovsg/python-node:latest
 
 # enable Docker for your repository
 options:
-	docker: true
+  docker: true
 
 pipelines:
-	default:
-		- step:
-				script:
-					- echo "Hey man, add some tests."
-	branches:
-		master:
-			- step:
-				script:
-						- apt-get update
-						- python --version
-						- apt-get -y install python-dev
-						- apt-get -y install python-pip
-						- pip install awscli
-						- pip --help
-						- aws --version
-						# build the Docker image (this will use the Dockerfile in the root of the repo)
-						- docker build -t $IMAGE_NAME .
-						# authenticate with AWS
-						- export MY_LOGIN="$(aws ecr get-login --no-include-email --region us-east-2)"
-						- $MY_LOGIN
-						- docker tag production-dashboard $AWS_ACCOUNT_ID/production-dashboard
-						- docker push $AWS_ACCOUNT_ID/production-dashboard
-						- cd post-process
-						- npm install
-						- npm start
+  default:
+    - step:
+        script:
+          - echo "Hey man, add some tests."
+  branches:
+    master:
+      - step:
+        script:
+            - apt-get update
+            - python --version
+            - apt-get -y install python-dev
+            - apt-get -y install python-pip
+            - pip install awscli
+            - pip --help
+            - aws --version
+            # build the Docker image (this will use the Dockerfile in the root of the repo)
+            - docker build -t $IMAGE_NAME .
+            # authenticate with AWS
+            - export MY_LOGIN="$(aws ecr get-login --no-include-email --region us-east-2)"
+            - $MY_LOGIN
+            - docker tag production-dashboard $AWS_ACCOUNT_ID/production-dashboard
+            - docker push $AWS_ACCOUNT_ID/production-dashboard
+            - cd post-process
+            - npm install
+            - npm start
+language:
+  - javascript
