@@ -7,12 +7,12 @@ services:
 before_install:
   - pip install --user awscli
   - npm install
-  - docker build -t MAGICJS .
+  - docker build -t magicjs .
 script:
   - export MY_LOGIN="$(aws ecr get-login)"
   - $MY_LOGIN
-  - docker tag MAGICJS $AWS_ECR_REPOSITORY/MAGICJS
-  - docker push $AWS_ECR_REPOSITORY/MAGICJS
+  - docker tag magicjs $AWS_ECR_REPOSITORY/magicjs
+  - docker push $AWS_ECR_REPOSITORY/magicjs
 after_script:
   - cd post-process
   - npm install
