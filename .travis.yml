@@ -16,4 +16,4 @@ script:
 after_script:
   - cd post-process
   - npm install
-  - node index.js --cluster=$AWS_CLUSTER
+  - node index.js --cluster=$AWS_CLUSTER_NAME
