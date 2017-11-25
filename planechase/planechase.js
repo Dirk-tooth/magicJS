@@ -20,7 +20,7 @@ class Plane extends React.Component {
     if (this.props.planechase.planes.length > 0) {
       const current = random(this.props.planechase.planes);
       const card = this.props.planechase.planes[current];
-			// TODO: Problem Case: Stairs to Infinity
+      // TODO: Problem Case: Stairs to Infinity
       const text = card.text.split('Whenever you roll ');
       this.props.planechase.planes.splice(current, 1);
       const newState = {
@@ -43,28 +43,28 @@ class Plane extends React.Component {
   }
   render() {
     return (
-		<div className="pc-wrap">
-			<div className="game-bottom-background">
-				<img alt={`${this.props.planechase.currentPlaneName} background`}
-					src={this.props.planechase.currentPlaneImage}
-				/>
-			</div>
-			<div className="pc-container">
-				<div id="image-holder">
-					<input type="image"
-						id="plane-image"
-						alt={`${this.props.planechase.currentPlaneName} card`}
-						src={this.props.planechase.currentPlaneImage}
-						onClick={() => this.nextPlane()}
-					/>
-				</div>
-				<div className="plane-text">
-					<h2 id="plane-name">{this.props.planechase.currentPlaneName}</h2>
-					<h4 id="plane-oracle">{this.props.planechase.currentPlaneOracle}</h4>
-					<h4 is="plane-chaos">{this.props.planechase.currentPlaneChaos}</h4>
-				</div>
-			</div>
-		</div>
+      <div className="pc-wrap">
+        <div className="game-bottom-background">
+          <img alt={`${this.props.planechase.currentPlaneName} background`}
+            src={this.props.planechase.currentPlaneImage}
+           />
+        </div>
+        <div className="pc-container">
+          <div id="image-holder">
+            <input type="image"
+              id="plane-image"
+              alt={`${this.props.planechase.currentPlaneName} card`}
+              src={this.props.planechase.currentPlaneImage}
+              onClick={() => this.nextPlane()}
+          />
+          </div>
+          <div className="plane-text">
+            <h2 id="plane-name">{this.props.planechase.currentPlaneName}</h2>
+            <h4 id="plane-oracle">{this.props.planechase.currentPlaneOracle}</h4>
+            <h4 is="plane-chaos">{this.props.planechase.currentPlaneChaos}</h4>
+          </div>
+        </div>
+      </div>
     );
   }
 }

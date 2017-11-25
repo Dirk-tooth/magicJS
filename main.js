@@ -20,10 +20,10 @@ class Container extends React.Component {
       currentPage: 'tools',
       planechase: {
         planes: '',
-        currentPlaneImage: 'images/default.jpg',
-        currentPlaneName: '',
-        currentPlaneOracle: '',
-        currentPlaneChaos: '',
+        currentPlaneImage: 'images/default.png',
+        currentPlaneName: 'Welcome to magicJS',
+        currentPlaneOracle: 'Click the card to the left to planeswalk.',
+        currentPlaneChaos: 'There are other worlds than these.',
       },
       search: {
         searchBy: 'name',
@@ -61,22 +61,22 @@ class Container extends React.Component {
       plane: <Plane
         changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
         planechase={this.state.planechase}
-				/>,
+        />,
       search: <Search
         changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
         search={this.state.search}
-				/>,
+        />,
       tools: <div className="game">
         <div className="game-bottom">
           <Plane
             changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
             planechase={this.state.planechase}
-					/>
+          />
         </div>
         <Players
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           players={this.state.players}
-					/>
+          />
       </div>,
       about: <About />,
     };
@@ -85,7 +85,7 @@ class Container extends React.Component {
         <Nav
           changeTopLevelState={(key, value) => this.changeTopLevelState(key, value)}
           views={views}
-				/>
+        />
         <div>{views[this.state.currentPage]}</div>
       </div>
     );
@@ -94,5 +94,5 @@ class Container extends React.Component {
 
 ReactDOM.render(
   <Container />,
-	document.getElementById('container'),
+  document.getElementById('container'),
 );
