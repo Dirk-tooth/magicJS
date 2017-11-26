@@ -4,6 +4,7 @@
   "description": "A Magic: The Gathering tool kit",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "watch": "webpack -w",
     "start": "webpack-dev-server --inline --hot",
     "prod": "webpack -p"
@@ -31,7 +32,7 @@
     "jquery": "^3.1.1",
     "lodash": "^4.17.2",
     "mtgsdk": "^0.1.1",
-    "react": "^15.4.2",
+    "react": "^15.6.2",
     "react-dom": "^15.4.2",
     "styled-components": "^2.2.1",
     "webpack": "^1.13.3"
@@ -39,16 +40,19 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
+    "babel-jest": "^21.2.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^3.11.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.7.1",
+    "jest": "^21.2.1",
     "json-loader": "^0.5.4",
+    "react-test-renderer": "^16.1.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
