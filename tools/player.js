@@ -78,6 +78,10 @@ class Player extends React.Component {
   render() {
     return (
       <div className="player">
+        <button
+          className="remove btn"
+          onClick={() => this.props.removePlayer(this.props.player.id)}
+        >X</button>
         <input
           type="text"
           className="player-name"
@@ -135,6 +139,14 @@ class Players extends React.Component {
     this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
   }
 
+  removePlayer(playerId) {
+    console.log(playerId);
+    const tempPlayersList = this.props.players;
+    delete tempPlayersList[playerId];
+    console.log(tempPlayersList);
+    this.props.changeTopLevelState('players', tempPlayersList);
+  }
+
   updatePlayer(newPlayer) {
     this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
   }
@@ -181,7 +193,9 @@ class Players extends React.Component {
           { Object.values(this.props.players).map(item =>
             <Player key={item.id}
               player={item}
-              updatePlayer={newPlayer => this.updatePlayer(newPlayer)} />) }
+              updatePlayer={newPlayer => this.updatePlayer(newPlayer)}
+              removePlayer={playerId => this.removePlayer(playerId)}
+            />) }
         </div>
       </div>
     );
