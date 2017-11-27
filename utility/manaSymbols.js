@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 const isNumber = num => !isNaN(num);
 
@@ -45,4 +45,4 @@ function parse(text) {
   return splitOnSymbols(text).map((item, idx) => replacements(item, idx));
 }
 
-module.exports.parse = parse;
+export default parse;

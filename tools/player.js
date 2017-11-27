@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 class Counter extends React.Component {
   updateCounterState(newState) {
@@ -188,4 +188,4 @@ class Players extends React.Component {
   }
 }
 
-module.exports = Players;
+export default Players;

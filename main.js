@@ -1,15 +1,15 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // React Components
-const Nav = require('./nav/nav.js');
-const Players = require('./tools/player.js');
-const Search = require('./search/search.js');
-const Plane = require('./planechase/planechase.js');
-const About = require('./about/about.js');
+import Nav from './nav/nav.js';
+import Players from './tools/player.js';
+import Search from './search/search.js';
+import Plane from './planechase/planechase.js';
+import About from './about/about.js';
 
 // Modules
-const requests = require('./utility/requests.js');
+import requests from './utility/requests.js';
 
 const request = requests.layout('plane');
 

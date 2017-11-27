@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 function About() {
   return (
@@ -8,8 +8,8 @@ function About() {
       <br />
       <h2>Planechase</h2>
       <p>We wanted to create tools for players who wanted to look through the
-			planechase cards and build sample planechase decks to hone their skills
-			as a planeswalker.</p>
+      planechase cards and build sample planechase decks to hone their skills
+      as a planeswalker.</p>
 
       <p>This tool allows players to:</p>
       <p> › look though all the planes in random order</p>
@@ -17,11 +17,11 @@ function About() {
 
       <h2>Search</h2>
       <p>To give the players full access to information they may need during a
-			game, we put together the most comprehensive search tool we could so that
-			players have access to every card and every ruling to ensure games go as smoothly
-			as possible. Here players can find all the information they ever wanted to
-			know about any card they can think of quickly, without leaving the plane -
-			or their tools behind. Speaking of tools...</p>
+      game, we put together the most comprehensive search tool we could so that
+      players have access to every card and every ruling to ensure games go as smoothly
+      as possible. Here players can find all the information they ever wanted to
+      know about any card they can think of quickly, without leaving the plane -
+      or their tools behind. Speaking of tools...</p>
 
       <h2>Tools</h2>
       <p>The tools page give players the ability to track all the accounting the game requires with out need their Pound-O-Dice, every where they go.</p>
@@ -49,4 +49,4 @@ function About() {
   );
 }
 
-module.exports = About;
+export default About;
