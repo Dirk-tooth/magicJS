@@ -1,6 +1,6 @@
-const requests = require('../utility/requests.js');
-const Card = require('./card.js');
-const React = require('react');
+import requests from '../utility/requests.js';
+import Card from './card.js';
+import React from 'react';
 
 class SearchCards extends React.Component {
   constructor(props) {
@@ -49,4 +49,4 @@ class SearchCards extends React.Component {
   }
 }
 
-module.exports = SearchCards;
+export default SearchCards;

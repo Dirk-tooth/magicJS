@@ -1,6 +1,6 @@
-const requests = require('../utility/requests.js');
-const manaSymbols = require('../utility/manaSymbols.js');
-const React = require('react');
+import requests from '../utility/requests.js';
+import manaSymbols from '../utility/manaSymbols.js';
+import React from 'react';
 
 const request = requests.layout('plane'); // .reduce((acc, item) => acc.find(item) ? null : acc.push(item), []);
 
@@ -69,4 +69,4 @@ class Plane extends React.Component {
   }
 }
 
-module.exports = Plane;
+export default Plane;
