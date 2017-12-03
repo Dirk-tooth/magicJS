@@ -45,4 +45,4 @@ function parse(text) {
   return splitOnSymbols(text).map((item, idx) => replacements(item, idx));
 }
 
-export default parse;
+module.exports.parse = parse;

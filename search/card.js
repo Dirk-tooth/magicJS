@@ -16,12 +16,12 @@ class Card extends React.Component {
   }
   rulingsTable() {
     return (
-      <table>
+      <table className="ruleings-table">
         <thead>
-          <tr><td>date</td><td>ruling</td></tr>
+          <tr className="ruleings-table-row-header"><td className="date-col">date</td><td className="text-col">ruling</td></tr>
         </thead>
-        <tbody>
-          {this.props.card.rulings.map((item, idx) => <tr key={idx}><td>{item.date}</td><td>{item.text}</td></tr>)}
+        <tbody className="ruleings-table-body">
+          {this.props.card.rulings.map((item, idx) => <tr key={idx} className="ruleings-table-row"><td className="date-col">{item.date}</td><td className="text-col">{manaSymbols.parse(item.text)}</td></tr>)}
         </tbody>
       </table>
     );
