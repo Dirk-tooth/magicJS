@@ -28,10 +28,10 @@ You can track all the things you could think of and more, including:
 We hope you enjoy using our MTG suite. If you have any questions or want to contribute, please contact us or leave us a message!
 
 ### Created by:
-J.Kyle  
-Dirk-Tooth
+[J.Kyle]()
+[Dirk-Tooth]()
 
 ###### Contributions from:
 
-Skybreak  
-Jaya Prime
+[Skybreak]()
+[Jaya Prime]()

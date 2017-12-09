@@ -1,3 +1,6 @@
+# system bin
+# bin/
+
 # Logs
 logs
 *.log
@@ -34,9 +37,6 @@ node_modules/
 
 # OSX Files
 .DS_Store
-
-# system bin
-bin/
 
 .jshintrc
 .eslintrc
