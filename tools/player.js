@@ -16,6 +16,10 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="counter">
+        <button
+          className="remove btn"
+          onClick={() => this.props.removeCounter(this.props.counter.id)}
+        >X</button>
         <input
           type="text"
           className="counter-name"
@@ -70,6 +74,14 @@ class Player extends React.Component {
     this.updateCounter(newCounter);
   }
 
+  removeCounter(counterId) {
+    console.log(counterId);
+    const tempCountersList = this.props.player.counters;
+    delete tempCountersList[counterId];
+    console.log(tempCountersList);
+    this.props.updatePlayer(Object.assign({}, this.props.player, { counters: tempCountersList }));
+  }
+
   updateCounter(newCounter) {
     const counters = Object.assign({}, this.props.player.counters, { [newCounter.id]: newCounter });
     this.updatePlayerState({ counters });
@@ -78,6 +90,10 @@ class Player extends React.Component {
   render() {
     return (
       <div className="player">
+        <button
+          className="remove btn"
+          onClick={() => this.props.removePlayer(this.props.player.id)}
+        >X</button>
         <input
           type="text"
           className="player-name"
@@ -113,7 +129,8 @@ class Player extends React.Component {
           { Object.values(this.props.player.counters).map(item =>
             <Counter key={item.id}
               counter={item}
-              updateCounter={newCounter => this.updateCounter(newCounter)} />) }
+              updateCounter={newCounter => this.updateCounter(newCounter)}
+              removeCounter={counterId => this.removeCounter(counterId)} />) }
         </div>
       </div>
     );
@@ -133,6 +150,14 @@ class Players extends React.Component {
       counters: {},
     };
     this.props.changeTopLevelState('players', Object.assign({}, this.props.players, { [newPlayer.id]: newPlayer }));
+  }
+
+  removePlayer(playerId) {
+    console.log(playerId);
+    const tempPlayersList = this.props.players;
+    delete tempPlayersList[playerId];
+    console.log(tempPlayersList);
+    this.props.changeTopLevelState('players', tempPlayersList);
   }
 
   updatePlayer(newPlayer) {
@@ -181,7 +206,9 @@ class Players extends React.Component {
           { Object.values(this.props.players).map(item =>
             <Player key={item.id}
               player={item}
-              updatePlayer={newPlayer => this.updatePlayer(newPlayer)} />) }
+              updatePlayer={newPlayer => this.updatePlayer(newPlayer)}
+              removePlayer={playerId => this.removePlayer(playerId)}
+            />) }
         </div>
       </div>
     );
