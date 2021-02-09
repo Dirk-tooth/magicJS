@@ -4,13 +4,17 @@ import $ from 'jquery';
 
 function requestLayout(layout) {
   // console.log($.getJSON(`https://api.magicthegathering.io/v1/cards?layout=${layout}&set=pca`));
-  return $.getJSON(`https://api.magicthegathering.io/v1/cards?layout=${layout}&set=pca`);
+  return $.getJSON(
+    `https://api.magicthegathering.io/v1/cards?layout=${layout}`
+  );
   // console.log(planes);
   // return new Promise(resolve => resolve(planes));
 }
 
 function searchRequest(searchType, searchText) {
-  return $.getJSON(`https://api.magicthegathering.io/v1/cards?${searchType}=${searchText}`);
+  return $.getJSON(
+    `https://api.magicthegathering.io/v1/cards?${searchType}=${searchText}`
+  );
   // return new Promise(resolve => resolve(jace));
 }
 
